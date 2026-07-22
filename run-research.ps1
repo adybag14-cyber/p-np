@@ -17,7 +17,9 @@ $experiments = @(
   "elimination_width.py",
   "xor_core.py",
   "certified_dag.py",
-  "optimal_obdd.py"
+  "optimal_obdd.py",
+  "adaptive_semantic_dag.py",
+  "adaptive_policy_search.py"
 )
 
 foreach ($experiment in $experiments) {

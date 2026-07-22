@@ -1,6 +1,6 @@
 # PIsNPOrNot — Lean 4 attack laboratory
 
-A native Windows Lean 4 research workspace containing **135 mechanically checked approaches** to P versus NP, verified CNF transformations, executable finite experiments, and structural SAT prototypes.
+A native Windows Lean 4 research workspace containing **165 mechanically checked approaches** to P versus NP, verified CNF transformations, executable finite experiments, and structural SAT prototypes.
 
 The project does **not** claim a proof of `P = NP` or `P != NP`. It is designed to expose exactly which additional theorem each attempted route would require.
 
@@ -253,6 +253,40 @@ polynomial layer/state/construction accounting, a non-circular compiled-language
 predicate, the conditional `P = NP` theorem, and the corresponding obstruction
 if the classes are separated.
 
+
+
+### `ResearchEleventh.lean` - approaches 136-150
+
+Adaptive residual branching over partial assignments. The next variable may depend
+on the current residual. Lean proves adaptive Shannon branching, exact rank decrease,
+local-to-global tree correctness, depth bounded by unset variables, semantic alias
+safety, polynomial layer accounting, and an explicit adaptive compiler criterion.
+
+### `ResearchTwelfth.lean` - approaches 151-165
+
+Global policy accounting. The adaptive model embeds every fixed-order model, safe
+selection never exceeds its ordered baseline, shared-state overlap is measured by
+set union/intersection, monotone improvement chains preserve the baseline bound,
+and polynomial policy portfolios compose.
+
+## Adaptive paradigm experiment
+
+Two separate experiments are retained because they reveal different facts:
+
+- `adaptive_semantic_dag.py` chooses each variable by a local recurrence. It often
+  produces a larger shared DAG than the exact optimal OBDD, proving that local tree
+  cost is the wrong objective for a globally shared graph.
+- `adaptive_policy_search.py` begins from the exact best OBDD and accepts an override
+  only after rebuilding and measuring the entire DAG. In a deterministic sample of
+  2,056 four-variable tables it found 17 strict one-node improvements. It also found
+  improvements in 7/60 random five-variable functions and 2/15 random six-variable
+  functions. No tested candidate was allowed to become worse than its OBDD baseline.
+
+This establishes a real but limited paradigm advantage: residual-dependent order can
+strictly beat every fixed order, but discovering the useful overrides is itself a
+global optimization problem.
+
+
 ## Main files
 
 - `PIsNPOrNot.lean` — approaches 1–15 and residual synthesis.
@@ -266,9 +300,11 @@ if the classes are separated.
 - `ResearchEighth.lean` - approaches 91-105 and concrete CNF proof trees.
 - `ResearchNinth.lean` - approaches 106-120 and semantic residual minimality.
 - `ResearchTenth.lean` - approaches 121-135 and the acceptable ordered-residual compiler skeleton.
+- `ResearchEleventh.lean` - approaches 136-150 and adaptive partial-assignment branching.
+- `ResearchTwelfth.lean` - approaches 151-165 and global policy accounting.
 - `CNFCore.lean` - verified CNF restriction semantics.
 - `Audit.lean` - selected theorem axiom audit.
-- `FORMULATIONS.md` - compact status of all 135 approaches.
+- `FORMULATIONS.md` - compact status of all 165 approaches.
 - `ACCEPTABLE_TARGET.md` - precise obligations still required for a publishable result.
 - `Main.lean` - residual-state executable.
 - `hybrid_portfolio.py` - heterogeneous structural solver portfolio.

@@ -9,6 +9,8 @@ import ResearchSeventh
 import ResearchEighth
 import ResearchNinth
 import ResearchTenth
+import ResearchEleventh
+import ResearchTwelfth
 import CNFCore
 
 -- Original residual and decomposition core
@@ -88,3 +90,20 @@ import CNFCore
 #print axioms PIsNPOrNot.ResearchTenth.A132_TotalCertifiedCost.total_cost_bound
 #print axioms PIsNPOrNot.ResearchTenth.A134_CollapseCriterion.p_eq_np_of_uniform_compiler
 #print axioms PIsNPOrNot.ResearchTenth.A135_CompilerObstruction.compiler_obstruction_of_separation
+
+
+-- Approaches 136-150: adaptive residual branching
+#print axioms PIsNPOrNot.ResearchEleventh.A139_AdaptiveShannon.residual_branch
+#print axioms PIsNPOrNot.ResearchEleventh.A141_RankDecrease.rank_assign_lt
+#print axioms PIsNPOrNot.ResearchEleventh.A143_AdaptiveValidity.eval_correct
+#print axioms PIsNPOrNot.ResearchEleventh.A144_AdaptiveDepth.height_le_rank
+#print axioms PIsNPOrNot.ResearchEleventh.A148_AdaptiveDagBudget.dagNodes_le_depth_mul_width
+#print axioms PIsNPOrNot.ResearchEleventh.A149_AdaptiveCompiler.Compiler.decide_correct
+
+-- Approaches 151-165: globally measured policy improvement
+#print axioms PIsNPOrNot.ResearchTwelfth.A155_AdaptiveBaseline.adaptive_best_le_ordered
+#print axioms PIsNPOrNot.ResearchTwelfth.A157_SharedUnion.union_inter_identity
+#print axioms PIsNPOrNot.ResearchTwelfth.A159_StrictSharing.union_card_lt_sum_of_intersection
+#print axioms PIsNPOrNot.ResearchTwelfth.A160_ImprovementChain.final_le_initial
+#print axioms PIsNPOrNot.ResearchTwelfth.A163_PortfolioBaseline.choosePortfolio_cost_le_seed
+#print axioms PIsNPOrNot.ResearchTwelfth.A165_PolicyCollapseCriterion.p_eq_np_of_uniform_policy_portfolios

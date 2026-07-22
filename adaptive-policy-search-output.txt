@@ -1,0 +1,29 @@
+Monotone global adaptive-policy search
+seed=2953953616
+Every search starts from the exact best OBDD order and accepts only smaller DAGs.
+
+Deterministic 2,056-table four-variable sample plus known hardest OBDD tables
+ordered-minus-adaptive: 0: 2039 (99.17%), 1: 17 (0.83%)
+strongest: table=0x1260/ordered=10/adaptive=9/overrides=1, table=0x1d60/ordered=10/adaptive=9/overrides=1, table=0x26e0/ordered=10/adaptive=9/overrides=1, table=0x2e60/ordered=10/adaptive=9/overrides=1, table=0x3be0/ordered=9/adaptive=8/overrides=1, table=0x46e0/ordered=10/adaptive=9/overrides=1, table=0x4760/ordered=10/adaptive=9/overrides=1, table=0x67e0/ordered=10/adaptive=9/overrides=1, table=0x8460/ordered=10/adaptive=9/overrides=1, table=0x89e0/ordered=10/adaptive=9/overrides=1, table=0x8b60/ordered=10/adaptive=9/overrides=1, table=0x8be0/ordered=9/adaptive=8/overrides=1
+
+60 random 5-variable functions
+ordered-minus-adaptive: 0: 53 (88.33%), 1: 7 (11.67%)
+accepted override counts: 0: 53 (88.33%), 1: 7 (11.67%)
+
+15 random 6-variable functions
+ordered-minus-adaptive: 0: 13 (86.67%), 1: 2 (13.33%)
+accepted override counts: 0: 13 (86.67%), 1: 2 (13.33%)
+
+Structured eight-variable functions
+parity-8: ordered=17, adaptive=17, improvement=0, overrides=0
+majority-8: ordered=22, adaptive=22, improvement=0, overrides=0
+exact-one-8: ordered=17, adaptive=17, improvement=0, overrides=0
+equality-halves-4+4: ordered=14, adaptive=14, improvement=0, overrides=0
+inner-product-4: ordered=16, adaptive=16, improvement=0, overrides=0
+
+Eight-variable CNFs
+random-3cnf-1: clauses=24, sat=6/256, ordered=14, adaptive=14, improvement=0, overrides=0
+random-3cnf-2: clauses=34, sat=2/256, ordered=14, adaptive=14, improvement=0, overrides=0
+random-3cnf-3: clauses=44, sat=0/256, ordered=1, adaptive=1, improvement=0, overrides=0
+
+total-seconds=114.014

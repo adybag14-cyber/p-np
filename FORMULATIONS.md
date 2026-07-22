@@ -186,3 +186,40 @@ The best surviving formulation is not “compress every witness set directly.”
 8. prove that the number and size of all leaves/states is polynomial for every NP instance.
 
 Steps 1–7 are represented by checked components in the workspace. Step 8 is the unsolved global coverage theorem.
+
+
+## 136-150: adaptive semantic-width branching
+
+136. **Partial residual semantics** - acceptance is existential completion of a partial assignment.
+137. **Single-variable assignment** - functional update fixes one selected bit.
+138. **Extension characterization** - extending an updated partial assignment equals extending the old state plus matching the selected bit.
+139. **Adaptive Shannon branching** - any currently unset variable may be selected, independently at every residual.
+140. **Unassigned-variable set** - the exact remaining variable support is represented as a finite set.
+141. **Rank decrease** - assigning an unset variable removes exactly one rank unit.
+142. **Adaptive search tree** - each internal node stores its own residual-dependent variable choice.
+143. **Adaptive validity** - locally certified branches and leaves imply global answer correctness.
+144. **Adaptive depth bound** - valid depth is at most the number of unset variables at the root.
+145. **Binary-tree ceiling** - an unshared adaptive tree still has the standard exponential ceiling.
+146. **Completion equivalence** - equal completion sets are verifier-independent merge certificates.
+147. **Semantic aliases** - verifier-specific residual equivalence is sufficient for memoization.
+148. **Adaptive DAG budget** - total nodes are bounded by depth times maximum semantic layer width.
+149. **Adaptive compiler** - exactness and polynomial node bounds are packaged without assuming the answer.
+150. **Adaptive collapse criterion** - a uniform polynomial adaptive compiler family would yield class equality.
+
+## 151-165: global policy optimization and safe baselines
+
+151. **Finite policy result** - a policy exposes its reachable-state set and answer.
+152. **State dominance** - reachable-set inclusion implies a cardinality cost bound.
+153. **Safe global choice** - choose the smaller of two exact results without losing correctness.
+154. **Ordered embedding** - every fixed-order model may be embedded into the adaptive model at equal cost.
+155. **Adaptive baseline theorem** - a globally optimal adaptive candidate cannot be worse than any ordered baseline.
+156. **Local/global mismatch** - a smaller local recurrence score need not imply a smaller shared graph.
+157. **Shared-union identity** - union and intersection cardinalities exactly account for DAG sharing.
+158. **Sharing upper bound** - shared expansion never costs more than separate child expansion.
+159. **Strict sharing** - nonempty child-state overlap gives a strict cardinality saving.
+160. **Improvement chains** - any chain of accepted nonincreasing moves remains below its initial cost.
+161. **Search invariant** - accepted moves preserve exactness as well as cost monotonicity.
+162. **Exact portfolio fold** - folding safe choices across candidate policies preserves correctness.
+163. **Portfolio baseline** - the folded portfolio never exceeds its seed baseline.
+164. **Polynomial portfolio accounting** - polynomially many polynomial-cost policies remain polynomial overall.
+165. **Policy collapse criterion** - a uniform polynomial exact policy portfolio would yield P = NP.
