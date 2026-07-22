@@ -1,6 +1,6 @@
 # PIsNPOrNot — Lean 4 attack laboratory
 
-A native Windows Lean 4 research workspace containing **225 mechanically checked approaches** to P versus NP, verified CNF transformations, executable finite experiments, and structural SAT prototypes.
+A native Windows Lean 4 research workspace containing **330 mechanically checked approaches** to P versus NP, verified CNF transformations, executable finite experiments, and structural SAT prototypes.
 
 The project does **not** claim a proof of `P = NP` or `P != NP`. It is designed to expose exactly which additional theorem each attempted route would require.
 
@@ -304,6 +304,46 @@ Least policy closures, coherent policy merging on shared residuals, uniqueness, 
 
 Dominance, compatibility transfer, safe coherent-frontier pruning, frontier product bounds, and the polynomial-frontier collapse criterion.
 
+
+### `ResearchSeventeenth.lean` - approaches 226-240
+
+Feature quotients, orbit representatives, sparse support, tensor separators, isolation families, proof traces, and a heterogeneous radical-cover criterion.
+
+### `ResearchEighteenth.lean` - approaches 241-255
+
+Bijective coordinate transforms, affine/spectral sketches, transformed state budgets, proof-carrying radical certificates, and transform-sketch portfolios.
+
+### `ResearchNineteenth.lean` - approaches 256-270
+
+GF(2) basis-search cardinality, one-bit parity and k-bit syndrome bounds, concrete parity machines, polynomial candidate-basis families, and the linear-sketch collapse criterion.
+
+### `ResearchTwentieth.lean` - approaches 271-285
+
+Canonical equivalence, strict symmetry compression, permutation-family cost, automorphism orbits, product features, and symmetry-linear portfolios.
+
+### `ResearchTwentyFirst.lean` - approaches 286-300
+
+Exact restriction covers, residual solver composition, shallow-tree and common-core accounting, exact kernels, restricted proof traces, and the restriction-cover criterion.
+
+### `ResearchTwentySecond.lean` - approaches 301-315
+
+Involutive gates, reversible nonlinear networks, monotone network search, post-transform feature compression, checked networks, and the reversible-compiler criterion.
+
+### `ResearchTwentyThird.lean` - approaches 316-330
+
+Exact finite witness counting, zero/nonzero residue criteria, modulus `2^n + 1`, independent product counts, separator partitions, tensor width, and modular compilers.
+
+## Radical paradigm experiments
+
+The strongest experimental extension replaces original-variable queries with transformed coordinates:
+
+- `linear_basis_obdd.py` exhaustively tests all 20,160 ordered GF(2) bases for selected four-variable functions and samples larger bases. It reduced parity-8 from 17 nodes to 3 and equality-halves from 14 to 6.
+- `symmetry_residual_quotient.py` canonicalizes residual truth tables under remaining-variable permutations. Structured six-variable functions compressed by roughly 10-12x.
+- `restriction_collapse.py` verifies exact restriction covers. Residuals collapse rapidly, but the exponential number of cover branches can erase the gain.
+- `reversible_transform_obdd.py` adds reversible X, CNOT, and Toffoli preprocessing. It improved 16 of 17 tested six-variable functions over the exact ordinary OBDD baseline.
+
+Full measurements and barriers are recorded in `RADICAL_PARADIGMS_RESULTS.md`.
+
 ## Main files
 
 - `PIsNPOrNot.lean` — approaches 1–15 and residual synthesis.
@@ -323,11 +363,19 @@ Dominance, compatibility transfer, safe coherent-frontier pruning, frontier prod
 - `ResearchFourteenth.lean` - approaches 181-195 and canonical semantic-state/node correspondence.
 - `ResearchFifteenth.lean` - approaches 196-210 and coherent least-policy closures.
 - `ResearchSixteenth.lean` - approaches 211-225 and safe frontier dominance pruning.
+- `ResearchSeventeenth.lean` - approaches 226-240 and exact feature/orbit quotients.
+- `ResearchEighteenth.lean` - approaches 241-255 and transformed/sketched representations.
+- `ResearchNineteenth.lean` - approaches 256-270 and GF(2) linear-basis sketches.
+- `ResearchTwentieth.lean` - approaches 271-285 and symmetry canonicalization.
+- `ResearchTwentyFirst.lean` - approaches 286-300 and restriction-cover ensembles.
+- `ResearchTwentySecond.lean` - approaches 301-315 and reversible nonlinear transforms.
+- `ResearchTwentyThird.lean` - approaches 316-330 and exact modular counting.
 - `CNFCore.lean` - verified CNF restriction semantics.
 - `Audit.lean` - selected theorem axiom audit.
-- `FORMULATIONS.md` - compact status of all 225 approaches.
+- `FORMULATIONS.md` - compact status of all 330 approaches.
 - `ACCEPTABLE_TARGET.md` - precise obligations still required for a publishable result.
 - `CANONICAL_FRONTIER_RESULTS.md` - canonical-state, coherent-policy, and frontier-pruning results.
+- `RADICAL_PARADIGMS_RESULTS.md` - linear, symmetry, restriction, reversible, and modular results.
 - `Main.lean` - residual-state executable.
 - `hybrid_portfolio.py` - heterogeneous structural solver portfolio.
 - `certified_dag.py` - emitted and independently checked AND/OR DAG certificates.

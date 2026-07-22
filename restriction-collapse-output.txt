@@ -1,0 +1,44 @@
+Restriction-cover collapse experiment
+seed=98923264
+Exact covers enumerate all assignments to a selected variable set and verify OR-of-residuals equals the original SAT answer.
+
+Exact restriction covers
+random-3sat-18/natural/fix=6/cover=64: baseline-result=True, baseline-calls=5, baseline-states=4
+  terminal=12.5%, 2-CNF=12.5%, Horn=12.5%, dual-Horn=12.5%, split=20.3%, mean-vars=10.50, mean-clauses=25.91, mean-calls=1.02, max-calls=2, sum-calls=65, mean-states=0.02
+  selected=(0, 1, 2, 3, 4, 5)
+random-3sat-18/score/fix=6/cover=64: baseline-result=True, baseline-calls=5, baseline-states=4
+  terminal=73.4%, 2-CNF=73.4%, Horn=73.4%, dual-Horn=73.4%, split=14.1%, mean-vars=3.14, mean-clauses=6.42, mean-calls=1.03, max-calls=3, sum-calls=66, mean-states=0.03
+  selected=(13, 3, 12, 16, 17, 14)
+random-3sat-18/random/fix=6/cover=64: baseline-result=True, baseline-calls=5, baseline-states=4
+  terminal=12.5%, 2-CNF=12.5%, Horn=12.5%, dual-Horn=12.5%, split=43.8%, mean-vars=10.50, mean-clauses=22.17, mean-calls=1.09, max-calls=3, sum-calls=70, mean-states=0.05
+  selected=(0, 4, 9, 11, 12, 16)
+planted-3sat-18/natural/fix=6/cover=64: baseline-result=True, baseline-calls=10, baseline-states=8
+  terminal=18.8%, 2-CNF=18.8%, Horn=18.8%, dual-Horn=18.8%, split=25.0%, mean-vars=9.75, mean-clauses=23.55, mean-calls=1.19, max-calls=6, sum-calls=76, mean-states=0.14
+  selected=(0, 1, 2, 3, 4, 5)
+planted-3sat-18/score/fix=6/cover=64: baseline-result=True, baseline-calls=10, baseline-states=8
+  terminal=37.5%, 2-CNF=37.5%, Horn=37.5%, dual-Horn=37.5%, split=50.0%, mean-vars=7.44, mean-clauses=11.78, mean-calls=1.09, max-calls=5, sum-calls=70, mean-states=0.08
+  selected=(11, 12, 6, 3, 14, 0)
+planted-3sat-18/random/fix=6/cover=64: baseline-result=True, baseline-calls=10, baseline-states=8
+  terminal=0.0%, 2-CNF=0.0%, Horn=0.0%, dual-Horn=0.0%, split=12.5%, mean-vars=12.00, mean-clauses=32.16, mean-calls=1.09, max-calls=3, sum-calls=70, mean-states=0.09
+  selected=(2, 5, 8, 9, 13, 17)
+pigeonhole-7-into-6/natural/fix=6/cover=64: baseline-result=False, baseline-calls=1757, baseline-states=878
+  terminal=90.6%, 2-CNF=90.6%, Horn=90.6%, dual-Horn=90.6%, split=0.0%, mean-vars=3.38, mean-clauses=14.69, mean-calls=30.25, max-calls=313, sum-calls=1936, mean-states=14.62
+  selected=(0, 1, 2, 3, 4, 5)
+pigeonhole-7-into-6/score/fix=6/cover=64: baseline-result=False, baseline-calls=1757, baseline-states=878
+  terminal=90.6%, 2-CNF=90.6%, Horn=90.6%, dual-Horn=90.6%, split=0.0%, mean-vars=3.38, mean-clauses=14.69, mean-calls=30.25, max-calls=313, sum-calls=1936, mean-states=14.62
+  selected=(41, 40, 39, 38, 37, 36)
+pigeonhole-7-into-6/random/fix=6/cover=64: baseline-result=False, baseline-calls=1757, baseline-states=878
+  terminal=76.6%, 2-CNF=76.6%, Horn=76.6%, dual-Horn=76.6%, split=21.9%, mean-vars=8.44, mean-clauses=26.97, mean-calls=31.89, max-calls=534, sum-calls=2041, mean-states=15.55
+  selected=(12, 13, 38, 39, 40, 41)
+
+Sampled larger restrictions (structural evidence only, not a complete cover)
+random-3sat-32: variables=32, clauses=136
+  random-fix=8 (25%), samples=120: terminal=22.5%, 2-CNF=22.5%, Horn=22.5%, dual-Horn=22.5%, split=18.3%, mean-vars=18.60, mean-clauses=51.75, mean-calls=1.05, max-calls=3, sum-calls=126, mean-states=0.03
+  random-fix=16 (50%), samples=120: terminal=86.7%, 2-CNF=87.5%, Horn=87.5%, dual-Horn=86.7%, split=12.5%, mean-vars=2.09, mean-clauses=4.42, mean-calls=1.00, max-calls=1, sum-calls=120, mean-states=0.00
+  random-fix=24 (75%), samples=120: terminal=100.0%, 2-CNF=100.0%, Horn=100.0%, dual-Horn=100.0%, split=0.0%, mean-vars=0.00, mean-clauses=1.00, mean-calls=1.00, max-calls=1, sum-calls=120, mean-states=0.00
+planted-3sat-32: variables=32, clauses=136
+  random-fix=8 (25%), samples=120: terminal=17.5%, 2-CNF=17.5%, Horn=17.5%, dual-Horn=17.5%, split=29.2%, mean-vars=19.80, mean-clauses=54.30, mean-calls=1.06, max-calls=4, sum-calls=127, mean-states=0.05
+  random-fix=16 (50%), samples=120: terminal=75.8%, 2-CNF=76.7%, Horn=76.7%, dual-Horn=75.8%, split=21.7%, mean-vars=3.80, mean-clauses=7.39, mean-calls=1.00, max-calls=1, sum-calls=120, mean-states=0.00
+  random-fix=24 (75%), samples=120: terminal=100.0%, 2-CNF=100.0%, Horn=100.0%, dual-Horn=100.0%, split=0.0%, mean-vars=0.00, mean-clauses=1.00, mean-calls=1.00, max-calls=1, sum-calls=120, mean-states=0.00
+
+total-seconds=7.603

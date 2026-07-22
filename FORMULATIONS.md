@@ -296,3 +296,111 @@ Steps 1–7 are represented by checked components in the workspace. Step 8 is th
 223. **Pruning certificate** - records a frontier witness dominating a discarded candidate.
 224. **Frontier product budget** - pairwise combination work is bounded by the product of frontier sizes.
 225. **Polynomial-frontier collapse criterion** - uniform polynomial undominated frontiers imply `P = NP` abstractly.
+
+## Approaches 226-330: radical representations
+
+226. **Feature quotients preserve existential acceptance**
+227. **Universally lossless feature maps cannot reduce cardinality**
+228. **Accepted features recover witnesses when fibers have representatives**
+229. **Sparse feature descriptions have linear total support cost**
+230. **Polynomially many features with polynomial evaluation remain polynomial**
+231. **Canonical orbit representatives preserve invariant predicates**
+232. **Orbit representatives decide existential acceptance**
+233. **Orbit images are bounded by the orbit type**
+234. **Separator tensor products have explicit state cost**
+235. **Low-rank feature factorizations reduce existential search to feature pairs**
+236. **Deterministic isolation families cover all accepted witnesses**
+237. **Unique isolation makes witness recovery unambiguous**
+238. **Entailed learned constraints preserve the model set**
+239. **Proof-trace checkers transfer correctness to compiled answers**
+240. **A uniform radical representation cover yields class collapse**
+241. **Bijective coordinate changes preserve existential acceptance**
+242. **Coordinate transformations compose**
+243. **A feature quotient is constant on every feature fiber**
+244. **Distinguishable witnesses must receive different exact feature codes**
+245. **Exact transformed machines decide the original relation**
+246. **Finite transformed state budgets bound reachable images**
+247. **Polynomially bounded affine coset counts remain polynomial**
+248. **Sparse algebraic normal forms have sparse evaluation cost**
+249. **Sparse spectral features need only their support image**
+250. **Exact linear sketches may collide only on equal answers**
+251. **A finite family of exact sketches has a union state bound**
+252. **Proof-carrying radical certificates need only checker soundness**
+253. **Polynomial hash families with polynomial checks remain polynomial**
+254. **A radical portfolio may dispatch to any exact polynomial representation**
+255. **Uniform transformed or sketched deciders yield P = NP**
+256. **The unrestricted ordered linear-form search space is quadratic-exponential**
+257. **All ordered n-tuples of Boolean linear-form masks have size 2^(n^2)**
+258. **Any one-bit feature has at most two reachable feature states**
+259. **A k-bit sketch has at most 2^k reachable states**
+260. **Concrete parity is a one-bit witness feature**
+261. **Parity therefore has at most two semantic feature states**
+262. **Bijective basis changes preserve satisfiability before feature compression**
+263. **A listed candidate family succeeds whenever it contains a good transform**
+264. **Polynomial transform families with polynomial compilation remain polynomial**
+265. **Independent linear equations reduce search to their syndrome image**
+266. **A relation depending only on a syndrome is safely quotientable**
+267. **A known parity coordinate gives a constant-size decision representation**
+268. **Linear preprocessing cost plus bounded-state traversal composes additively**
+269. **Exponential full-basis enumeration localizes the construction obstruction**
+270. **Uniform polynomial linear-basis sketches would collapse P and NP**
+271. **Canonicalization induces an equivalence relation**
+272. **Canonical images never exceed the raw residual set**
+273. **A genuine canonical collision gives strict compression**
+274. **Invariant answers factor through canonical states**
+275. **The full variable-renaming family has n! elements**
+276. **A polynomial generator family avoids factorial enumeration**
+277. **Relabeling by an equivalence preserves existential acceptance**
+278. **Automorphism orbits safely merge invariant residuals**
+279. **A checked canonicalizer transfers answers soundly**
+280. **Polynomially many symmetry quotients have a polynomial union bound**
+281. **Linear and symmetry features compose into product features**
+282. **Product feature state counts multiply**
+283. **Polynomial canonicalization and traversal costs compose**
+284. **A finite radical portfolio is complete when one member covers each input**
+285. **Uniform polynomial symmetry-linear portfolios yield P = NP**
+286. **A covering restriction family preserves satisfiability**
+287. **Exact residual solvers compose with a restriction cover**
+288. **Polynomial restriction families with polynomial residual solvers remain polynomial**
+289. **Fixing variables leaves the expected Boolean search ceiling**
+290. **A polynomial residual-dimension bound gives polynomial enumeration**
+291. **Switching certificates expose shallow residual decision trees**
+292. **Polynomially bounded depth ceilings imply explicit leaf ceilings**
+293. **A restriction ensemble of shallow trees has multiplicative cost**
+294. **A common sunflower core is charged once across petals**
+295. **Exact kernelization transfers decisions back to the source instance**
+296. **Learned proof traces remain sound after restriction**
+297. **Strict rank decrease bounds every restriction chain**
+298. **Isolation and restriction certificates compose**
+299. **A heterogeneous radical cover may choose restrictions, symmetry, or algebra**
+300. **Uniform polynomial restriction covers would collapse P and NP**
+301. **Every involution defines a reversible coordinate transform**
+302. **Reversible gate networks compose into one exact transform**
+303. **Reversible networks preserve existential acceptance**
+304. **Reversible preprocessing preserves the number of assignments**
+305. **A transformed relation may then be quotiented by a small feature**
+306. **Linear gate-count and per-gate work compose multiplicatively**
+307. **Polynomial preprocessing plus polynomial traversal stays polynomial**
+308. **A polynomial portfolio of reversible networks has polynomial total work**
+309. **Monotone network search never exceeds its seed representation**
+310. **Seeding with an ordinary representation guarantees baseline dominance**
+311. **Nonlinear feature collisions remain safe only under answer constancy**
+312. **Reversibility alone cannot reduce assignment cardinality**
+313. **Compression must therefore occur after the reversible transform**
+314. **Checked reversible networks transfer answers soundly**
+315. **Uniform polynomial reversible-feature compilers yield P = NP**
+316. **Accepted witnesses can be counted exactly over a finite type**
+317. **The accepted count is zero exactly when no witness is accepted**
+318. **Positive accepted count is equivalent to an accepted witness**
+319. **Accepted count is bounded by the witness-space cardinality**
+320. **An n-bit witness language has at most 2^n accepted witnesses**
+321. **Reduction modulo a larger modulus preserves the exact count**
+322. **Under a large modulus, zero residue is equivalent to zero count**
+323. **Modulus 2^n + 1 decides whether an n-bit witness exists**
+324. **A nonzero large-modulus residue certifies existence**
+325. **Counts multiply across independent witness components**
+326. **Counts add across a disjoint separator partition**
+327. **A width-w Boolean tensor table has 2^w entries**
+328. **A polynomial tensor-table bound transfers directly to contraction work**
+329. **Polynomial modular-residue compilers decide finite witness existence**
+330. **Uniform polynomial exact-residue compilers would collapse P and NP**

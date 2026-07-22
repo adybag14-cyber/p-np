@@ -1,0 +1,30 @@
+Residual symmetry quotient experiment
+seed=94859888
+All 3^n partial assignments are enumerated; residual truth tables are quotiented by all permutations of remaining variables.
+
+parity-6: raw=127, permutation-quotient=13, compression=9.769x
+  m=6:1->1, m=5:12->2, m=4:30->2, m=3:40->2, m=2:30->2, m=1:12->2, m=0:2->2
+majority-6: raw=218, permutation-quotient=19, compression=11.474x
+  m=6:1->1, m=5:12->2, m=4:45->3, m=3:80->4, m=2:60->4, m=1:18->3, m=0:2->2
+exact-one-6: raw=183, permutation-quotient=17, compression=10.765x
+  m=6:1->1, m=5:12->2, m=4:45->3, m=3:60->3, m=2:45->3, m=1:18->3, m=0:2->2
+equality-halves-3+3: raw=253, permutation-quotient=25, compression=10.120x
+  m=6:1->1, m=5:12->2, m=4:54->5, m=3:100->7, m=2:66->5, m=1:18->3, m=0:2->2
+inner-product-3: raw=307, permutation-quotient=30, compression=10.233x
+  m=6:1->1, m=5:12->2, m=4:54->5, m=3:112->8, m=2:102->8, m=1:24->4, m=0:2->2
+K4-has-triangle: raw=313, permutation-quotient=28, compression=11.179x
+  m=6:1->1, m=5:12->2, m=4:60->6, m=3:136->9, m=2:84->5, m=1:18->3, m=0:2->2
+K4-connected: raw=323, permutation-quotient=26, compression=12.423x
+  m=6:1->1, m=5:12->2, m=4:60->6, m=3:140->7, m=2:90->5, m=1:18->3, m=0:2->2
+random-6-1: raw=387, permutation-quotient=130, compression=2.977x
+  m=6:1->1, m=5:12->12, m=4:60->52, m=3:151->47, m=2:137->12, m=1:24->4, m=0:2->2
+random-6-2: raw=411, permutation-quotient=142, compression=2.894x
+  m=6:1->1, m=5:12->12, m=4:60->59, m=3:159->52, m=2:153->12, m=1:24->4, m=0:2->2
+random-6-3: raw=409, permutation-quotient=149, compression=2.745x
+  m=6:1->1, m=5:12->12, m=4:60->59, m=3:158->59, m=2:152->12, m=1:24->4, m=0:2->2
+random-6-4: raw=420, permutation-quotient=149, compression=2.819x
+  m=6:1->1, m=5:12->12, m=4:60->57, m=3:159->61, m=2:162->12, m=1:24->4, m=0:2->2
+random-6-5: raw=419, permutation-quotient=149, compression=2.812x
+  m=6:1->1, m=5:12->12, m=4:60->60, m=3:159->58, m=2:161->12, m=1:24->4, m=0:2->2
+
+total-seconds=0.152

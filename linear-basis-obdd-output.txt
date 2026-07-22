@@ -1,0 +1,20 @@
+Linear-basis decision diagram experiment
+seed=184488533
+Each decision variable may be an arbitrary independent GF(2) linear form.
+
+n=4 exact over all 20,160 ordered GF(2) bases; tables=96
+gap 0: 9 (9.38%), gap 1: 24 (25.00%), gap 2: 25 (26.04%), gap 3: 18 (18.75%), gap 4: 19 (19.79%), gap 6: 1 (1.04%)
+strongest: table=0x6996/ordered=9/linear=3/anf=4/basis=(1, 2, 4, 15)
+
+n=5 exact fixed-order baseline; 2,500 random linear bases per table
+gap 1: 4 (20.00%), gap 2: 3 (15.00%), gap 3: 7 (35.00%), gap 4: 4 (20.00%), gap 5: 1 (5.00%), gap 8: 1 (5.00%)
+improvements: sample=0/ordered=16/linear=11/anf=14/basis=(23, 13, 10, 4, 8), sample=1/ordered=12/linear=10/anf=13/basis=(25, 8, 27, 16, 13), sample=2/ordered=13/linear=9/anf=14/basis=(8, 7, 22, 2, 29), sample=3/ordered=11/linear=10/anf=17/basis=(19, 29, 27, 16, 26), sample=4/ordered=13/linear=10/anf=18/basis=(8, 21, 27, 10, 16), sample=5/ordered=14/linear=10/anf=19/basis=(8, 26, 15, 13, 22), sample=6/ordered=15/linear=12/anf=13/basis=(31, 9, 3, 1, 14), sample=7/ordered=14/linear=11/anf=14/basis=(10, 7, 27, 20, 26), sample=8/ordered=12/linear=10/anf=15/basis=(6, 27, 16, 26, 24), sample=9/ordered=12/linear=10/anf=15/basis=(13, 22, 21, 18, 1), sample=10/ordered=15/linear=12/anf=14/basis=(31, 12, 3, 22, 13), sample=11/ordered=12/linear=11/anf=15/basis=(19, 13, 15, 27, 23)
+
+Structured eight-variable functions
+parity-8: ordered=17, linear=3, improvement=14, anf=8, basis=(255, 128, 64, 32, 16, 8, 4, 2)
+majority-8: ordered=22, linear=22, improvement=0, anf=71, basis=(128, 64, 32, 16, 8, 4, 2, 1)
+exact-one-8: ordered=17, linear=17, improvement=0, anf=128, basis=(128, 64, 32, 16, 8, 4, 2, 1)
+equality-halves-4+4: ordered=14, linear=6, improvement=8, anf=81, basis=(136, 68, 34, 17, 128, 64, 32, 16)
+inner-product-4: ordered=16, linear=16, improvement=0, anf=4, basis=(128, 8, 64, 4, 32, 2, 16, 1)
+
+total-seconds=128.383

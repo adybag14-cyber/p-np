@@ -22,7 +22,11 @@ $experiments = @(
   "adaptive_policy_search.py",
   "overlap_potential.py",
   "contextual_interning.py",
-  "coherent_policy_dp.py"
+  "coherent_policy_dp.py",
+  "linear_basis_obdd.py",
+  "symmetry_residual_quotient.py",
+  "restriction_collapse.py",
+  "reversible_transform_obdd.py"
 )
 
 foreach ($experiment in $experiments) {

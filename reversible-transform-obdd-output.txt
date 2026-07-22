@@ -1,0 +1,25 @@
+Reversible nonlinear preprocessing experiment
+seed=118485009
+Coordinates are first changed by an invertible GF(2) basis, then by a greedily selected reversible X/CNOT/Toffoli network.
+
+parity-6: ordered=13, linear=3, reversible=3, linear-gain=10, extra-nonlinear-gain=0, gates=[]
+majority-6: ordered=14, linear=14, reversible=13, linear-gain=0, extra-nonlinear-gain=1, gates=[CNOT(1, 0)]
+exact-one-6: ordered=13, linear=11, reversible=10, linear-gain=2, extra-nonlinear-gain=1, gates=[CNOT(4, 1)]
+equality-halves-3+3: ordered=11, linear=5, reversible=5, linear-gain=6, extra-nonlinear-gain=0, gates=[]
+inner-product-3: ordered=12, linear=12, reversible=10, linear-gain=0, extra-nonlinear-gain=2, gates=[TOFFOLI(2, 3, 1)]
+threshold-2-of-6: ordered=12, linear=12, reversible=11, linear-gain=0, extra-nonlinear-gain=1, gates=[CNOT(1, 0)]
+exact-two-6: ordered=16, linear=13, reversible=10, linear-gain=3, extra-nonlinear-gain=3, gates=[TOFFOLI(0, 3, 4), TOFFOLI(2, 4, 1)]
+random-6-1: ordered=22, linear=20, reversible=19, linear-gain=2, extra-nonlinear-gain=1, gates=[TOFFOLI(4, 5, 3)]
+random-6-2: ordered=22, linear=20, reversible=18, linear-gain=2, extra-nonlinear-gain=2, gates=[CNOT(2, 0), TOFFOLI(0, 3, 2)]
+random-6-3: ordered=25, linear=20, reversible=18, linear-gain=5, extra-nonlinear-gain=2, gates=[CNOT(0, 5), CNOT(5, 4)]
+random-6-4: ordered=21, linear=21, reversible=21, linear-gain=0, extra-nonlinear-gain=0, gates=[]
+random-6-5: ordered=23, linear=20, reversible=19, linear-gain=3, extra-nonlinear-gain=1, gates=[TOFFOLI(1, 3, 0)]
+random-6-6: ordered=24, linear=21, reversible=16, linear-gain=3, extra-nonlinear-gain=5, gates=[CNOT(1, 3), CNOT(4, 5), TOFFOLI(1, 2, 5), TOFFOLI(0, 3, 5), CNOT(5, 3)]
+random-6-7: ordered=25, linear=20, reversible=16, linear-gain=5, extra-nonlinear-gain=4, gates=[TOFFOLI(1, 5, 3), TOFFOLI(0, 5, 3), TOFFOLI(3, 4, 5)]
+random-6-8: ordered=24, linear=20, reversible=20, linear-gain=4, extra-nonlinear-gain=0, gates=[]
+random-6-9: ordered=24, linear=19, reversible=18, linear-gain=5, extra-nonlinear-gain=1, gates=[CNOT(3, 5)]
+random-6-10: ordered=23, linear=20, reversible=19, linear-gain=3, extra-nonlinear-gain=1, gates=[TOFFOLI(1, 5, 4)]
+
+ordinary-minus-linear: 0:4, 2:3, 3:4, 4:1, 5:3, 6:1, 10:1
+ordinary-minus-reversible: 0:1, 1:2, 2:1, 3:2, 4:4, 6:3, 7:1, 8:1, 9:1, 10:1
+total-seconds=3.800
