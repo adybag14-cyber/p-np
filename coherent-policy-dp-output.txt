@@ -1,0 +1,20 @@
+Exact coherent adaptive-policy dynamic program
+Policies are combined only when their choices agree on every shared residual signature.
+
+n=4, tables=64
+optimal OBDD minus exact adaptive: gap 0=60, gap 1=4
+greedy adaptive minus exact adaptive: gap 0=61, gap 1=3
+coherent frontier sizes: min=1, max=408, mean=213.94
+
+n=5, tables=2
+optimal OBDD minus exact adaptive: gap 0=2
+greedy adaptive minus exact adaptive: gap 0=2
+coherent frontier sizes: min=1, max=1, mean=1.00
+
+strict exact-adaptive improvements:
+table=0x4f68, n=4, ordered=10, greedy=10, exact=9, frontier=256
+table=0xb2e1, n=4, ordered=10, greedy=10, exact=9, frontier=340
+table=0xd342, n=4, ordered=9, greedy=9, exact=8, frontier=294
+table=0xf819, n=4, ordered=10, greedy=9, exact=9, frontier=242
+
+total-seconds=1.014

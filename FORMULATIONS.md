@@ -223,3 +223,76 @@ Steps 1–7 are represented by checked components in the workspace. Step 8 is th
 163. **Portfolio baseline** - the folded portfolio never exceeds its seed baseline.
 164. **Polynomial portfolio accounting** - polynomially many polynomial-cost policies remain polynomial overall.
 165. **Policy collapse criterion** - a uniform polynomial exact policy portfolio would yield P = NP.
+
+
+## 166-180: overlap-aware global accounting
+
+166. **Exact overlap accounting** - branch-union cost plus intersection credit equals the sum of child-state counts.
+167. **Overlap upper bound** - overlap cannot exceed either child closure.
+168. **Overlap monotonicity** - enlarging both closures cannot reduce their intersection.
+169. **Common-core credit** - any certified common core gives a valid sharing discount.
+170. **Equal-sum comparison** - with equal child sums, greater overlap cannot worsen union cost.
+171. **Strict overlap saving** - strictly greater overlap with equal child sums strictly lowers union cost.
+172. **Full reuse** - a candidate contained in existing states adds no new state.
+173. **Zero-overlap accounting** - no intersection means union cost equals the child sum.
+174. **Portfolio union** - defines the globally reachable state union of a policy portfolio.
+175. **Portfolio-union bound** - global union size is at most the sum of individual sizes.
+176. **Polynomial portfolio states** - polynomial policy count and polynomial policy width compose.
+177. **Separator cross-product** - separator assignments times residual width has the explicit product bound.
+178. **Branch potential certificate** - packages exact shared cost and overlap credit.
+179. **Monotone potential search** - exact globally measured replacements preserve answers and never increase cost.
+180. **Overlap-policy collapse criterion** - uniform polynomial overlap-aware policies imply `P = NP` abstractly.
+
+## 181-195: canonical semantic states and contextual replacement
+
+181. **Canonical representation** - injective exact state-to-node images have equal semantic and concrete cardinality.
+182. **Cardinality sign transfer** - node `<` and `<=` comparisons are exactly state comparisons.
+183. **Context partition** - separates unaffected graph nodes from old and replacement regions.
+184. **Context subset safety** - a replacement-region subset cannot enlarge the total graph.
+185. **Context strict saving** - proper total inclusion gives a strict node-count reduction.
+186. **Disjoint context accounting** - when context and region do not overlap, local and global costs differ identically.
+187. **Local-to-global strictness** - a smaller disjoint replacement region strictly lowers total graph size.
+188. **Ancestor-cone budget** - replacement work is bounded by subtree size plus affected depth.
+189. **Boundary fingerprint** - stable root key and answer preserve the exported interface.
+190. **Intern-key reuse** - equal or already-present keys create no additional node.
+191. **Canonical optimality** - a canonical representation attains any semantic lower bound on exact nodes.
+192. **Exact delta transfer** - equality and additive node differences transfer to semantic-state differences.
+193. **Polynomial state-to-node transfer** - a polynomial semantic-state bound is a polynomial node bound.
+194. **Canonical compiler collapse** - uniform canonical polynomial compilers imply class equality.
+195. **Canonical compiler obstruction** - class separation forces at least one NP language to lack such a compiler.
+
+## 196-210: coherent least-policy closures
+
+196. **Transition systems** - packages residual states, choices, and finite child transitions.
+197. **Policy closure** - defines finite state sets closed under a global policy.
+198. **Least closure certificate** - records rootedness, closure, and minimality.
+199. **Closure uniqueness** - two least closures for the same root and policy are equal.
+200. **Closure cardinality minimality** - the least closure is no larger than any closed rooted candidate.
+201. **Policy agreement** - policies agreeing on a set preserve closure of that set.
+202. **Finite-domain merge** - merges two policies according to membership in a finite left domain.
+203. **Left merge agreement** - the merged policy equals the left policy on the left domain.
+204. **Policy compatibility** - child policies must agree on every shared state.
+205. **Right merge agreement** - compatibility makes the merged policy equal the right policy on its domain.
+206. **Coherent union closure** - compatible closed child policies compose into a closed union.
+207. **Coherent union root** - either rooted child makes the union rooted.
+208. **Coherent composition certificate** - packages two closed compatible policies and their merged closure.
+209. **Coherent composition cost** - merged closure receives the exact overlap discount.
+210. **Coherent-policy collapse criterion** - uniform polynomial coherent closures imply `P = NP` abstractly.
+
+## 211-225: dominance and exact-frontier pruning
+
+211. **Policy candidate** - a candidate carries a finite closure and one global policy.
+212. **Candidate compatibility** - policies agree on every state shared by their closures.
+213. **Candidate dominance** - a smaller closure with identical retained choices dominates a larger one.
+214. **Dominance reflexivity** - every candidate dominates itself.
+215. **Dominance transitivity** - dominance composes.
+216. **Compatibility transfer** - a dominating candidate preserves compatibility with every extension of the dominated candidate.
+217. **Candidate union** - composition cost is measured by the union of closures.
+218. **Union dominance** - dominance is preserved after union with an external candidate.
+219. **Union cost nonworsening** - dominating candidates never increase future composed cost.
+220. **Strict union saving** - proper composed inclusion gives strict cost improvement.
+221. **Safe pruning** - a dominated candidate may be removed without losing compatible nonworse composition.
+222. **Undominated frontier** - no two distinct members safely dominate one another.
+223. **Pruning certificate** - records a frontier witness dominating a discarded candidate.
+224. **Frontier product budget** - pairwise combination work is bounded by the product of frontier sizes.
+225. **Polynomial-frontier collapse criterion** - uniform polynomial undominated frontiers imply `P = NP` abstractly.

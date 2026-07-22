@@ -1,0 +1,40 @@
+Contextual interning experiment
+Exact node cost is decomposed into added decision keys, removed decision keys, and terminal change.
+
+n=4, tables=768, overrides=5959, improved=29, equal=1459, worse=4471
+improvement mechanisms: semantic-shrink=29, same-semantic-better-interning=0, semantic-growth-better-interning=0
+
+n=5, tables=36, overrides=638, improved=9, equal=123, worse=506
+improvement mechanisms: semantic-shrink=9, same-semantic-better-interning=0, semantic-growth-better-interning=0
+
+combined improvement mechanisms:
+semantic-shrink=38, same-semantic-better-interning=0, semantic-growth-better-interning=0
+
+semantic-sign versus node-sign matrix (-1 shrink, 0 equal, 1 grow):
+semantic -1: node -1=38, node 0=0, node 1=0
+semantic 0: node -1=0, node 0=1582, node 1=0
+semantic 1: node -1=0, node 0=0, node 1=4977
+
+strict-improvement examples:
+table=0x1bf2, n=4, size=9->8, reachable=9->8, keys_added=3, keys_removed=4, terminal_delta=0, category=semantic-shrink
+table=0x1df6, n=4, size=10->9, reachable=10->9, keys_added=3, keys_removed=4, terminal_delta=0, category=semantic-shrink
+table=0x2eb0, n=4, size=9->8, reachable=9->8, keys_added=3, keys_removed=4, terminal_delta=0, category=semantic-shrink
+table=0x31a4, n=4, size=10->9, reachable=10->9, keys_added=3, keys_removed=4, terminal_delta=0, category=semantic-shrink
+table=0x3867, n=4, size=10->9, reachable=10->9, keys_added=5, keys_removed=6, terminal_delta=0, category=semantic-shrink
+table=0x3a41, n=4, size=10->9, reachable=10->9, keys_added=5, keys_removed=6, terminal_delta=0, category=semantic-shrink
+table=0x4f62, n=4, size=10->9, reachable=10->9, keys_added=4, keys_removed=5, terminal_delta=0, category=semantic-shrink
+table=0x5138, n=4, size=10->9, reachable=10->9, keys_added=3, keys_removed=4, terminal_delta=0, category=semantic-shrink
+table=0x53de, n=4, size=10->9, reachable=10->9, keys_added=3, keys_removed=4, terminal_delta=0, category=semantic-shrink
+table=0x5b46, n=4, size=10->9, reachable=10->9, keys_added=4, keys_removed=5, terminal_delta=0, category=semantic-shrink
+table=0x640d, n=4, size=10->9, reachable=10->9, keys_added=2, keys_removed=3, terminal_delta=0, category=semantic-shrink
+table=0x640e, n=4, size=10->9, reachable=10->9, keys_added=3, keys_removed=4, terminal_delta=0, category=semantic-shrink
+table=0x64da, n=4, size=10->9, reachable=10->9, keys_added=3, keys_removed=4, terminal_delta=0, category=semantic-shrink
+table=0x720b, n=4, size=9->8, reachable=9->8, keys_added=3, keys_removed=4, terminal_delta=0, category=semantic-shrink
+table=0x7c24, n=4, size=9->8, reachable=9->8, keys_added=3, keys_removed=4, terminal_delta=0, category=semantic-shrink
+table=0x7c89, n=4, size=10->9, reachable=10->9, keys_added=4, keys_removed=5, terminal_delta=0, category=semantic-shrink
+table=0x7cea, n=4, size=10->9, reachable=10->9, keys_added=5, keys_removed=6, terminal_delta=0, category=semantic-shrink
+table=0x9bf8, n=4, size=10->9, reachable=10->9, keys_added=2, keys_removed=3, terminal_delta=0, category=semantic-shrink
+table=0xa7b9, n=4, size=10->9, reachable=10->9, keys_added=4, keys_removed=5, terminal_delta=0, category=semantic-shrink
+table=0xa7c8, n=4, size=10->9, reachable=10->9, keys_added=5, keys_removed=6, terminal_delta=0, category=semantic-shrink
+
+total-seconds=1.638

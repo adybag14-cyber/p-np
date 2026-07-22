@@ -19,7 +19,10 @@ $experiments = @(
   "certified_dag.py",
   "optimal_obdd.py",
   "adaptive_semantic_dag.py",
-  "adaptive_policy_search.py"
+  "adaptive_policy_search.py",
+  "overlap_potential.py",
+  "contextual_interning.py",
+  "coherent_policy_dp.py"
 )
 
 foreach ($experiment in $experiments) {

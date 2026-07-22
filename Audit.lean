@@ -11,6 +11,10 @@ import ResearchNinth
 import ResearchTenth
 import ResearchEleventh
 import ResearchTwelfth
+import ResearchThirteenth
+import ResearchFourteenth
+import ResearchFifteenth
+import ResearchSixteenth
 import CNFCore
 
 -- Original residual and decomposition core
@@ -107,3 +111,19 @@ import CNFCore
 #print axioms PIsNPOrNot.ResearchTwelfth.A160_ImprovementChain.final_le_initial
 #print axioms PIsNPOrNot.ResearchTwelfth.A163_PortfolioBaseline.choosePortfolio_cost_le_seed
 #print axioms PIsNPOrNot.ResearchTwelfth.A165_PolicyCollapseCriterion.p_eq_np_of_uniform_policy_portfolios
+
+
+-- Approaches 166-225: overlap, canonical states, coherent frontiers, and pruning
+#print axioms PIsNPOrNot.ResearchThirteenth.A166_OverlapAccounting.union_plus_overlap
+#print axioms PIsNPOrNot.ResearchThirteenth.A170_EqualSumComparison.union_nonincreasing_of_overlap
+#print axioms PIsNPOrNot.ResearchThirteenth.A176_PolynomialPortfolioStates.portfolio_state_bound
+#print axioms PIsNPOrNot.ResearchFourteenth.A181_CanonicalRepresentation.node_card_eq_state_card
+#print axioms PIsNPOrNot.ResearchFourteenth.A185_ContextStrictSaving.new_total_card_lt_old_total
+#print axioms PIsNPOrNot.ResearchFourteenth.A193_PolynomialStateToNode.node_bound_of_state_bound
+#print axioms PIsNPOrNot.ResearchFifteenth.A199_ClosureUniqueness.reachable_unique
+#print axioms PIsNPOrNot.ResearchFifteenth.A206_CoherentUnionClosure.union_closed
+#print axioms PIsNPOrNot.ResearchFifteenth.A209_CoherentCompositionCost.composition_cost_identity
+#print axioms PIsNPOrNot.ResearchSixteenth.A216_CompatibilityTransfer.compatible_of_dominates
+#print axioms PIsNPOrNot.ResearchSixteenth.A221_SafePruning.prune_dominated
+#print axioms PIsNPOrNot.ResearchSixteenth.A224_FrontierProductBudget.pair_count_bound
+#print axioms PIsNPOrNot.ResearchSixteenth.A225_FrontierCollapseCriterion.p_eq_np_of_uniform_polynomial_frontiers

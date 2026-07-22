@@ -1,6 +1,6 @@
 # PIsNPOrNot — Lean 4 attack laboratory
 
-A native Windows Lean 4 research workspace containing **165 mechanically checked approaches** to P versus NP, verified CNF transformations, executable finite experiments, and structural SAT prototypes.
+A native Windows Lean 4 research workspace containing **225 mechanically checked approaches** to P versus NP, verified CNF transformations, executable finite experiments, and structural SAT prototypes.
 
 The project does **not** claim a proof of `P = NP` or `P != NP`. It is designed to expose exactly which additional theorem each attempted route would require.
 
@@ -287,6 +287,23 @@ strictly beat every fixed order, but discovering the useful overrides is itself 
 global optimization problem.
 
 
+
+### `ResearchThirteenth.lean` - approaches 166-180
+
+Exact overlap accounting, common-core credit, portfolio-union bounds, separator cross-products, and monotone globally measured replacement.
+
+### `ResearchFourteenth.lean` - approaches 181-195
+
+Canonical semantic-state to node representations, contextual replacement, node/state cardinality transfer, and polynomial state-to-node bounds.
+
+### `ResearchFifteenth.lean` - approaches 196-210
+
+Least policy closures, coherent policy merging on shared residuals, uniqueness, minimality, and exact coherent composition cost.
+
+### `ResearchSixteenth.lean` - approaches 211-225
+
+Dominance, compatibility transfer, safe coherent-frontier pruning, frontier product bounds, and the polynomial-frontier collapse criterion.
+
 ## Main files
 
 - `PIsNPOrNot.lean` — approaches 1–15 and residual synthesis.
@@ -302,10 +319,15 @@ global optimization problem.
 - `ResearchTenth.lean` - approaches 121-135 and the acceptable ordered-residual compiler skeleton.
 - `ResearchEleventh.lean` - approaches 136-150 and adaptive partial-assignment branching.
 - `ResearchTwelfth.lean` - approaches 151-165 and global policy accounting.
+- `ResearchThirteenth.lean` - approaches 166-180 and overlap-aware global accounting.
+- `ResearchFourteenth.lean` - approaches 181-195 and canonical semantic-state/node correspondence.
+- `ResearchFifteenth.lean` - approaches 196-210 and coherent least-policy closures.
+- `ResearchSixteenth.lean` - approaches 211-225 and safe frontier dominance pruning.
 - `CNFCore.lean` - verified CNF restriction semantics.
 - `Audit.lean` - selected theorem axiom audit.
-- `FORMULATIONS.md` - compact status of all 165 approaches.
+- `FORMULATIONS.md` - compact status of all 225 approaches.
 - `ACCEPTABLE_TARGET.md` - precise obligations still required for a publishable result.
+- `CANONICAL_FRONTIER_RESULTS.md` - canonical-state, coherent-policy, and frontier-pruning results.
 - `Main.lean` - residual-state executable.
 - `hybrid_portfolio.py` - heterogeneous structural solver portfolio.
 - `certified_dag.py` - emitted and independently checked AND/OR DAG certificates.
