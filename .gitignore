@@ -1,0 +1,14 @@
+.elan/
+.venv/
+.lake/
+elan-bootstrap/
+elan-x86_64-pc-windows-msvc.zip
+elan-init.exe
+*.olean
+*.ilean
+*.trace
+__pycache__/
+*.pyc
+Check.lean
+patch_*.py
+fix_*.py

@@ -1,0 +1,8 @@
+Certified structural-dispatch experiment
+
+pigeonhole-7-6: variables=42, recognized=True, result=False, rows=7, columns=6, seconds=0.002751
+pigeonhole-9-8: variables=72, recognized=True, result=False, rows=9, columns=8, seconds=0.008699
+pigeonhole-10-9: variables=90, recognized=True, result=False, rows=10, columns=9, seconds=0.016255
+pigeonhole-12-11: variables=132, recognized=True, result=False, rows=12, columns=11, seconds=0.049431
+pigeonhole-15-14: variables=210, recognized=True, result=False, rows=15, columns=14, seconds=0.190929
+mutated-nonmatching-encoding: recognized=False

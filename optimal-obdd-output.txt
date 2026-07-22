@@ -1,0 +1,26 @@
+Exact reduced ordered-BDD state experiment
+seed=12439840
+
+All 65,536 four-variable functions; exact best of all 24 orders
+size 1: 2 (0.00%), size 3: 8 (0.01%), size 4: 48 (0.07%), size 5: 364 (0.56%), size 6: 3168 (4.83%), size 7: 12440 (18.98%), size 8: 22488 (34.31%), size 9: 20346 (31.05%), size 10: 6672 (10.18%)
+hardest examples: table=0x0168/size=10/order=(0, 1, 2, 3), table=0x0186/size=10/order=(0, 1, 2, 3), table=0x0192/size=10/order=(0, 1, 2, 3), table=0x0194/size=10/order=(0, 1, 2, 3), table=0x0196/size=10/order=(0, 1, 2, 3), table=0x0249/size=10/order=(0, 1, 2, 3), table=0x0261/size=10/order=(0, 1, 2, 3), table=0x0268/size=10/order=(0, 1, 2, 3)
+
+600 random five-variable functions; exact best of all 120 orders
+size 8: 1 (0.17%), size 9: 3 (0.50%), size 10: 3 (0.50%), size 11: 25 (4.17%), size 12: 87 (14.50%), size 13: 187 (31.17%), size 14: 212 (35.33%), size 15: 78 (13.00%), size 16: 4 (0.67%)
+
+120 random six-variable functions; exact best of all 720 orders
+size 19: 3 (2.50%), size 20: 3 (2.50%), size 21: 18 (15.00%), size 22: 25 (20.83%), size 23: 37 (30.83%), size 24: 27 (22.50%), size 25: 7 (5.83%)
+
+Structured eight-variable functions; exact best of all 40,320 orders
+parity-8: natural-size=17, best-size=17, best-order=(0, 1, 2, 3, 4, 5, 6, 7)
+majority-8: natural-size=22, best-size=22, best-order=(0, 1, 2, 3, 4, 5, 6, 7)
+exact-one-8: natural-size=17, best-size=17, best-order=(0, 1, 2, 3, 4, 5, 6, 7)
+equality-halves-4+4: natural-size=47, best-size=14, best-order=(0, 4, 1, 5, 2, 6, 3, 7)
+inner-product-4: natural-size=39, best-size=16, best-order=(0, 4, 1, 5, 2, 6, 3, 7)
+
+Eight-variable CNFs; exact best of all 40,320 orders
+random-3cnf-1: clauses=23, satisfying=4/256, natural-size=8, best-size=8, best-order=(0, 1, 2, 3, 4, 5, 6, 7)
+random-3cnf-2: clauses=33, satisfying=8/256, natural-size=15, best-size=9, best-order=(0, 2, 3, 5, 6, 7, 1, 4)
+random-3cnf-3: clauses=43, satisfying=0/256, natural-size=1, best-size=1, best-order=(0, 1, 2, 3, 4, 5, 6, 7)
+
+total-seconds=129.311

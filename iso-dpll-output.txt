@@ -1,0 +1,8 @@
+Isomorphism-aware residual memoization
+
+pigeonhole-4-3: n=12, result=False, calls=13, exact-states=6, iso-representatives=6, exact-hits=0, iso-hits=0, iso-checks=0, units=56, branches=6, component-splits=0, depth=5, seconds=0.0025
+pigeonhole-5-4: n=20, result=False, calls=35, exact-states=22, iso-representatives=17, exact-hits=0, iso-hits=5, iso-checks=5, units=159, branches=17, component-splits=0, depth=11, seconds=0.0181
+pigeonhole-6-5: n=30, result=False, calls=79, exact-states=57, iso-representatives=39, exact-hits=0, iso-hits=18, iso-checks=18, units=380, branches=39, component-splits=0, depth=19, seconds=0.1052
+pigeonhole-7-6: n=42, result=False, calls=169, exact-states=131, iso-representatives=84, exact-hits=0, iso-hits=47, iso-checks=47, units=836, branches=84, component-splits=0, depth=29, seconds=0.6195
+pigeonhole-8-7: n=56, result=False, calls=351, exact-states=282, iso-representatives=175, exact-hits=0, iso-hits=107, iso-checks=107, units=1794, branches=175, component-splits=0, depth=41, seconds=7.4883
+pigeonhole-9-8: n=72, result=False, calls=741, exact-states=599, iso-representatives=370, exact-hits=0, iso-hits=229, iso-checks=234, units=3905, branches=370, component-splits=0, depth=55, seconds=114.0878

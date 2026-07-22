@@ -1,0 +1,29 @@
+﻿P versus NP: fifteen checked attacks, finite experiments
+Lean proves the reductions and barriers; it does not assume a collapse.
+
+Residual-state experiment
+n | witnesses | parity states | capped-count states | identity states
+--+-----------+---------------+---------------------+----------------
+0 | 1 | 1 | 1 | 1
+1 | 2 | 2 | 2 | 2
+2 | 4 | 2 | 3 | 4
+3 | 8 | 2 | 4 | 8
+4 | 16 | 2 | 5 | 16
+5 | 32 | 2 | 6 | 32
+6 | 64 | 2 | 7 | 64
+7 | 128 | 2 | 8 | 128
+8 | 256 | 2 | 9 | 256
+9 | 512 | 2 | 9 | 512
+10 | 1024 | 2 | 9 | 1024
+11 | 2048 | 2 | 9 | 2048
+12 | 4096 | 2 | 9 | 4096
+
+Witness-space growth
+m=8: 2^m = 256 candidate witnesses
+m=16: 2^m = 65536 candidate witnesses
+m=24: 2^m = 16777216 candidate witnesses
+m=32: 2^m = 4294967296 candidate witnesses
+m=40: 2^m = 1099511627776 candidate witnesses
+m=48: 2^m = 281474976710656 candidate witnesses
+m=56: 2^m = 72057594037927936 candidate witnesses
+m=64: 2^m = 18446744073709551616 candidate witnesses

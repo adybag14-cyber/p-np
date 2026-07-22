@@ -1,0 +1,12 @@
+Hybrid certified-portfolio experiment
+seed=79548201978180
+small-instance brute-force validation: checked=1440, routes={'2-sat': 222, 'affine-3xor': 246, 'dual-horn': 216, 'horn': 522, 'memo-dpll': 234}
+
+horn-80: n=80, result=False, portfolio(routes=horn:1,splits=0,fallback-states=0,fallback-branches=0,seconds=0.000683), plain(states=0,branches=0,seconds=0.001552)
+dual-horn-80: n=80, result=False, portfolio(routes=dual-horn:1,splits=0,fallback-states=0,fallback-branches=0,seconds=0.001547), plain(states=0,branches=0,seconds=0.000516)
+2sat-120: n=120, result=False, portfolio(routes=2-sat:1,splits=0,fallback-states=0,fallback-branches=0,seconds=0.004402), plain(states=0,branches=0,seconds=0.006515)
+exact-one-20x5: n=100, result=True, portfolio(routes=exact-one-blocks:1,splits=0,fallback-states=0,fallback-branches=0,seconds=0.002576), plain(states=81,branches=80,seconds=0.003320)
+pigeonhole-7-6: n=42, result=False, portfolio(routes=bipartite-matching:1,splits=0,fallback-states=0,fallback-branches=0,seconds=0.004915), plain(states=878,branches=878,seconds=0.450513)
+pigeonhole-8-7: n=56, result=False, portfolio(routes=bipartite-matching:1,splits=0,fallback-states=0,fallback-branches=0,seconds=0.007128), plain(states=5354,branches=5351,seconds=3.908637)
+random-3sat-70: n=70, result=False, portfolio(routes=memo-dpll:1,splits=0,fallback-states=77,fallback-branches=77,seconds=0.695881), plain(states=77,branches=77,seconds=0.713424)
+mixed-six-family-sat: n=200, result=True, portfolio(routes=2-sat:1,affine-3xor:1,decomposition:1,dual-horn:1,exact-one-blocks:6,horn:1,memo-dpll:1,splits=1,fallback-states=12,fallback-branches=12,seconds=0.029675), plain(states=76,branches=75,seconds=0.028879)

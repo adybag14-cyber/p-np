@@ -1,0 +1,12 @@
+Proof-carrying AND/OR DAG experiment
+seed=3670986311
+
+repeated-random-component-30x12: result=False, dag-nodes=9, tree-nodes=331, tree/dag=36.778, edges=40, depth=5, cache-hits=32, build-seconds=0.032427, verify-seconds=0.034716, routes={and-components:1,false:1,or-branch:3,unit-propagation:4}
+repeated-exact-one-50x4: result=True, dag-nodes=2, tree-nodes=51, tree/dag=25.500, edges=50, depth=2, cache-hits=49, build-seconds=0.005618, verify-seconds=0.005254, routes={and-components:1,leaf:bipartite-matching:1}
+pigeonhole-7-6: result=False, dag-nodes=1, tree-nodes=1, tree/dag=1.000, edges=0, depth=1, cache-hits=0, build-seconds=0.003048, verify-seconds=0.002285, routes={leaf:bipartite-matching:1}
+pigeonhole-8-7: result=False, dag-nodes=1, tree-nodes=1, tree/dag=1.000, edges=0, depth=1, cache-hits=0, build-seconds=0.004946, verify-seconds=0.003682, routes={leaf:bipartite-matching:1}
+random-3sat-30: result=True, dag-nodes=42, tree-nodes=51, tree/dag=1.214, edges=50, depth=14, cache-hits=9, build-seconds=0.082739, verify-seconds=0.038095, routes={and-components:4,false:1,leaf:bipartite-matching:1,leaf:horn:2,or-branch:9,or-short-circuit:6,true:1,unit-propagation:18}
+random-3sat-40: result=True, dag-nodes=119, tree-nodes=154, tree/dag=1.294, edges=153, depth=22, cache-hits=35, build-seconds=0.286247, verify-seconds=0.139132, routes={and-components:9,false:1,leaf:bipartite-matching:1,leaf:horn:5,or-branch:31,or-short-circuit:11,unit-propagation:61}
+random-3sat-50: result=False, dag-nodes=177, tree-nodes=244, tree/dag=1.379, edges=243, depth=23, cache-hits=67, build-seconds=0.669242, verify-seconds=0.353771, routes={and-components:12,false:1,leaf:2-sat:1,leaf:bipartite-matching:1,leaf:horn:5,or-branch:58,or-short-circuit:2,unit-propagation:97}
+random-3sat-60: result=True, dag-nodes=17, tree-nodes=17, tree/dag=1.000, edges=16, depth=16, cache-hits=0, build-seconds=0.098447, verify-seconds=0.035965, routes={and-components:1,leaf:2-sat:1,leaf:horn:1,or-short-circuit:9,unit-propagation:5}
+mixed-structural-and-random: result=False, dag-nodes=37, tree-nodes=61, tree/dag=1.649, edges=60, depth=9, cache-hits=24, build-seconds=0.085474, verify-seconds=0.046789, routes={and-components:1,false:1,leaf:bipartite-matching:2,or-branch:13,unit-propagation:20}

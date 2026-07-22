@@ -1,0 +1,30 @@
+Sparse 3-XOR DPLL hard-instance search
+instances tested=720
+
+random-xor-30x24: seed=379287936103, result=False, states=63, branches=63, seconds=0.053240, cutoff=False
+random-xor-30x24: seed=379287936091, result=False, states=31, branches=31, seconds=0.061867, cutoff=False
+random-xor-30x24: seed=379287936069, result=True, states=29, branches=26, seconds=0.019936, cutoff=False
+planted-xor-26x21: seed=379287921067, result=True, states=29, branches=26, seconds=0.017427, cutoff=False
+random-xor-22x18: seed=379287896110, result=True, states=28, branches=22, seconds=0.010091, cutoff=False
+random-xor-26x21: seed=379287916096, result=True, states=26, branches=20, seconds=0.020220, cutoff=False
+random-xor-30x24: seed=379287936095, result=True, states=26, branches=21, seconds=0.017320, cutoff=False
+random-xor-26x26: seed=379287926089, result=False, states=25, branches=17, seconds=0.026837, cutoff=False
+planted-xor-30x30: seed=379287951084, result=True, states=24, branches=24, seconds=0.046510, cutoff=False
+planted-xor-22x18: seed=379287901094, result=True, states=23, branches=23, seconds=0.015977, cutoff=False
+random-xor-30x30: seed=379287946097, result=True, states=21, branches=21, seconds=0.029012, cutoff=False
+planted-xor-30x24: seed=379287941095, result=True, states=20, branches=17, seconds=0.020308, cutoff=False
+planted-xor-26x21: seed=379287921076, result=True, states=20, branches=17, seconds=0.016078, cutoff=False
+random-xor-26x21: seed=379287916083, result=False, states=20, branches=12, seconds=0.014700, cutoff=False
+random-xor-26x26: seed=379287926078, result=False, states=19, branches=19, seconds=0.028948, cutoff=False
+random-xor-22x22: seed=379287906129, result=False, states=19, branches=19, seconds=0.024289, cutoff=False
+planted-xor-26x21: seed=379287921112, result=True, states=19, branches=14, seconds=0.011941, cutoff=False
+random-xor-22x18: seed=379287896111, result=True, states=19, branches=14, seconds=0.006773, cutoff=False
+planted-xor-30x24: seed=379287941088, result=True, states=18, branches=16, seconds=0.018242, cutoff=False
+planted-xor-30x24: seed=379287941081, result=True, states=18, branches=14, seconds=0.015841, cutoff=False
+
+summary-22x18: count=160, median-states=5, max-states=28, cutoffs=0
+summary-22x22: count=160, median-states=5, max-states=19, cutoffs=0
+summary-26x21: count=120, median-states=6, max-states=29, cutoffs=0
+summary-26x26: count=120, median-states=5, max-states=25, cutoffs=0
+summary-30x24: count=80, median-states=6, max-states=63, cutoffs=0
+summary-30x30: count=80, median-states=7, max-states=24, cutoffs=0

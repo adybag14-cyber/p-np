@@ -1,0 +1,24 @@
+Private-variable peeling and affine-core experiment
+full-vs-core validation cases=760
+
+random-density experiment: variables=240, trials-per-ratio=24
+ratio | equations | mean-core-vars | mean-core-equations | empty-core-rate | sat-rate | mean-seconds
+------+-----------+----------------+---------------------+-----------------+----------+-------------
+0.25 |        60 |           0.00 |                0.00 |           1.000 |    1.000 |    0.000094
+0.40 |        96 |           0.00 |                0.00 |           1.000 |    1.000 |    0.000137
+0.55 |       132 |           0.00 |                0.00 |           1.000 |    1.000 |    0.000177
+0.70 |       168 |           2.38 |                1.79 |           0.958 |    1.000 |    0.000213
+0.80 |       192 |          56.33 |               47.67 |           0.375 |    1.000 |    0.000246
+0.90 |       216 |         145.96 |              144.12 |           0.000 |    0.542 |    0.000304
+1.00 |       240 |         174.83 |              189.58 |           0.000 |    0.000 |    0.000341
+1.10 |       264 |         191.21 |              225.46 |           0.000 |    0.000 |    0.000370
+1.25 |       300 |         208.08 |              274.92 |           0.000 |    0.000 |    0.000397
+1.50 |       360 |         224.21 |              347.04 |           0.000 |    0.000 |    0.000441
+
+planted systems: variables=500
+ratio=0.50, equations=250, peeled-equations=250, core-vars=0, core-equations=0, core-sat=True
+ratio=0.80, equations=400, peeled-equations=400, core-vars=0, core-equations=0, core-sat=True
+ratio=1.00, equations=500, peeled-equations=113, core-vars=353, core-equations=387, core-sat=True
+ratio=1.25, equations=625, peeled-equations=48, core-vars=433, core-equations=577, core-sat=True
+ratio=1.50, equations=750, peeled-equations=31, core-vars=466, core-equations=719, core-sat=True
+ratio=2.00, equations=1000, peeled-equations=9, core-vars=490, core-equations=991, core-sat=True

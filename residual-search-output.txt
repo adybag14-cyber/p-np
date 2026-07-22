@@ -1,0 +1,21 @@
+Residual-width search
+seed=5262928
+
+All 65,536 Boolean functions on four variables
+natural order: width 1: 4 (0.01%), width 2: 516 (0.79%), width 3: 12240 (18.68%), width 4: 52776 (80.53%)
+best of all 24 orders: width 1: 10 (0.02%), width 2: 2358 (3.60%), width 3: 43112 (65.78%), width 4: 20056 (30.60%)
+
+5,000 uniformly random five-variable functions; best of all 120 orders
+width 3: 33 (0.66%), width 4: 663 (13.26%), width 5: 2694 (53.88%), width 6: 1583 (31.66%), width 7: 27 (0.54%)
+
+500 uniformly random six-variable functions; best of 240 sampled orders
+width 6: 4 (0.80%), width 7: 53 (10.60%), width 8: 238 (47.60%), width 9: 178 (35.60%), width 10: 27 (5.40%)
+
+parity-12: tuned width=2, order=(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11), profile=[1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2]
+majority-12: tuned width=7, order=(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11), profile=[1, 2, 3, 4, 5, 6, 7, 7, 6, 5, 4, 3, 2]
+exact-one-12: tuned width=3, order=(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11), profile=[1, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 2]
+equality-halves-6+6: tuned width=3, order=(0, 6, 1, 7, 2, 8, 3, 9, 4, 10, 5, 11), profile=[1, 2, 2, 3, 2, 3, 2, 3, 2, 3, 2, 3, 2]
+
+random-3CNF-1: clauses=24, satisfying=40/4096, natural-width=5, tuned-width=4, order=(3, 5, 0, 1, 7, 2, 4, 8, 9, 11, 6, 10), profile=[1, 1, 1, 2, 3, 3, 4, 4, 4, 4, 4, 3, 2]
+random-3CNF-2: clauses=36, satisfying=30/4096, natural-width=8, tuned-width=5, order=(9, 1, 10, 3, 4, 5, 6, 7, 8, 0, 2, 11), profile=[1, 2, 3, 4, 5, 5, 5, 4, 5, 5, 5, 4, 2]
+random-3CNF-3: clauses=48, satisfying=21/4096, natural-width=7, tuned-width=5, order=(5, 6, 2, 3, 4, 0, 1, 7, 8, 9, 10, 11), profile=[1, 2, 4, 5, 5, 5, 5, 4, 4, 4, 4, 2, 2]

@@ -1,0 +1,48 @@
+name = "pisnpornot"
+version = "0.2.0"
+defaultTargets = ["PIsNPOrNot", "ResearchNext", "ResearchThird", "ResearchFourth", "ResearchAgenda", "ResearchFifth", "ResearchSixth", "ResearchSeventh", "ResearchEighth", "ResearchNinth", "ResearchTenth", "CNFCore", "pnp_experiments"]
+
+[[lean_lib]]
+name = "PIsNPOrNot"
+
+[[lean_lib]]
+name = "ResearchNext"
+
+[[lean_lib]]
+name = "CNFCore"
+
+[[lean_lib]]
+name = "ResearchThird"
+
+[[lean_lib]]
+name = "ResearchFourth"
+
+[[lean_lib]]
+name = "ResearchAgenda"
+
+[[lean_lib]]
+name = "ResearchFifth"
+
+[[lean_lib]]
+name = "ResearchSixth"
+
+[[lean_lib]]
+name = "ResearchSeventh"
+
+[[lean_lib]]
+name = "ResearchEighth"
+
+[[lean_lib]]
+name = "ResearchNinth"
+
+[[lean_lib]]
+name = "ResearchTenth"
+
+[[lean_exe]]
+name = "pnp_experiments"
+root = "Main"
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4.git"
+rev = "v4.32.0"

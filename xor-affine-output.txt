@@ -1,0 +1,8 @@
+Canonical 3-XOR affine-dispatch experiment
+brute-force validation: checked=400
+
+planted-xor-30x45: n=30, equations=45, result=True, gaussian(seconds=0.000815), dpll(result=True,states=4,branches=4,seconds=0.006522)
+planted-xor-40x60: n=40, equations=60, result=True, gaussian(seconds=0.001151), dpll(result=True,states=3,branches=3,seconds=0.015064)
+random-xor-30x45: n=30, equations=45, result=False, gaussian(seconds=0.000838), dpll(result=False,states=7,branches=7,seconds=0.023234)
+random-xor-40x60: n=40, equations=60, result=False, gaussian(seconds=0.001121), dpll(result=False,states=7,branches=7,seconds=0.034504)
+direct-conflicting-xor: n=3, equations=0, result=False, gaussian(seconds=0.000037), dpll(result=False,states=2,branches=2,seconds=0.000095)

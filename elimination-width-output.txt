@@ -1,0 +1,60 @@
+Davis-Putnam elimination-width experiment
+seed=293405606226
+brute-force validation runs=600
+
+random-3sat-18/natural: result=True, steps=16, peak-clauses=174, peak-width=8, peak-product=630, raw-resolvents=2945, kept-resolvents=1719, seconds=0.020942
+random-3sat-18/reverse: result=True, steps=17, peak-clauses=231, peak-width=8, peak-product=1377, raw-resolvents=5552, kept-resolvents=3366, seconds=0.038926
+random-3sat-18/min-product: result=True, steps=17, peak-clauses=162, peak-width=9, peak-product=648, raw-resolvents=2652, kept-resolvents=1373, seconds=0.085786
+random-3sat-18/min-fill: result=True, steps=16, peak-clauses=140, peak-width=9, peak-product=493, raw-resolvents=1928, kept-resolvents=1014, seconds=0.065501
+random-3sat-18/min-width: result=True, steps=15, peak-clauses=140, peak-width=8, peak-product=520, raw-resolvents=1594, kept-resolvents=883, seconds=0.060052
+
+planted-3sat-18/natural: result=True, steps=17, peak-clauses=298, peak-width=10, peak-product=4187, raw-resolvents=12863, kept-resolvents=5792, seconds=0.074780
+planted-3sat-18/reverse: result=True, steps=18, peak-clauses=168, peak-width=9, peak-product=1400, raw-resolvents=4516, kept-resolvents=2352, seconds=0.025182
+planted-3sat-18/min-product: result=True, steps=18, peak-clauses=122, peak-width=9, peak-product=405, raw-resolvents=1514, kept-resolvents=788, seconds=0.050040
+planted-3sat-18/min-fill: result=True, steps=18, peak-clauses=122, peak-width=9, peak-product=405, raw-resolvents=1582, kept-resolvents=797, seconds=0.051512
+planted-3sat-18/min-width: result=True, steps=16, peak-clauses=155, peak-width=8, peak-product=540, raw-resolvents=1996, kept-resolvents=898, seconds=0.077918
+
+random-3sat-24/natural: result=True, steps=24, peak-clauses=1094, peak-width=12, peak-product=40448, raw-resolvents=127662, kept-resolvents=56157, seconds=1.235638
+random-3sat-24/reverse: result=True, steps=23, peak-clauses=460, peak-width=12, peak-product=14391, raw-resolvents=34688, kept-resolvents=12568, seconds=0.218822
+random-3sat-24/min-product: result=True, steps=24, peak-clauses=198, peak-width=9, peak-product=1240, raw-resolvents=5996, kept-resolvents=2687, seconds=0.195639
+random-3sat-24/min-fill: result=True, steps=24, peak-clauses=198, peak-width=9, peak-product=1260, raw-resolvents=6016, kept-resolvents=2682, seconds=0.199070
+random-3sat-24/min-width: result=True, steps=24, peak-clauses=198, peak-width=9, peak-product=1560, raw-resolvents=7374, kept-resolvents=3079, seconds=0.354609
+
+planted-3sat-24/natural: result=True, steps=23, peak-clauses=384, peak-width=11, peak-product=4116, raw-resolvents=14158, kept-resolvents=6618, seconds=0.184732
+planted-3sat-24/reverse: result=True, steps=22, peak-clauses=519, peak-width=11, peak-product=9570, raw-resolvents=25625, kept-resolvents=11195, seconds=0.376012
+planted-3sat-24/min-product: result=True, steps=22, peak-clauses=103, peak-width=8, peak-product=100, raw-resolvents=750, kept-resolvents=432, seconds=0.089751
+planted-3sat-24/min-fill: result=True, steps=22, peak-clauses=101, peak-width=8, peak-product=116, raw-resolvents=741, kept-resolvents=416, seconds=0.084241
+planted-3sat-24/min-width: result=True, steps=22, peak-clauses=183, peak-width=8, peak-product=1190, raw-resolvents=3186, kept-resolvents=1812, seconds=0.218270
+
+pigeonhole-5-4/natural: result=False, steps=20, peak-clauses=80, peak-width=8, peak-product=216, raw-resolvents=1060, kept-resolvents=803, seconds=0.011417
+pigeonhole-5-4/reverse: result=False, steps=20, peak-clauses=80, peak-width=8, peak-product=216, raw-resolvents=1060, kept-resolvents=803, seconds=0.012335
+pigeonhole-5-4/min-product: result=False, steps=20, peak-clauses=75, peak-width=10, peak-product=165, raw-resolvents=1048, kept-resolvents=291, seconds=0.036432
+pigeonhole-5-4/min-fill: result=False, steps=20, peak-clauses=75, peak-width=10, peak-product=180, raw-resolvents=1169, kept-resolvents=282, seconds=0.038882
+pigeonhole-5-4/min-width: result=False, steps=20, peak-clauses=75, peak-width=8, peak-product=264, raw-resolvents=1054, kept-resolvents=293, seconds=0.033061
+
+pigeonhole-6-5/natural: result=False, steps=30, peak-clauses=230, peak-width=11, peak-product=3360, raw-resolvents=16826, kept-resolvents=12394, seconds=0.215959
+pigeonhole-6-5/reverse: result=False, steps=30, peak-clauses=230, peak-width=11, peak-product=3360, raw-resolvents=16826, kept-resolvents=12394, seconds=0.211472
+pigeonhole-6-5/min-product: result=False, steps=30, peak-clauses=215, peak-width=17, peak-product=2070, raw-resolvents=16294, kept-resolvents=2111, seconds=0.609250
+pigeonhole-6-5/min-fill: result=False, steps=30, peak-clauses=220, peak-width=18, peak-product=2340, raw-resolvents=17930, kept-resolvents=2112, seconds=0.660253
+pigeonhole-6-5/min-width: result=False, steps=30, peak-clauses=223, peak-width=15, peak-product=2205, raw-resolvents=13766, kept-resolvents=2012, seconds=0.458839
+
+exact-one-10x4/natural: result=True, steps=39, peak-clauses=70, peak-width=4, peak-product=3, raw-resolvents=30, kept-resolvents=0, seconds=0.002917
+exact-one-10x4/reverse: result=True, steps=39, peak-clauses=70, peak-width=4, peak-product=3, raw-resolvents=30, kept-resolvents=0, seconds=0.004726
+exact-one-10x4/min-product: result=True, steps=30, peak-clauses=70, peak-width=4, peak-product=3, raw-resolvents=30, kept-resolvents=0, seconds=0.010439
+exact-one-10x4/min-fill: result=True, steps=30, peak-clauses=70, peak-width=4, peak-product=3, raw-resolvents=30, kept-resolvents=0, seconds=0.009849
+exact-one-10x4/min-width: result=True, steps=30, peak-clauses=70, peak-width=4, peak-product=3, raw-resolvents=30, kept-resolvents=0, seconds=0.008658
+
+equality-10+10/natural: result=True, steps=10, peak-clauses=20, peak-width=2, peak-product=1, raw-resolvents=10, kept-resolvents=0, seconds=0.000315
+equality-10+10/reverse: result=True, steps=10, peak-clauses=20, peak-width=2, peak-product=1, raw-resolvents=10, kept-resolvents=0, seconds=0.000241
+equality-10+10/min-product: result=True, steps=10, peak-clauses=20, peak-width=2, peak-product=1, raw-resolvents=10, kept-resolvents=0, seconds=0.000663
+equality-10+10/min-fill: result=True, steps=10, peak-clauses=20, peak-width=2, peak-product=1, raw-resolvents=10, kept-resolvents=0, seconds=0.000963
+equality-10+10/min-width: result=True, steps=10, peak-clauses=20, peak-width=2, peak-product=1, raw-resolvents=10, kept-resolvents=0, seconds=0.000927
+
+xor-24x20/natural: result=True, steps=22, peak-clauses=276, peak-width=9, peak-product=12100, raw-resolvents=22713, kept-resolvents=4856, seconds=0.126385
+xor-24x20/reverse: result=True, steps=20, peak-clauses=406, peak-width=9, peak-product=33124, raw-resolvents=56455, kept-resolvents=11034, seconds=0.276850
+xor-24x20/min-product: result=True, steps=20, peak-clauses=80, peak-width=3, peak-product=4, raw-resolvents=80, kept-resolvents=0, seconds=0.019707
+xor-24x20/min-fill: result=True, steps=20, peak-clauses=80, peak-width=3, peak-product=4, raw-resolvents=80, kept-resolvents=0, seconds=0.018058
+xor-24x20/min-width: result=True, steps=20, peak-clauses=80, peak-width=3, peak-product=4, raw-resolvents=80, kept-resolvents=0, seconds=0.018777
+
+equality-12+12/split-explicit: result=True, steps=12, peak-clauses=24, peak-width=2, peak-product=1, raw-resolvents=12, kept-resolvents=0, seconds=0.000270
+equality-12+12/paired-explicit: result=True, steps=23, peak-clauses=24, peak-width=2, peak-product=1, raw-resolvents=12, kept-resolvents=0, seconds=0.000568

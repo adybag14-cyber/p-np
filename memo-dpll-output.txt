@@ -1,0 +1,25 @@
+Memoized symbolic DPLL experiment
+seed=1146113100
+
+verified-random-8: n=8, result=True, unique=3, calls=5, cache-hits=0, units=8, component-splits=0, branches=3, depth=3, state/2^n=0.0117188, seconds=0.0008, checked by brute force
+verified-random-10: n=10, result=True, unique=4, calls=5, cache-hits=0, units=4, component-splits=0, branches=4, depth=4, state/2^n=0.00390625, seconds=0.0006, checked by brute force
+verified-random-12: n=12, result=False, unique=3, calls=7, cache-hits=0, units=34, component-splits=0, branches=3, depth=2, state/2^n=0.000732422, seconds=0.0019, checked by brute force
+
+random-20: n=20, result=True, unique=3, calls=5, cache-hits=0, units=22, component-splits=0, branches=3, depth=3, state/2^n=2.86102e-06, seconds=0.0029, clauses=84
+random-30: n=30, result=True, unique=10, calls=12, cache-hits=0, units=19, component-splits=1, branches=9, depth=9, state/2^n=9.31323e-09, seconds=0.0071, clauses=126
+random-40: n=40, result=False, unique=21, calls=43, cache-hits=0, units=267, component-splits=0, branches=21, depth=7, state/2^n=1.90994e-11, seconds=0.1090, clauses=168
+random-50: n=50, result=True, unique=19, calls=22, cache-hits=0, units=53, component-splits=1, branches=18, depth=18, state/2^n=1.68754e-14, seconds=0.0295, clauses=210
+random-60: n=60, result=False, unique=106, calls=213, cache-hits=0, units=1428, component-splits=0, branches=106, depth=13, state/2^n=9.19403e-17, seconds=0.8891, clauses=252
+planted-20: n=20, result=True, unique=5, calls=6, cache-hits=0, units=11, component-splits=0, branches=5, depth=5, state/2^n=4.76837e-06, seconds=0.0023, clauses=84, planted-assignment-present
+planted-30: n=30, result=True, unique=9, calls=14, cache-hits=0, units=38, component-splits=1, branches=8, depth=8, state/2^n=8.3819e-09, seconds=0.0119, clauses=126, planted-assignment-present
+planted-40: n=40, result=True, unique=18, calls=21, cache-hits=0, units=23, component-splits=1, branches=17, depth=17, state/2^n=1.63709e-11, seconds=0.0133, clauses=168, planted-assignment-present
+planted-50: n=50, result=True, unique=17, calls=26, cache-hits=0, units=156, component-splits=1, branches=16, depth=11, state/2^n=1.5099e-14, seconds=0.0653, clauses=210, planted-assignment-present
+planted-60: n=60, result=True, unique=22, calls=29, cache-hits=0, units=154, component-splits=0, branches=22, depth=17, state/2^n=1.9082e-17, seconds=0.0909, clauses=252, planted-assignment-present
+
+pigeonhole-4-3: n=12, result=False, unique=6, calls=13, cache-hits=0, units=56, component-splits=0, branches=6, depth=5, state/2^n=0.00146484, seconds=0.0015
+pigeonhole-5-4: n=20, result=False, unique=30, calls=61, cache-hits=0, units=297, component-splits=0, branches=30, depth=11, state/2^n=2.86102e-05, seconds=0.0116
+pigeonhole-6-5: n=30, result=False, unique=156, calls=313, cache-hits=4, units=1647, component-splits=0, branches=156, depth=19, state/2^n=1.45286e-07, seconds=0.0811
+pigeonhole-7-6: n=42, result=False, unique=878, calls=1757, cache-hits=50, units=9825, component-splits=0, branches=878, depth=29, state/2^n=1.99634e-10, seconds=0.5705
+
+disconnected-with-components: n=40, result=False, unique=19, calls=31, cache-hits=0, units=17, component-splits=1, branches=18, depth=4, state/2^n=1.72804e-11, seconds=0.0017
+disconnected-without-components: n=40, result=False, unique=87, calls=175, cache-hits=0, units=178, component-splits=0, branches=87, depth=17, state/2^n=7.9126e-11, seconds=0.0509
