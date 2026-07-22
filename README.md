@@ -1,6 +1,6 @@
 # PIsNPOrNot — Lean 4 attack laboratory
 
-A native Windows Lean 4 research workspace containing **330 mechanically checked approaches** to P versus NP, verified CNF transformations, executable finite experiments, and structural SAT prototypes.
+A native Windows Lean 4 research workspace containing **390 mechanically checked approaches** to P versus NP, verified CNF transformations, executable finite experiments, and structural SAT prototypes.
 
 The project does **not** claim a proof of `P = NP` or `P != NP`. It is designed to expose exactly which additional theorem each attempted route would require.
 
@@ -344,6 +344,44 @@ The strongest experimental extension replaces original-variable queries with tra
 
 Full measurements and barriers are recorded in `RADICAL_PARADIGMS_RESULTS.md`.
 
+
+### `ResearchTwentyFourth.lean` - approaches 331-345
+
+Certified reversible-network candidate search, baseline-retaining beams, exact replay,
+finite gate-network counting, polynomial portfolio accounting, and the learned-compiler
+collapse criterion.
+
+### `ResearchTwentyFifth.lean` - approaches 346-360
+
+Arbitrary nonlinear Boolean observables, exact feature-fiber factorization, the 2^k
+signature bound, explicit observable-evaluation cost, collision certificates, and the
+uniform nonlinear-compiler criterion.
+
+### `ResearchTwentySixth.lean` - approaches 361-375
+
+Opposite-label witness pairs, observable separation covers, finite collision universes,
+cover-union accounting, the 2^(2n) exhaustive validation barrier, and structural
+separation certificates.
+
+### `ResearchTwentySeventh.lean` - approaches 376-390
+
+Pullback of arbitrary features through reversible bijections, exact feature-image
+transport, baseline-safe original/transformed portfolios, composed certificate replay,
+and the combined transform-feature compiler criterion.
+
+## Learned compiler experiments
+
+- `reversible_beam_search.py` crosses local plateaus while retaining the exact linear
+  baseline. It beat greedy reversible search on 16 of 18 tested six-variable functions.
+- `nonlinear_observable_search.py` learns exact feature quotients from parity, low-degree
+  conjunction, majority, and Hamming-weight observables.
+- `transform_then_observe.py` composes both approaches and motivates a baseline-safe
+  portfolio because transformations help some relations but damage already-optimal
+  symmetric quotients.
+
+Full results and the precise remaining theorem are recorded in
+`LEARNED_COMPILER_RESULTS.md`.
+
 ## Main files
 
 - `PIsNPOrNot.lean` — approaches 1–15 and residual synthesis.
@@ -370,12 +408,17 @@ Full measurements and barriers are recorded in `RADICAL_PARADIGMS_RESULTS.md`.
 - `ResearchTwentyFirst.lean` - approaches 286-300 and restriction-cover ensembles.
 - `ResearchTwentySecond.lean` - approaches 301-315 and reversible nonlinear transforms.
 - `ResearchTwentyThird.lean` - approaches 316-330 and exact modular counting.
+- `ResearchTwentyFourth.lean` - approaches 331-345 and certified reversible beam search.
+- `ResearchTwentyFifth.lean` - approaches 346-360 and nonlinear observable quotients.
+- `ResearchTwentySixth.lean` - approaches 361-375 and opposite-pair feature covers.
+- `ResearchTwentySeventh.lean` - approaches 376-390 and baseline-safe transform-feature portfolios.
 - `CNFCore.lean` - verified CNF restriction semantics.
 - `Audit.lean` - selected theorem axiom audit.
-- `FORMULATIONS.md` - compact status of all 330 approaches.
+- `FORMULATIONS.md` - compact status of all 390 approaches.
 - `ACCEPTABLE_TARGET.md` - precise obligations still required for a publishable result.
 - `CANONICAL_FRONTIER_RESULTS.md` - canonical-state, coherent-policy, and frontier-pruning results.
 - `RADICAL_PARADIGMS_RESULTS.md` - linear, symmetry, restriction, reversible, and modular results.
+- `LEARNED_COMPILER_RESULTS.md` - beam-search, nonlinear-feature, and combined-portfolio results.
 - `Main.lean` - residual-state executable.
 - `hybrid_portfolio.py` - heterogeneous structural solver portfolio.
 - `certified_dag.py` - emitted and independently checked AND/OR DAG certificates.

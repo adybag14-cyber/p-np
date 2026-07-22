@@ -1,0 +1,21 @@
+Reversible-transform then nonlinear-observable experiment
+seed=2052000606
+Every transform is bijective and every learned feature partition is checked for constant truth value on each fiber.
+
+parity-6: original-k=1, original-image=2, transformed-k=1, transformed-image=2, network-gates=0, obdd=13->3, features=[xor(0)]
+majority-6: original-k=1, original-image=2, transformed-k=4, transformed-image=13, network-gates=3, obdd=14->12, features=[maj(0,1,2), maj(3,4,5), weight==2, xor(2)]
+exact-one-6: original-k=1, original-image=2, transformed-k=5, transformed-image=18, network-gates=2, obdd=13->11, features=[weight==1, weight==2, xor(0,1), xor(0,4), maj(2,3,4)]
+exact-two-6: original-k=1, original-image=2, transformed-k=5, transformed-image=13, network-gates=4, obdd=16->9, features=[maj(0,1,2), xor(2,5), and(0,5), xor(2), weight==1]
+equality-halves-3+3: original-k=3, original-image=8, transformed-k=2, transformed-image=4, network-gates=0, obdd=11->5, features=[maj(0,1,2), xor(0,1,2)]
+inner-product-3: original-k=4, original-image=16, transformed-k=5, transformed-image=14, network-gates=3, obdd=12->8, features=[and(0,1), and(2,3), and(4,5), maj(0,2,4), and(0,2,3)]
+random-6-1: original-k=6, original-image=56, transformed-k=6, transformed-image=64, network-gates=4, obdd=21->17, features=[xor(0,1), xor(4), xor(0,2), xor(0,5), xor(0), xor(3)]
+random-6-2: original-k=6, original-image=48, transformed-k=6, transformed-image=34, network-gates=4, obdd=22->14, features=[maj(0,1,2), xor(0,1), xor(3), xor(5), and(1,4), and(0,2,3)]
+random-6-3: original-k=6, original-image=48, transformed-k=6, transformed-image=64, network-gates=4, obdd=23->16, features=[xor(0), xor(1,3,5), xor(1), xor(2,3), xor(2), xor(4)]
+random-6-4: original-k=6, original-image=56, transformed-k=6, transformed-image=64, network-gates=4, obdd=23->16, features=[xor(1), xor(5), xor(3), xor(0), xor(4), xor(2)]
+random-6-5: original-k=6, original-image=64, transformed-k=6, transformed-image=48, network-gates=4, obdd=23->17, features=[maj(1,3,5), xor(0,1), xor(0,3,4), xor(0,2), xor(0,5), weight==3]
+random-6-6: original-k=6, original-image=56, transformed-k=6, transformed-image=48, network-gates=4, obdd=23->17, features=[maj(0,4,5), xor(4,5), xor(1), xor(2,3), xor(0,2,4), maj(1,3,5)]
+random-6-7: original-k=6, original-image=64, transformed-k=6, transformed-image=64, network-gates=4, obdd=24->18, features=[maj(0,1,2), xor(0,2), xor(3), xor(5), xor(4), xor(0,1)]
+random-6-8: original-k=6, original-image=64, transformed-k=6, transformed-image=56, network-gates=4, obdd=23->18, features=[maj(0,1,2), xor(0,5), xor(0,1), xor(0,3), xor(0,2,4), maj(0,4,5)]
+random-6-9: original-k=6, original-image=48, transformed-k=6, transformed-image=64, network-gates=3, obdd=23->16, features=[xor(0), xor(4), xor(5), xor(1), xor(2), xor(3)]
+random-6-10: original-k=6, original-image=64, transformed-k=6, transformed-image=48, network-gates=4, obdd=24->16, features=[maj(1,2,4), xor(5), xor(0), xor(1,2), xor(1,4), and(0,3)]
+total-seconds=34.834

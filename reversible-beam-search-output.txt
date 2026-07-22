@@ -1,0 +1,26 @@
+Certified reversible beam-search experiment
+seed=3198639853
+The identity network remains in the beam; every returned network is exhaustively verified.
+
+parity-6: ordered=13, linear=3, greedy=3, beam=3, beam-vs-greedy=0, gates=[]
+majority-6: ordered=14, linear=14, greedy=13, beam=11, beam-vs-greedy=2, gates=[CNOT(1, 0), CNOT(0, 2), CNOT(2, 1), TOFFOLI(4, 5, 3), CNOT(3, 2)]
+exact-one-6: ordered=13, linear=12, greedy=11, beam=7, beam-vs-greedy=4, gates=[X(4,), TOFFOLI(3, 4, 0), CNOT(5, 2), CNOT(3, 5), TOFFOLI(2, 3, 5), CNOT(2, 5)]
+exact-two-6: ordered=16, linear=12, greedy=12, beam=8, beam-vs-greedy=4, gates=[TOFFOLI(0, 2, 4), CNOT(3, 0), CNOT(2, 0), CNOT(4, 1)]
+equality-halves-3+3: ordered=11, linear=5, greedy=5, beam=5, beam-vs-greedy=0, gates=[]
+inner-product-3: ordered=12, linear=12, greedy=10, beam=7, beam-vs-greedy=3, gates=[TOFFOLI(2, 3, 1), TOFFOLI(4, 5, 3), TOFFOLI(4, 5, 1), CNOT(3, 1), TOFFOLI(0, 1, 3)]
+random-6-1: ordered=23, linear=21, greedy=20, beam=16, beam-vs-greedy=4, gates=[TOFFOLI(2, 4, 0), TOFFOLI(0, 3, 5), CNOT(3, 0), CNOT(5, 4), TOFFOLI(2, 4, 5), CNOT(2, 1)]
+random-6-2: ordered=23, linear=20, greedy=16, beam=15, beam-vs-greedy=1, gates=[CNOT(2, 4), CNOT(3, 5), TOFFOLI(0, 1, 5), CNOT(1, 0), TOFFOLI(0, 2, 1), TOFFOLI(3, 5, 2)]
+random-6-3: ordered=20, linear=20, greedy=17, beam=14, beam-vs-greedy=3, gates=[X(3,), TOFFOLI(2, 3, 4), CNOT(3, 2), X(5,), TOFFOLI(4, 5, 3), CNOT(5, 4)]
+random-6-4: ordered=23, linear=22, greedy=20, beam=15, beam-vs-greedy=5, gates=[TOFFOLI(0, 1, 4), TOFFOLI(0, 2, 1), TOFFOLI(1, 3, 0), CNOT(2, 1), TOFFOLI(0, 5, 1)]
+random-6-5: ordered=24, linear=22, greedy=20, beam=18, beam-vs-greedy=2, gates=[TOFFOLI(0, 3, 5), TOFFOLI(0, 3, 2), TOFFOLI(2, 5, 0), CNOT(0, 1), CNOT(2, 0)]
+random-6-6: ordered=24, linear=21, greedy=17, beam=15, beam-vs-greedy=2, gates=[CNOT(2, 5), CNOT(2, 0), TOFFOLI(1, 4, 2), TOFFOLI(3, 5, 1), CNOT(1, 3)]
+random-6-7: ordered=23, linear=21, greedy=18, beam=16, beam-vs-greedy=2, gates=[X(2,), TOFFOLI(1, 2, 5), TOFFOLI(0, 2, 1), TOFFOLI(4, 5, 2), CNOT(5, 3)]
+random-6-8: ordered=25, linear=20, greedy=16, beam=13, beam-vs-greedy=3, gates=[TOFFOLI(4, 5, 2), CNOT(0, 5), CNOT(5, 4), TOFFOLI(2, 3, 4), CNOT(1, 4), TOFFOLI(0, 2, 1)]
+random-6-9: ordered=22, linear=21, greedy=20, beam=16, beam-vs-greedy=4, gates=[TOFFOLI(2, 3, 0), CNOT(0, 5), CNOT(2, 0), TOFFOLI(0, 5, 3), TOFFOLI(1, 3, 2)]
+random-6-10: ordered=22, linear=20, greedy=18, beam=16, beam-vs-greedy=2, gates=[TOFFOLI(2, 3, 5), TOFFOLI(1, 3, 2), TOFFOLI(3, 4, 1), X(1,), TOFFOLI(1, 5, 0), TOFFOLI(0, 3, 2)]
+random-6-11: ordered=22, linear=22, greedy=20, beam=16, beam-vs-greedy=4, gates=[TOFFOLI(4, 5, 2), TOFFOLI(0, 2, 4), TOFFOLI(0, 3, 2), TOFFOLI(1, 2, 0), CNOT(3, 2), CNOT(0, 4)]
+random-6-12: ordered=24, linear=20, greedy=17, beam=14, beam-vs-greedy=3, gates=[TOFFOLI(1, 4, 2), TOFFOLI(2, 3, 1), TOFFOLI(1, 3, 4), TOFFOLI(1, 4, 3), TOFFOLI(0, 5, 2)]
+
+greedy-minus-beam: 0:2, 1:1, 2:5, 3:4, 4:5, 5:1
+ordered-minus-beam: 3:1, 5:1, 6:7, 7:2, 8:3, 9:1, 10:2, 12:1
+total-seconds=29.753

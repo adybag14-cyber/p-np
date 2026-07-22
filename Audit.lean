@@ -22,6 +22,10 @@ import ResearchTwentieth
 import ResearchTwentyFirst
 import ResearchTwentySecond
 import ResearchTwentyThird
+import ResearchTwentyFourth
+import ResearchTwentyFifth
+import ResearchTwentySixth
+import ResearchTwentySeventh
 import CNFCore
 
 -- Original residual and decomposition core
@@ -162,3 +166,18 @@ import CNFCore
 #print axioms PIsNPOrNot.ResearchTwentyThird.A323_ExactModularSAT.no_witness_iff_large_residue_zero
 #print axioms PIsNPOrNot.ResearchTwentyThird.A329_ModularCompilerCriterion.compiler_decides_no_witness
 #print axioms PIsNPOrNot.ResearchTwentyThird.A330_ModularCollapse.p_eq_np_of_uniform_modular_compilers
+
+
+-- Approaches 331-390: learned reversible compilers and nonlinear feature covers
+#print axioms PIsNPOrNot.ResearchTwentyFourth.A335_BeamBaseline.chosen_exact_and_bounded
+#print axioms PIsNPOrNot.ResearchTwentyFourth.A336_GateNetworkCount.network_space_card
+#print axioms PIsNPOrNot.ResearchTwentyFourth.A345_LearnedCollapse.p_eq_np_of_uniform_learned_compilers
+#print axioms PIsNPOrNot.ResearchTwentyFifth.A348_SignatureImageDecision.exists_witness_iff_signature_image
+#print axioms PIsNPOrNot.ResearchTwentyFifth.A349_SignatureCardinality.signature_image_le_pow_two
+#print axioms PIsNPOrNot.ResearchTwentyFifth.A360_NonlinearCollapse.p_eq_np_of_uniform_nonlinear_observables
+#print axioms PIsNPOrNot.ResearchTwentySixth.A364_SeparationImpliesFiberSafety.same_features_same_label
+#print axioms PIsNPOrNot.ResearchTwentySixth.A373_BitPairBarrier.bit_pair_space_card
+#print axioms PIsNPOrNot.ResearchTwentySixth.A375_FeatureCoverCollapse.p_eq_np_of_uniform_separating_features
+#print axioms PIsNPOrNot.ResearchTwentySeventh.A379_FeatureImageTransport.pullback_image_eq
+#print axioms PIsNPOrNot.ResearchTwentySeventh.A386_SeparationPullback.transformed_cover_gives_original_cover
+#print axioms PIsNPOrNot.ResearchTwentySeventh.A390_CombinedCollapse.p_eq_np_of_uniform_transform_feature_compilers

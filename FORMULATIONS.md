@@ -404,3 +404,38 @@ Steps 1–7 are represented by checked components in the workspace. Step 8 is th
 328. **A polynomial tensor-table bound transfers directly to contraction work**
 329. **Polynomial modular-residue compilers decide finite witness existence**
 330. **Uniform polynomial exact-residue compilers would collapse P and NP**
+
+
+## Approaches 331-345: certified learned reversible compilers
+
+A331-A335 package exact candidates, identity baselines, globally measured improvement
+steps, monotone chains, and baseline-retaining beam outputs. A336 counts depth-d gate
+networks exactly as |Gate|^d. A337-A342 account for candidate enumeration, exact replay,
+construction/evaluation cost, and certificate length. A343-A345 prove exact portfolio
+selection and the conditional class collapse from a uniform polynomial learned compiler.
+
+## Approaches 346-360: nonlinear observable quotients
+
+A346 defines k-observable signatures. A347-A350 prove exact factorization through
+noninjective signatures, existential reduction to the reachable image, the 2^k image
+bound, and the distinction between decision-safe compression and lossless recovery.
+A351-A358 prove refinement, product-feature, lower-bound, evaluation-cost, portfolio,
+collision-certificate, and reachable-image lemmas. A359-A360 package the fully costed
+nonlinear compiler and its conditional collapse theorem.
+
+## Approaches 361-375: opposite-pair separation covers
+
+A361-A368 identify opposite-label pairs as the exact collision obligations and prove
+that complete feature separation is equivalent to fiber safety. A369-A372 establish
+coverage monotonicity, union accounting, witness-pair cardinality, and checking cost.
+A373 proves that the explicit pair universe for n-bit witnesses has size 2^(2n).
+A374-A375 isolate structural separation certificates and the uniform polynomial-cover
+collapse criterion.
+
+## Approaches 376-390: baseline-safe transform-feature portfolios
+
+A376-A380 prove transport of opposite pairs, arbitrary feature pullback, fiber safety,
+and exact reachable-image cardinality through a bijection. A381-A388 prove that keeping
+both original and transformed exact quotients cannot worsen the baseline, with explicit
+network/feature/portfolio cost and certificate composition. A389-A390 package the
+combined compiler and conditional P = NP theorem.
