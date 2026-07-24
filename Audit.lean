@@ -35,6 +35,10 @@ import ResearchThirtyThird
 import ResearchThirtyFourth
 import ResearchThirtyFifth
 import ResearchThirtySixth
+import ResearchThirtySeventh
+import ResearchThirtyEighth
+import ResearchThirtyNinth
+import ResearchFortieth
 import CNFCore
 
 -- Original residual and decomposition core
@@ -221,3 +225,19 @@ import CNFCore
 #print axioms PIsNPOrNot.ResearchThirtySixth.A517_ArbitraryWireConditioning.exists_transport
 #print axioms PIsNPOrNot.ResearchThirtySixth.A522_BaselineSafeCutsetChoice.chosen_work_le_baseline
 #print axioms PIsNPOrNot.ResearchThirtySixth.A525_InternalCutsetCollapse.p_eq_np_of_uniform_internal_cutsets
+
+-- Approaches 526-585: exact residual quotients, safe certificates, and semantic optimality
+#print axioms PIsNPOrNot.ResearchThirtySeventh.A529_SignatureImageSafety.equal_reachable_images
+#print axioms PIsNPOrNot.ResearchThirtySeventh.A534_RepresentativeExistence.exists_over_representatives
+#print axioms PIsNPOrNot.ResearchThirtySeventh.A535_RepresentativeImageUnion.representative_outputs_exact
+#print axioms PIsNPOrNot.ResearchThirtySeventh.A540_SemanticQuotientCollapse.p_eq_np_of_uniform_semantic_quotients
+#print axioms PIsNPOrNot.ResearchThirtyEighth.A542_CertificateToSignature.equal_signature
+#print axioms PIsNPOrNot.ResearchThirtyEighth.A550_ExpressionCertificate.system
+#print axioms PIsNPOrNot.ResearchThirtyEighth.A555_CertificateCollapse.p_eq_np_of_uniform_safe_certificates
+#print axioms PIsNPOrNot.ResearchThirtyNinth.A562_LayerWidthBound.total_states_le_depth_mul_width
+#print axioms PIsNPOrNot.ResearchThirtyNinth.A563_RawPathBarrier.binary_paths
+#print axioms PIsNPOrNot.ResearchThirtyNinth.A570_RecursiveQuotientCollapse.p_eq_np_of_uniform_recursive_quotients
+#print axioms PIsNPOrNot.ResearchFortieth.A572_SignatureImageFactorization.signatures_eq_decoded_certificates
+#print axioms PIsNPOrNot.ResearchFortieth.A573_SemanticOptimalityBound.semantic_card_le_certificate_card
+#print axioms PIsNPOrNot.ResearchFortieth.A580_CollisionSaving.strict_collision_saving
+#print axioms PIsNPOrNot.ResearchFortieth.A585_ResidualKernelCollapse.p_eq_np_of_uniform_residual_kernels

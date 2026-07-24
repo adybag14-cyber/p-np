@@ -1,6 +1,6 @@
 # PIsNPOrNot — Lean 4 attack laboratory
 
-A native Windows Lean 4 research workspace containing **525 mechanically checked approaches** to P versus NP, verified CNF transformations, executable finite experiments, and structural SAT prototypes.
+A native Windows Lean 4 research workspace containing **585 mechanically checked approaches** to P versus NP, verified CNF transformations, executable finite experiments, and structural SAT prototypes.
 
 The project does **not** claim a proof of `P = NP` or `P != NP`. It is designed to expose exactly which additional theorem each attempted route would require.
 
@@ -460,6 +460,43 @@ cutset selection, and monotone cutset-improvement chains.
 
 Full results and the remaining theorem are recorded in `CIRCUIT_MESSAGE_RESULTS.md`.
 
+### `ResearchThirtySeventh.lean` - approaches 526-540
+
+Exact residual signatures for cut assignments, semantic equivalence, representative
+covers, exact representative-only existence and image reconstruction, impossible-branch
+merging, quotient work bounds, and the semantic-quotient collapse criterion.
+
+### `ResearchThirtyEighth.lean` - approaches 541-555
+
+Safe decodable certificate systems, certificate covers, Boolean expression certificates,
+certificate-to-signature refinement, construction and class-work accounting, baseline-safe
+certificate portfolios, and the safe-certificate collapse criterion.
+
+### `ResearchThirtyNinth.lean` - approaches 556-570
+
+Raw branch count versus unique residual classes, strict quotient savings, layered semantic
+state bounds, exponential path versus linear memo-state accounting, transition and memo
+work budgets, and recursive quotient compilers.
+
+### `ResearchFortieth.lean` - approaches 571-585
+
+Exact certificate factorization through residual functions, the theorem that semantic
+signatures are the coarsest exact decodable quotient, residual-kernel work accounting,
+strict collision savings, and the residual-kernel compiler criterion.
+
+## Residual quotient experiments
+
+- `cutset_residual_quotient.py` computes exact residual input/output relations for every
+  finite cut assignment. Seven input cuts reduced 128 raw branches to 2-9 exact residual
+  classes on tested random DAG and random 3-SAT circuits.
+- `cutset_structural_certificates.py` uses sound constant folding and canonical circuit
+  syntax as a polynomially checkable but generally finer certificate. It captured 87.2%
+  of available exact branch savings on one 12-variable random 3-SAT instance, but only
+  28.8% on a harder 14-variable instance.
+
+Full results and the semantic-optimality theorem are recorded in
+`RESIDUAL_QUOTIENT_RESULTS.md`.
+
 ## Main files
 
 - `PIsNPOrNot.lean` — approaches 1–15 and residual synthesis.
@@ -499,15 +536,20 @@ Full results and the remaining theorem are recorded in `CIRCUIT_MESSAGE_RESULTS.
 - `ResearchThirtyFourth.lean` - approaches 481-495 and exact circuit relation-width accounting.
 - `ResearchThirtyFifth.lean` - approaches 496-510 and exact finite cutset conditioning.
 - `ResearchThirtySixth.lean` - approaches 511-525 and internal-wire substitution/cutset search.
+- `ResearchThirtySeventh.lean` - approaches 526-540 and exact semantic branch quotients.
+- `ResearchThirtyEighth.lean` - approaches 541-555 and safe structural residual certificates.
+- `ResearchThirtyNinth.lean` - approaches 556-570 and recursive quotient/memo accounting.
+- `ResearchFortieth.lean` - approaches 571-585 and semantic quotient optimality.
 - `CNFCore.lean` - verified CNF restriction semantics.
 - `Audit.lean` - selected theorem axiom audit.
-- `FORMULATIONS.md` - compact status of all 525 approaches.
+- `FORMULATIONS.md` - compact status of all 585 approaches.
 - `ACCEPTABLE_TARGET.md` - precise obligations still required for a publishable result.
 - `CANONICAL_FRONTIER_RESULTS.md` - canonical-state, coherent-policy, and frontier-pruning results.
 - `RADICAL_PARADIGMS_RESULTS.md` - linear, symmetry, restriction, reversible, and modular results.
 - `LEARNED_COMPILER_RESULTS.md` - beam-search, nonlinear-feature, and combined-portfolio results.
 - `REACHABLE_IMAGE_RESULTS.md` - exact reachable-image generation and syndrome results.
 - `CIRCUIT_MESSAGE_RESULTS.md` - factorized circuit messages, reconvergence, and cutset results.
+- `RESIDUAL_QUOTIENT_RESULTS.md` - exact semantic branch quotients and safe certificate results.
 - `Main.lean` - residual-state executable.
 - `hybrid_portfolio.py` - heterogeneous structural solver portfolio.
 - `certified_dag.py` - emitted and independently checked AND/OR DAG certificates.

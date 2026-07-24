@@ -27,6 +27,8 @@ $experiments = @(
   "circuit_message_width.py",
   "circuit_cutset_conditioning.py",
   "circuit_graph_cutset.py",
+  "cutset_residual_quotient.py",
+  "cutset_structural_certificates.py",
   "transform_then_observe.py",
   "nonlinear_observable_search.py",
   "reversible_beam_search.py",

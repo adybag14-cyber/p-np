@@ -1,0 +1,49 @@
+Cutset structural-certificate experiment
+seed=12789535
+Certificates are canonical constant-folded circuit expressions after input substitution.
+Certificate equality is syntactic and therefore safely implies identical residual functions.
+
+[random-dag-12x40] order=x6, x3, x9, x11, x0, x7, x2
+  k=0, raw=1, exact-classes=1, structural-classes=1, constant-certificates=0, exact-saving-captured=100.0%
+  k=1, raw=2, exact-classes=2, structural-classes=2, constant-certificates=0, exact-saving-captured=100.0%
+  k=2, raw=4, exact-classes=4, structural-classes=4, constant-certificates=0, exact-saving-captured=100.0%
+  k=3, raw=8, exact-classes=7, structural-classes=8, constant-certificates=1, exact-saving-captured=0.0%
+  k=4, raw=16, exact-classes=4, structural-classes=4, constant-certificates=2, exact-saving-captured=100.0%
+  k=5, raw=32, exact-classes=4, structural-classes=4, constant-certificates=2, exact-saving-captured=100.0%
+  k=6, raw=64, exact-classes=2, structural-classes=2, constant-certificates=2, exact-saving-captured=100.0%
+  k=7, raw=128, exact-classes=2, structural-classes=2, constant-certificates=2, exact-saving-captured=100.0%
+
+[random-dag-12x60] order=x11, x1, x5, x0, x6, x7, x2
+  k=0, raw=1, exact-classes=1, structural-classes=1, constant-certificates=0, exact-saving-captured=100.0%
+  k=1, raw=2, exact-classes=2, structural-classes=2, constant-certificates=0, exact-saving-captured=100.0%
+  k=2, raw=4, exact-classes=4, structural-classes=4, constant-certificates=0, exact-saving-captured=100.0%
+  k=3, raw=8, exact-classes=4, structural-classes=4, constant-certificates=0, exact-saving-captured=100.0%
+  k=4, raw=16, exact-classes=4, structural-classes=4, constant-certificates=0, exact-saving-captured=100.0%
+  k=5, raw=32, exact-classes=7, structural-classes=7, constant-certificates=2, exact-saving-captured=100.0%
+  k=6, raw=64, exact-classes=3, structural-classes=3, constant-certificates=2, exact-saving-captured=100.0%
+  k=7, raw=128, exact-classes=3, structural-classes=3, constant-certificates=2, exact-saving-captured=100.0%
+
+[random-3sat-12x30] order=x1, x4, x6, x10, x5, x2, x7
+  k=0, raw=1, exact-classes=1, structural-classes=1, constant-certificates=0, exact-saving-captured=100.0%
+  k=1, raw=2, exact-classes=2, structural-classes=2, constant-certificates=0, exact-saving-captured=100.0%
+  k=2, raw=4, exact-classes=4, structural-classes=4, constant-certificates=0, exact-saving-captured=100.0%
+  k=3, raw=8, exact-classes=6, structural-classes=8, constant-certificates=0, exact-saving-captured=0.0%
+  k=4, raw=16, exact-classes=9, structural-classes=15, constant-certificates=1, exact-saving-captured=14.3%
+  k=5, raw=32, exact-classes=11, structural-classes=24, constant-certificates=1, exact-saving-captured=38.1%
+  k=6, raw=64, exact-classes=11, structural-classes=31, constant-certificates=1, exact-saving-captured=62.3%
+  k=7, raw=128, exact-classes=11, structural-classes=26, constant-certificates=1, exact-saving-captured=87.2%
+
+[random-3sat-14x45] order=x8, x0, x4, x5, x6, x12
+  k=0, raw=1, exact-classes=1, structural-classes=1, constant-certificates=0, exact-saving-captured=100.0%
+  k=1, raw=2, exact-classes=2, structural-classes=2, constant-certificates=0, exact-saving-captured=100.0%
+  k=2, raw=4, exact-classes=4, structural-classes=4, constant-certificates=0, exact-saving-captured=100.0%
+  k=3, raw=8, exact-classes=4, structural-classes=8, constant-certificates=0, exact-saving-captured=0.0%
+  k=4, raw=16, exact-classes=5, structural-classes=15, constant-certificates=1, exact-saving-captured=9.1%
+  k=5, raw=32, exact-classes=5, structural-classes=26, constant-certificates=1, exact-saving-captured=22.2%
+  k=6, raw=64, exact-classes=5, structural-classes=47, constant-certificates=1, exact-saving-captured=28.8%
+
+Interpretation:
+- Structural equality never merged unequal residual functions in the exhaustive checks.
+- Constant folding captures many branch collapses but can miss semantic equivalences.
+- A safe certificate partition may be finer than the optimal semantic quotient and still reduce work.
+- The remaining discovery problem is to construct a polynomial number of safe certificates without enumerating all cut assignments.

@@ -1,4 +1,4 @@
-# Seventy-five P-versus-NP formulations
+# 585 P-versus-NP formulations
 
 Each item has a Lean-checked logical or finite core. None is presented as a completed proof of `P = NP`.
 
@@ -516,3 +516,36 @@ A519-A520 formalize the branch-width tradeoff and show that lower peak width alo
 insufficient. A521-A524 prove exact candidate selection, baseline dominance, monotone
 improvement chains, and the limitation of graph-width proxy scores. A525 states the
 uniform internal-cutset collapse criterion.
+
+## Approaches 526-540: exact residual-signature quotients
+
+A526-A531 define complete residual signatures, semantic equivalence, pointwise/image
+safety, the finite signature image, and its raw-cut cardinality bound. A532-A539 prove
+representative covers, exact representative-only existence and image reconstruction,
+impossible-branch merging, representative work, and quotient dominance. A540 packages
+the uniform semantic-quotient collapse criterion.
+
+## Approaches 541-555: safe decodable certificates
+
+A541-A547 define safe certificate systems, denotational decoders, certificate covers,
+exact conversion to semantic covers, and certificate-image bounds. A548-A551 provide a
+concrete Boolean-expression certificate language and prove that certificate collisions
+are semantic collisions. A552-A554 account for class work, construction budgets, and
+baseline-safe portfolios. A555 states the safe-certificate collapse criterion.
+
+## Approaches 556-570: recursive quotient layers
+
+A556-A562 separate raw branch count from unique residual classes, prove strict quotient
+savings and depth-times-width memo-state bounds. A563-A564 formally contrast `2^d` raw
+binary paths with `2d` states when every semantic layer has width two. A565-A569 account
+for transitions, memo work, compilation and exact decisions. A570 states the recursive
+quotient collapse criterion.
+
+## Approaches 571-585: semantic optimality and residual kernels
+
+A571-A574 prove exact certificate factorization and that the semantic signature quotient
+is the coarsest exact decodable residual certificate: no exact certificate system can use
+fewer classes. A575-A582 account for residual-kernel construction, class/message work,
+strict collision savings, one-class exponential examples, and empty impossible kernels.
+A583-A585 package exact residual-kernel compilation and the conditional class-collapse
+theorem.

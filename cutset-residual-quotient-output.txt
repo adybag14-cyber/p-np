@@ -1,0 +1,88 @@
+Exact cutset residual-signature quotient experiment
+seed=5336743
+A branch signature records the exact output relation over every remaining input assignment.
+Branches with identical signatures can be solved once and shared without approximation.
+
+[random-dag-12x40] inputs=12, gates=40
+  input-reuse order: x2, x0, x5, x8, x11, x7, x10
+    k=0, raw=1, reachable=1, unique-exact-residuals=1, impossible=0, saved=0, ratio=1.00x, largest-class=1, residual-points=4096
+    k=1, raw=2, reachable=2, unique-exact-residuals=1, impossible=0, saved=1, ratio=2.00x, largest-class=2, residual-points=2048
+    k=2, raw=4, reachable=4, unique-exact-residuals=2, impossible=0, saved=2, ratio=2.00x, largest-class=2, residual-points=1024
+    k=3, raw=8, reachable=8, unique-exact-residuals=4, impossible=0, saved=4, ratio=2.00x, largest-class=2, residual-points=512
+    k=4, raw=16, reachable=16, unique-exact-residuals=4, impossible=0, saved=12, ratio=4.00x, largest-class=4, residual-points=256
+    k=5, raw=32, reachable=32, unique-exact-residuals=4, impossible=0, saved=28, ratio=8.00x, largest-class=8, residual-points=128
+    k=6, raw=64, reachable=64, unique-exact-residuals=4, impossible=0, saved=60, ratio=16.00x, largest-class=16, residual-points=64
+    k=7, raw=128, reachable=128, unique-exact-residuals=2, impossible=0, saved=126, ratio=64.00x, largest-class=64, residual-points=32
+  internal-graph order: w25:or, w16:or, w17:and, x0, x2, x5, w24:or
+    k=0, raw=1, reachable=1, unique-exact-residuals=1, impossible=0, saved=0, ratio=1.00x, largest-class=1, residual-points=4096
+    k=1, raw=2, reachable=2, unique-exact-residuals=2, impossible=0, saved=0, ratio=1.00x, largest-class=1, residual-points=4096
+    k=2, raw=4, reachable=4, unique-exact-residuals=4, impossible=0, saved=0, ratio=1.00x, largest-class=1, residual-points=4096
+    k=3, raw=8, reachable=6, unique-exact-residuals=6, impossible=2, saved=2, ratio=1.33x, largest-class=2, residual-points=4096
+    k=4, raw=16, reachable=10, unique-exact-residuals=10, impossible=6, saved=6, ratio=1.60x, largest-class=6, residual-points=2048
+    k=5, raw=32, reachable=20, unique-exact-residuals=10, impossible=12, saved=22, ratio=3.20x, largest-class=12, residual-points=1024
+    k=6, raw=64, reachable=30, unique-exact-residuals=15, impossible=34, saved=49, ratio=4.27x, largest-class=34, residual-points=512
+    k=7, raw=128, reachable=38, unique-exact-residuals=19, impossible=90, saved=109, ratio=6.74x, largest-class=90, residual-points=512
+
+[random-dag-12x60] inputs=12, gates=60
+  input-reuse order: x2, x3, x4, x5, x8, x10, x0
+    k=0, raw=1, reachable=1, unique-exact-residuals=1, impossible=0, saved=0, ratio=1.00x, largest-class=1, residual-points=4096
+    k=1, raw=2, reachable=2, unique-exact-residuals=1, impossible=0, saved=1, ratio=2.00x, largest-class=2, residual-points=2048
+    k=2, raw=4, reachable=4, unique-exact-residuals=2, impossible=0, saved=2, ratio=2.00x, largest-class=2, residual-points=1024
+    k=3, raw=8, reachable=8, unique-exact-residuals=4, impossible=0, saved=4, ratio=2.00x, largest-class=2, residual-points=512
+    k=4, raw=16, reachable=16, unique-exact-residuals=7, impossible=0, saved=9, ratio=2.29x, largest-class=4, residual-points=256
+    k=5, raw=32, reachable=32, unique-exact-residuals=10, impossible=0, saved=22, ratio=3.20x, largest-class=8, residual-points=128
+    k=6, raw=64, reachable=64, unique-exact-residuals=15, impossible=0, saved=49, ratio=4.27x, largest-class=16, residual-points=64
+    k=7, raw=128, reachable=128, unique-exact-residuals=9, impossible=0, saved=119, ratio=14.22x, largest-class=32, residual-points=32
+  internal-graph order: w40:or, w35:xor, w16:or, w33:and, x4, w14:xor, w22:xor
+    k=0, raw=1, reachable=1, unique-exact-residuals=1, impossible=0, saved=0, ratio=1.00x, largest-class=1, residual-points=4096
+    k=1, raw=2, reachable=2, unique-exact-residuals=2, impossible=0, saved=0, ratio=1.00x, largest-class=1, residual-points=4096
+    k=2, raw=4, reachable=3, unique-exact-residuals=3, impossible=1, saved=1, ratio=1.33x, largest-class=1, residual-points=4096
+    k=3, raw=8, reachable=6, unique-exact-residuals=6, impossible=2, saved=2, ratio=1.33x, largest-class=2, residual-points=4096
+    k=4, raw=16, reachable=8, unique-exact-residuals=8, impossible=8, saved=8, ratio=2.00x, largest-class=8, residual-points=4096
+    k=5, raw=32, reachable=16, unique-exact-residuals=15, impossible=16, saved=17, ratio=2.13x, largest-class=16, residual-points=2048
+    k=6, raw=64, reachable=26, unique-exact-residuals=25, impossible=38, saved=39, ratio=2.56x, largest-class=38, residual-points=2048
+    k=7, raw=128, reachable=37, unique-exact-residuals=37, impossible=91, saved=91, ratio=3.46x, largest-class=91, residual-points=2048
+
+[random-3sat-12x30] inputs=12, gates=101
+  input-reuse order: x1, x3, x5, x8, x0, x4, x6
+    k=0, raw=1, reachable=1, unique-exact-residuals=1, impossible=0, saved=0, ratio=1.00x, largest-class=1, residual-points=4096
+    k=1, raw=2, reachable=2, unique-exact-residuals=2, impossible=0, saved=0, ratio=1.00x, largest-class=1, residual-points=2048
+    k=2, raw=4, reachable=4, unique-exact-residuals=4, impossible=0, saved=0, ratio=1.00x, largest-class=1, residual-points=1024
+    k=3, raw=8, reachable=8, unique-exact-residuals=5, impossible=0, saved=3, ratio=1.60x, largest-class=4, residual-points=512
+    k=4, raw=16, reachable=16, unique-exact-residuals=6, impossible=0, saved=10, ratio=2.67x, largest-class=11, residual-points=256
+    k=5, raw=32, reachable=32, unique-exact-residuals=8, impossible=0, saved=24, ratio=4.00x, largest-class=25, residual-points=128
+    k=6, raw=64, reachable=64, unique-exact-residuals=8, impossible=0, saved=56, ratio=8.00x, largest-class=56, residual-points=64
+    k=7, raw=128, reachable=128, unique-exact-residuals=9, impossible=0, saved=119, ratio=14.22x, largest-class=118, residual-points=32
+  internal-graph order: w96:and, x6, w19:not, x1, x5, x8, w13:not
+    k=0, raw=1, reachable=1, unique-exact-residuals=1, impossible=0, saved=0, ratio=1.00x, largest-class=1, residual-points=4096
+    k=1, raw=2, reachable=2, unique-exact-residuals=2, impossible=0, saved=0, ratio=1.00x, largest-class=1, residual-points=4096
+    k=2, raw=4, reachable=4, unique-exact-residuals=4, impossible=0, saved=0, ratio=1.00x, largest-class=1, residual-points=2048
+    k=3, raw=8, reachable=8, unique-exact-residuals=8, impossible=0, saved=0, ratio=1.00x, largest-class=1, residual-points=2048
+    k=4, raw=16, reachable=16, unique-exact-residuals=16, impossible=0, saved=0, ratio=1.00x, largest-class=1, residual-points=1024
+    k=5, raw=32, reachable=30, unique-exact-residuals=30, impossible=2, saved=2, ratio=1.07x, largest-class=2, residual-points=512
+    k=6, raw=64, reachable=60, unique-exact-residuals=49, impossible=4, saved=15, ratio=1.31x, largest-class=4, residual-points=256
+    k=7, raw=128, reachable=60, unique-exact-residuals=49, impossible=68, saved=79, ratio=2.61x, largest-class=68, residual-points=256
+
+[random-3sat-14x45] inputs=14, gates=148
+  input-reuse order: x2, x5, x7, x9, x11, x12
+    k=0, raw=1, reachable=1, unique-exact-residuals=1, impossible=0, saved=0, ratio=1.00x, largest-class=1, residual-points=16384
+    k=1, raw=2, reachable=2, unique-exact-residuals=2, impossible=0, saved=0, ratio=1.00x, largest-class=1, residual-points=8192
+    k=2, raw=4, reachable=4, unique-exact-residuals=4, impossible=0, saved=0, ratio=1.00x, largest-class=1, residual-points=4096
+    k=3, raw=8, reachable=8, unique-exact-residuals=6, impossible=0, saved=2, ratio=1.33x, largest-class=3, residual-points=2048
+    k=4, raw=16, reachable=16, unique-exact-residuals=7, impossible=0, saved=9, ratio=2.29x, largest-class=10, residual-points=1024
+    k=5, raw=32, reachable=32, unique-exact-residuals=7, impossible=0, saved=25, ratio=4.57x, largest-class=23, residual-points=512
+    k=6, raw=64, reachable=64, unique-exact-residuals=6, impossible=0, saved=58, ratio=10.67x, largest-class=52, residual-points=256
+  internal-graph order: w15:not, w24:not, w151:and, w129:and, w20:not, w23:not
+    k=0, raw=1, reachable=1, unique-exact-residuals=1, impossible=0, saved=0, ratio=1.00x, largest-class=1, residual-points=16384
+    k=1, raw=2, reachable=2, unique-exact-residuals=2, impossible=0, saved=0, ratio=1.00x, largest-class=1, residual-points=16384
+    k=2, raw=4, reachable=4, unique-exact-residuals=4, impossible=0, saved=0, ratio=1.00x, largest-class=1, residual-points=16384
+    k=3, raw=8, reachable=8, unique-exact-residuals=8, impossible=0, saved=0, ratio=1.00x, largest-class=1, residual-points=16384
+    k=4, raw=16, reachable=12, unique-exact-residuals=12, impossible=4, saved=4, ratio=1.33x, largest-class=4, residual-points=16384
+    k=5, raw=32, reachable=21, unique-exact-residuals=21, impossible=11, saved=11, ratio=1.52x, largest-class=11, residual-points=16384
+    k=6, raw=64, reachable=37, unique-exact-residuals=37, impossible=27, saved=27, ratio=1.73x, largest-class=27, residual-points=16384
+
+Interpretation:
+- The quotient is exact: signatures are complete residual input/output relations.
+- Internal-wire assignments can be impossible; all impossible branches share one empty signature.
+- Repeated reachable signatures remove part of the 2^k branch multiplier through memoization.
+- A polynomial algorithm still needs signatures or canonical certificates without enumerating all residual inputs.
