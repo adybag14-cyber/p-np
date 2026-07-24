@@ -176,4 +176,4 @@ def run() -> str:
 if __name__ == "__main__":
     output = run()
     print(output, end="")
-    Path("cutset-structural-certificates-output.txt").write_text(output, encoding="utf-8")
+    Path("cutset-structural-certificates-output.txt").write_text(output, encoding="utf-8", newline="\n")
