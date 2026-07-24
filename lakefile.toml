@@ -1,6 +1,6 @@
 name = "pisnpornot"
 version = "0.2.0"
-defaultTargets = ["PIsNPOrNot", "ResearchNext", "ResearchThird", "ResearchFourth", "ResearchAgenda", "ResearchFifth", "ResearchSixth", "ResearchSeventh", "ResearchEighth", "ResearchNinth", "ResearchTenth", "ResearchEleventh", "ResearchTwelfth", "ResearchThirteenth", "ResearchFourteenth", "ResearchFifteenth", "ResearchSixteenth", "ResearchSeventeenth", "ResearchEighteenth", "ResearchNineteenth", "ResearchTwentieth", "ResearchTwentyFirst", "ResearchTwentySecond", "ResearchTwentyThird", "ResearchTwentyFourth", "ResearchTwentyFifth", "ResearchTwentySixth", "ResearchTwentySeventh", "ResearchTwentyEighth", "ResearchTwentyNinth", "ResearchThirtieth", "ResearchThirtyFirst", "ResearchThirtySecond", "ResearchThirtyThird", "ResearchThirtyFourth", "ResearchThirtyFifth", "ResearchThirtySixth", "ResearchThirtySeventh", "ResearchThirtyEighth", "ResearchThirtyNinth", "ResearchFortieth", "CNFCore", "pnp_experiments"]
+defaultTargets = ["PIsNPOrNot", "ResearchNext", "ResearchThird", "ResearchFourth", "ResearchAgenda", "ResearchFifth", "ResearchSixth", "ResearchSeventh", "ResearchEighth", "ResearchNinth", "ResearchTenth", "ResearchEleventh", "ResearchTwelfth", "ResearchThirteenth", "ResearchFourteenth", "ResearchFifteenth", "ResearchSixteenth", "ResearchSeventeenth", "ResearchEighteenth", "ResearchNineteenth", "ResearchTwentieth", "ResearchTwentyFirst", "ResearchTwentySecond", "ResearchTwentyThird", "ResearchTwentyFourth", "ResearchTwentyFifth", "ResearchTwentySixth", "ResearchTwentySeventh", "ResearchTwentyEighth", "ResearchTwentyNinth", "ResearchThirtieth", "ResearchThirtyFirst", "ResearchThirtySecond", "ResearchThirtyThird", "ResearchThirtyFourth", "ResearchThirtyFifth", "ResearchThirtySixth", "ResearchThirtySeventh", "ResearchThirtyEighth", "ResearchThirtyNinth", "ResearchFortieth", "ResearchFortyFirst", "ResearchFortySecond", "ResearchFortyThird", "ResearchFortyFourth", "CNFCore", "pnp_experiments"]
 
 [[lean_lib]]
 name = "PIsNPOrNot"
@@ -127,6 +127,18 @@ name = "ResearchThirtyNinth"
 
 [[lean_lib]]
 name = "ResearchFortieth"
+
+[[lean_lib]]
+name = "ResearchFortyFirst"
+
+[[lean_lib]]
+name = "ResearchFortySecond"
+
+[[lean_lib]]
+name = "ResearchFortyThird"
+
+[[lean_lib]]
+name = "ResearchFortyFourth"
 
 [[lean_exe]]
 name = "pnp_experiments"

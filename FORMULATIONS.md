@@ -1,4 +1,4 @@
-# 585 P-versus-NP formulations
+# 645 P-versus-NP formulations
 
 Each item has a Lean-checked logical or finite core. None is presented as a completed proof of `P = NP`.
 
@@ -549,3 +549,38 @@ fewer classes. A575-A582 account for residual-kernel construction, class/message
 strict collision savings, one-class exponential examples, and empty impossible kernels.
 A583-A585 package exact residual-kernel compilation and the conditional class-collapse
 theorem.
+
+## Approaches 586-600: safe semantic cubes
+
+A586-A590 define Boolean cubes, exact cube regions, monochromatic residual behaviour,
+safe representative terms, and pointwise residual transport. A591-A595 prove accepting
+witness transport, rejection transport, complete safe covers, representative-only
+existential decision, and output-image reconstruction. A596-A599 prove singleton-cube
+fallback and the `3^n` cube versus `2^n` assignment cardinalities. A600 states the safe-
+cube conditional collapse criterion.
+
+## Approaches 601-615: partition-aware SAT and counting covers
+
+A601-A603 prove that overlapping region families are exact for existential SAT while even
+a duplicated singleton makes naive arithmetic addition overcount. A604-A611 formalise
+disjoint union, partitioned OR, decomposable products, overlap correction, and exact
+fresh-region disjointisation. A612-A614 prove finite-family existence and work composition.
+A615 states the partition-aware conditional collapse criterion.
+
+## Approaches 616-630: proof-carrying classified cube plans
+
+A616-A621 define accepting, rejecting, and classified safe terms and prove that witnesses,
+rejection, and exact Boolean answers transport across every cube extension. A622-A626
+define complete classified plans, an executable answer fold, exact global decision,
+witness recovery, and rejection certification. A627-A629 isolate coverage and work
+obligations and provide baseline-safe plan selection. A630 states the proof-carrying cube
+conditional collapse criterion.
+
+## Approaches 631-645: representation lower bounds and portfolios
+
+A631-A633 define labelled safe covers and prove that semantic residual class count is a
+lower bound on safe cover term count. A634-A637 record singleton, cube-candidate, support,
+and region bounds. A638 proves the corresponding semantic-class lower bound for decision-
+DAG nodes. A639-A642 separate quotient, DNF, and DAG sizes and give a baseline-safe
+representation portfolio. A643-A645 package Backdoor DNF obligations, construction cost,
+and the multi-representation conditional collapse criterion.

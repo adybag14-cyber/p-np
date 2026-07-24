@@ -1,0 +1,35 @@
+Backdoor DNF external artefact validation
+Date: 2026-07-24
+
+Zenodo record: 11259842
+Archive MD5 verified: 990a570ff89066755b575971fcedc4b3
+
+Published dependency issue:
+- python-sat==1.8.dev13 is no longer available from the current package index.
+- Native Windows Python 3.14 build of adjacent PySAT failed because old solver sources include unistd.h.
+- Bundled MUSER2 is a Linux ELF executable.
+
+Successful environment:
+- Ubuntu WSL2
+- Python 3.10.12
+- All published pins retained except python-sat 1.8.dev13 -> 1.8.dev12
+
+Command:
+runner.py instances/vc/Bull.edge.cnf.bz2 -e 1 -c -v
+
+Output:
+Parsing instances/vc/Bull.edge.cnf.bz2
+Finding sets of size 1
+Finding sets of size 2
+Finding sets of size 3
+Found UNSAT
+Found 4 partial assignments
+Backdoor cube size 4
+Result: [[-2, -3], [-2, 3], [2, 3], [2, -3]]
+Done in 0.003099679946899414
+
+CPOG current-checkout build attempt:
+- Pinned Lean toolchain v4.4.0-rc1 installed successfully.
+- Build failed before checker compilation because lake-manifest.json references LeanSAT branch ppa-tauto and commit 1e13508a3f8d035175e86f4eaeda0193945f0eeb.
+- The branch and commit are no longer fetchable from the current LeanSAT upstream.
+- This is an external dependency reproducibility failure, not a theorem failure.

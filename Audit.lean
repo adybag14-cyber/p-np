@@ -39,6 +39,10 @@ import ResearchThirtySeventh
 import ResearchThirtyEighth
 import ResearchThirtyNinth
 import ResearchFortieth
+import ResearchFortyFirst
+import ResearchFortySecond
+import ResearchFortyThird
+import ResearchFortyFourth
 import CNFCore
 
 -- Original residual and decomposition core
@@ -241,3 +245,22 @@ import CNFCore
 #print axioms PIsNPOrNot.ResearchFortieth.A573_SemanticOptimalityBound.semantic_card_le_certificate_card
 #print axioms PIsNPOrNot.ResearchFortieth.A580_CollisionSaving.strict_collision_saving
 #print axioms PIsNPOrNot.ResearchFortieth.A585_ResidualKernelCollapse.p_eq_np_of_uniform_residual_kernels
+
+
+-- Approaches 586-645: safe cubes, partition-aware covers, and representation bounds
+#print axioms PIsNPOrNot.ResearchFortyFirst.A590_SafeTermOutput.output_eq
+#print axioms PIsNPOrNot.ResearchFortyFirst.A594_RepresentativeDecision.exists_over_cover_iff
+#print axioms PIsNPOrNot.ResearchFortyFirst.A598_CubeSpaceCardinality.cube_card
+#print axioms PIsNPOrNot.ResearchFortyFirst.A600_SafeCubeCollapse.p_eq_np_of_uniform_safe_cube_covers
+#print axioms PIsNPOrNot.ResearchFortySecond.A603_DuplicateOvercount.duplicate_singleton_overcounts
+#print axioms PIsNPOrNot.ResearchFortySecond.A605_PartitionedOr.count
+#print axioms PIsNPOrNot.ResearchFortySecond.A608_OverlapCorrection.union_plus_intersection
+#print axioms PIsNPOrNot.ResearchFortySecond.A613_FamilyExistence.exists_unionAll_iff
+#print axioms PIsNPOrNot.ResearchFortyThird.A621_ClassifiedTransport.answer_exact_for_extension
+#print axioms PIsNPOrNot.ResearchFortyThird.A624_PlanDecision.decide_correct
+#print axioms PIsNPOrNot.ResearchFortyThird.A629_BaselineSafePlanChoice.chosen_work_le_baseline
+#print axioms PIsNPOrNot.ResearchFortyThird.A630_ProofCarryingCubeCollapse.p_eq_np_of_uniform_proof_carrying_cube_plans
+#print axioms PIsNPOrNot.ResearchFortyFourth.A633_TermLowerBound.semantic_card_le_terms
+#print axioms PIsNPOrNot.ResearchFortyFourth.A638_DagTerminalLowerBound.classes_le_nodes
+#print axioms PIsNPOrNot.ResearchFortyFourth.A642_RepresentationPortfolio.chosen_work_le_dnf
+#print axioms PIsNPOrNot.ResearchFortyFourth.A645_MultiRepresentationCollapse.p_eq_np_of_uniform_multi_representation_compilers

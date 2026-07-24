@@ -1,6 +1,6 @@
 # PIsNPOrNot — Lean 4 attack laboratory
 
-A native Windows Lean 4 research workspace containing **585 mechanically checked approaches** to P versus NP, verified CNF transformations, executable finite experiments, and structural SAT prototypes.
+A native Windows Lean 4 research workspace containing **645 mechanically checked approaches** to P versus NP, verified CNF transformations, executable finite experiments, and structural SAT prototypes.
 
 The project does **not** claim a proof of `P = NP` or `P != NP`. It is designed to expose exactly which additional theorem each attempted route would require.
 
@@ -497,6 +497,42 @@ strict collision savings, and the residual-kernel compiler criterion.
 Full results and the semantic-optimality theorem are recorded in
 `RESIDUAL_QUOTIENT_RESULTS.md`.
 
+### `ResearchFortyFirst.lean` - approaches 586-600
+
+Safe semantic cubes, exact cube regions, representative residual transport, complete cube
+covers, singleton-cube fallback, the `3^n` candidate-space bound, and the safe-cube
+compiler criterion.
+
+### `ResearchFortySecond.lean` - approaches 601-615
+
+The exact distinction between overlapping SAT covers and partitioned counting circuits:
+existential union, duplicate overcounting, partitioned OR, decomposable AND, overlap
+correction, disjointisation, family coverage, and cost composition.
+
+### `ResearchFortyThird.lean` - approaches 616-630
+
+Proof-carrying accepting, rejecting, and classified cube terms; exact answer transport;
+complete classified plans; executable plan decisions; witness recovery; rejection
+certificates; coverage obligations; and baseline-safe plan selection.
+
+### `ResearchFortyFourth.lean` - approaches 631-645
+
+Labelled safe covers, the semantic-class lower bound on DNF terms and DAG terminals,
+`2^n` singleton and `3^n` cube-space barriers, representation portfolios, abstract
+Backdoor DNF obligations, and the multi-representation compiler criterion.
+
+## Open-source cube and knowledge-compilation phase
+
+- `residual_dnf_cover.py` computes exact residual labels, all monochromatic partial cubes,
+  prime cubes, exact minimum DNF covers, and optimal fixed-order multi-terminal BDDs.
+- The Zenodo Backdoor DNF artefact was checksum-verified and successfully run in Ubuntu
+  WSL2 after replacing only the vanished `python-sat==1.8.dev13` pin with `1.8.dev12`.
+- The current CPOG source was inspected, but its old pinned build is no longer reproducible
+  because the referenced LeanSAT branch and commit are absent from the current upstream.
+
+The measurements, external reproduction record, SAT/counting distinction, and revised
+proof obligations are recorded in `OPEN_SOURCE_CUBE_RESULTS.md`.
+
 ## Main files
 
 - `PIsNPOrNot.lean` — approaches 1–15 and residual synthesis.
@@ -540,9 +576,13 @@ Full results and the semantic-optimality theorem are recorded in
 - `ResearchThirtyEighth.lean` - approaches 541-555 and safe structural residual certificates.
 - `ResearchThirtyNinth.lean` - approaches 556-570 and recursive quotient/memo accounting.
 - `ResearchFortieth.lean` - approaches 571-585 and semantic quotient optimality.
+- `ResearchFortyFirst.lean` - approaches 586-600 and safe semantic cube covers.
+- `ResearchFortySecond.lean` - approaches 601-615 and partition-aware SAT/counting covers.
+- `ResearchFortyThird.lean` - approaches 616-630 and proof-carrying classified cube plans.
+- `ResearchFortyFourth.lean` - approaches 631-645 and representation lower bounds.
 - `CNFCore.lean` - verified CNF restriction semantics.
 - `Audit.lean` - selected theorem axiom audit.
-- `FORMULATIONS.md` - compact status of all 585 approaches.
+- `FORMULATIONS.md` - compact status of all 645 approaches.
 - `ACCEPTABLE_TARGET.md` - precise obligations still required for a publishable result.
 - `CANONICAL_FRONTIER_RESULTS.md` - canonical-state, coherent-policy, and frontier-pruning results.
 - `RADICAL_PARADIGMS_RESULTS.md` - linear, symmetry, restriction, reversible, and modular results.
@@ -550,6 +590,7 @@ Full results and the semantic-optimality theorem are recorded in
 - `REACHABLE_IMAGE_RESULTS.md` - exact reachable-image generation and syndrome results.
 - `CIRCUIT_MESSAGE_RESULTS.md` - factorized circuit messages, reconvergence, and cutset results.
 - `RESIDUAL_QUOTIENT_RESULTS.md` - exact semantic branch quotients and safe certificate results.
+- `OPEN_SOURCE_CUBE_RESULTS.md` - Backdoor DNF, CPOG, exact cube-cover, and MTBDD results.
 - `Main.lean` - residual-state executable.
 - `hybrid_portfolio.py` - heterogeneous structural solver portfolio.
 - `certified_dag.py` - emitted and independently checked AND/OR DAG certificates.
