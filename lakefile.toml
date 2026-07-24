@@ -140,6 +140,27 @@ name = "ResearchFortyThird"
 [[lean_lib]]
 name = "ResearchFortyFourth"
 
+[[lean_lib]]
+name = "ResearchFortyFifth"
+
+[[lean_lib]]
+name = "ResearchFortySixth"
+
+[[lean_lib]]
+name = "ResearchFortySeventh"
+
+[[lean_lib]]
+name = "ResearchFortyEighth"
+
+[[lean_lib]]
+name = "ResearchFortyNinth"
+
+[[lean_lib]]
+name = "ResearchFiftieth"
+
+[[lean_lib]]
+name = "ResearchFiftyFirst"
+
 [[lean_exe]]
 name = "pnp_experiments"
 root = "Main"

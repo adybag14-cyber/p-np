@@ -1,6 +1,6 @@
 # PIsNPOrNot — Lean 4 attack laboratory
 
-A native Windows Lean 4 research workspace containing **645 mechanically checked approaches** to P versus NP, verified CNF transformations, executable finite experiments, and structural SAT prototypes.
+A native Windows Lean 4 research workspace containing **750 mechanically checked approaches** to P versus NP, verified CNF transformations, executable finite experiments, and structural SAT prototypes.
 
 The project does **not** claim a proof of `P = NP` or `P != NP`. It is designed to expose exactly which additional theorem each attempted route would require.
 
@@ -521,6 +521,58 @@ Labelled safe covers, the semantic-class lower bound on DNF terms and DAG termin
 `2^n` singleton and `3^n` cube-space barriers, representation portfolios, abstract
 Backdoor DNF obligations, and the multi-representation compiler criterion.
 
+### `ResearchFortyFifth.lean` - approaches 646-660
+
+Recursive parity, one-bit-flip sensitivity, singleton monochromatic cubes, injective cover
+ownership, and the exact `2^n` parity cube-cover lower bound.
+
+### `ResearchFortySixth.lean` - approaches 661-675
+
+Linear two-state parity DAGs, disjoint subcube-partition lower bounds, exponential versus
+linear growth, literal-cost accounting, and the cube-only compiler obstruction.
+
+### `ResearchFortySeventh.lean` - approaches 676-690
+
+Point sensitivity, sensitive-coordinate support lower bounds, exact parity sensitivity,
+full-width parity terms, the `n * 2^n` literal lower bound, and the fully sensitive-function
+generalisation.
+
+### `ResearchFortyEighth.lean` - approaches 691-705
+
+XOR-fold agreement, the exact conventional `2n + 1` reduced OBDD size, full-tree versus
+DAG sharing, and the complete parity representation profile.
+
+### `ResearchFortyNinth.lean` - approaches 706-720
+
+Exact two-class parity semantics, prefix residual equivalence, strict layer compression,
+and minimality of the two-state residual quotient.
+
+### `ResearchFiftieth.lean` - approaches 721-735
+
+Complemented references, one physical node for paired parity residuals, exact `n + 1`
+physical-node accounting, and complemented-edge versus cube-cover separation.
+
+### `ResearchFiftyFirst.lean` - approaches 736-750
+
+General semantic complement pairing, the `states <= 2 * bases` cardinality theorem,
+complement-closure obstructions, parity's minimal one-base encoding, and representation
+portfolios with explicit accounting conventions.
+
+## Parity and subcube-partition phase
+
+- `parity_representation_gap.py` exhaustively checks all partial cubes through nine
+  variables and independently builds/evaluates reduced OBDDs.
+- Every parity-safe cube is formally proved to be a singleton, giving exactly `2^n` terms
+  and `n * 2^n` literals despite only two semantic residual classes.
+- The conventional reduced OBDD has `2n + 1` nodes, while a complemented-edge BDD has
+  `n + 1` physical nodes.
+- `validate_dd_parity.py` reproduces the complemented count with the current
+  `tulip-control/dd` pure-Python backend; it remains an optional external validation and is
+  not part of the default dependency set.
+
+The literature bridge, formal theorems, exact measurements, and external validation are
+recorded in `PARITY_SUBCUBE_RESULTS.md`.
+
 ## Open-source cube and knowledge-compilation phase
 
 - `residual_dnf_cover.py` computes exact residual labels, all monochromatic partial cubes,
@@ -580,9 +632,16 @@ proof obligations are recorded in `OPEN_SOURCE_CUBE_RESULTS.md`.
 - `ResearchFortySecond.lean` - approaches 601-615 and partition-aware SAT/counting covers.
 - `ResearchFortyThird.lean` - approaches 616-630 and proof-carrying classified cube plans.
 - `ResearchFortyFourth.lean` - approaches 631-645 and representation lower bounds.
+- `ResearchFortyFifth.lean` - approaches 646-660 and exact parity cube complexity.
+- `ResearchFortySixth.lean` - approaches 661-675 and linear parity DAG separation.
+- `ResearchFortySeventh.lean` - approaches 676-690 and sensitivity-based cube lower bounds.
+- `ResearchFortyEighth.lean` - approaches 691-705 and conventional parity OBDD size.
+- `ResearchFortyNinth.lean` - approaches 706-720 and minimal parity residual quotients.
+- `ResearchFiftieth.lean` - approaches 721-735 and complemented-edge parity BDDs.
+- `ResearchFiftyFirst.lean` - approaches 736-750 and general complement-pair encodings.
 - `CNFCore.lean` - verified CNF restriction semantics.
 - `Audit.lean` - selected theorem axiom audit.
-- `FORMULATIONS.md` - compact status of all 645 approaches.
+- `FORMULATIONS.md` - compact status of all 750 approaches.
 - `ACCEPTABLE_TARGET.md` - precise obligations still required for a publishable result.
 - `CANONICAL_FRONTIER_RESULTS.md` - canonical-state, coherent-policy, and frontier-pruning results.
 - `RADICAL_PARADIGMS_RESULTS.md` - linear, symmetry, restriction, reversible, and modular results.
@@ -591,6 +650,7 @@ proof obligations are recorded in `OPEN_SOURCE_CUBE_RESULTS.md`.
 - `CIRCUIT_MESSAGE_RESULTS.md` - factorized circuit messages, reconvergence, and cutset results.
 - `RESIDUAL_QUOTIENT_RESULTS.md` - exact semantic branch quotients and safe certificate results.
 - `OPEN_SOURCE_CUBE_RESULTS.md` - Backdoor DNF, CPOG, exact cube-cover, and MTBDD results.
+- `PARITY_SUBCUBE_RESULTS.md` - parity cube lower bounds, OBDD sharing, and complement edges.
 - `Main.lean` - residual-state executable.
 - `hybrid_portfolio.py` - heterogeneous structural solver portfolio.
 - `certified_dag.py` - emitted and independently checked AND/OR DAG certificates.

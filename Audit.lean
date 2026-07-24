@@ -43,6 +43,13 @@ import ResearchFortyFirst
 import ResearchFortySecond
 import ResearchFortyThird
 import ResearchFortyFourth
+import ResearchFortyFifth
+import ResearchFortySixth
+import ResearchFortySeventh
+import ResearchFortyEighth
+import ResearchFortyNinth
+import ResearchFiftieth
+import ResearchFiftyFirst
 import CNFCore
 
 -- Original residual and decomposition core
@@ -264,3 +271,24 @@ import CNFCore
 #print axioms PIsNPOrNot.ResearchFortyFourth.A638_DagTerminalLowerBound.classes_le_nodes
 #print axioms PIsNPOrNot.ResearchFortyFourth.A642_RepresentationPortfolio.chosen_work_le_dnf
 #print axioms PIsNPOrNot.ResearchFortyFourth.A645_MultiRepresentationCollapse.p_eq_np_of_uniform_multi_representation_compilers
+
+
+-- Approaches 646-750: parity subcubes, sensitivity, OBDDs, and complement pairing
+#print axioms PIsNPOrNot.ResearchFortyFifth.A648_ParityFlip.parity_flip
+#print axioms PIsNPOrNot.ResearchFortyFifth.A654_ParityCubeSingleton.parity_safe_unique
+#print axioms PIsNPOrNot.ResearchFortyFifth.A657_ParityTermLowerBound.term_card_lower_bound
+#print axioms PIsNPOrNot.ResearchFortySixth.A667_LinearVersusExponential.linear_lt_pow
+#print axioms PIsNPOrNot.ResearchFortySixth.A668_ParityCoverDagGap.dag_strictly_smaller
+#print axioms PIsNPOrNot.ResearchFortySeventh.A681_SensitivityWidthLowerBound.sensitivity_le_support
+#print axioms PIsNPOrNot.ResearchFortySeventh.A687_ParityLiteralLowerBound.literal_work_lower_bound
+#print axioms PIsNPOrNot.ResearchFortySeventh.A689_GeneralSensitiveLowerBound.term_card_lower_bound
+#print axioms PIsNPOrNot.ResearchFortyEighth.A695_ExactParityObddSize.node_card_eq
+#print axioms PIsNPOrNot.ResearchFortyEighth.A699_ExactObddCubeGap.obdd_strictly_smaller
+#print axioms PIsNPOrNot.ResearchFortyNinth.A708_ExactParityClasses.parity_image_eq_two
+#print axioms PIsNPOrNot.ResearchFortyNinth.A715_PrefixEquivalence.equivalent_iff_same_parity
+#print axioms PIsNPOrNot.ResearchFortyNinth.A719_ParityResidualMinimality.state_card_lower_bound
+#print axioms PIsNPOrNot.ResearchFiftieth.A729_ComplementedParityCertificate.certificate
+#print axioms PIsNPOrNot.ResearchFiftieth.A732_ComplementedCubeGap.complemented_strictly_smaller
+#print axioms PIsNPOrNot.ResearchFiftyFirst.A740_ComplementedCardinalityBound.state_card_le_two_mul_base
+#print axioms PIsNPOrNot.ResearchFiftyFirst.A746_ComplementClosure.meaning_is_base_or_complement
+#print axioms PIsNPOrNot.ResearchFiftyFirst.A747_UnpairedResidualObstruction.no_encoding_of_unpaired

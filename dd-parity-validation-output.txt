@@ -1,0 +1,43 @@
+tulip-control/dd complemented-edge parity validation
+installed-dd-version=0.6.1
+external-git-commit=2596de454f95031f6f92d9796aab41fc8e273947
+external-git-date=2025-10-16T09:43:00+03:00
+backend=dd.autoref (pure Python, signed/complemented node references)
+
+n root_node root_negated reachable_dag_nodes manager_nodes exhaustive
+ 1         2 False                          2             2 verified
+ 2        -4 True                           3             4 verified
+ 3         7 False                          4             7 verified
+ 4       -11 True                           5            11 verified
+ 5        16 False                          6            16 verified
+ 6       -22 True                           7            22 verified
+ 7        29 False                          8            29 verified
+ 8       -37 True                           9            37 verified
+ 9        46 False                         10            46 verified
+10       -56 True                          11            56 verified
+11        67 False                         12            67 verified
+12       -79 True                          13            79 verified
+13        92 False                         14            92 construction
+14      -106 True                          15           106 construction
+15       121 False                         16           121 construction
+16      -137 True                          17           137 construction
+17       154 False                         18           154 construction
+18      -172 True                          19           172 construction
+19       191 False                         20           191 construction
+20      -211 True                          21           211 construction
+21       232 False                         22           232 construction
+22      -254 True                          23           254 construction
+23       277 False                         24           277 construction
+24      -301 True                          25           301 construction
+25       326 False                         26           326 construction
+26      -352 True                          27           352 construction
+27       379 False                         28           379 construction
+28      -407 True                          29           407 construction
+29       436 False                         30           436 construction
+30      -466 True                          31           466 construction
+31       497 False                         32           497 construction
+32      -529 True                          33           529 construction
+
+Result: reachable complemented-edge parity BDD nodes = n + 1.
+The count includes one terminal and one decision node per variable.
+Manager node counts are larger because intermediate construction nodes remain allocated.

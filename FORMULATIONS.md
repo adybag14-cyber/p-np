@@ -584,3 +584,62 @@ and region bounds. A638 proves the corresponding semantic-class lower bound for 
 DAG nodes. A639-A642 separate quotient, DNF, and DAG sizes and give a baseline-safe
 representation portfolio. A643-A645 package Backdoor DNF obligations, construction cost,
 and the multi-representation conditional collapse criterion.
+
+
+## Approaches 646-660: exact parity cube complexity
+
+A646-A649 define coordinate flips, recursive parity, the parity-flip theorem, and full
+sensitivity. A650-A654 prove that a free cube coordinate remains flippable, so every
+parity-safe cube is fully specified and has a unique extension. A655-A659 define complete
+parity cube covers, prove the owner map injective, derive the exact `2^n` term lower bound,
+and exhibit the singleton cover attaining it. A660 records the separation between two
+semantic labels and exponentially many cube terms.
+
+## Approaches 661-675: linear parity DAGs versus subcube partitions
+
+A661-A666 count two parity states per layer and package an exact one-bit parity machine and
+linear DAG certificate. A667-A669 prove the eventual strict linear-versus-exponential gap,
+including the eight-variable instance. A670 transfers the lower bound to disjoint subcube
+partitions. A671-A675 account for term-width literal work, baseline-safe representation
+selection, and the unavoidable exponential output of every cube-only parity compiler.
+
+## Approaches 676-690: sensitivity lower-bounds cube width
+
+A676-A681 define sensitive coordinates and prove they are contained in the support of every
+safe cube through the representative, so point sensitivity lower-bounds term width.
+A682-A687 prove parity has sensitivity and support exactly `n`, giving total literal work at
+least `n * 2^n`. A688-A690 generalise the exponential term obstruction to every fully
+sensitive Boolean function and package the sensitivity obstruction.
+
+## Approaches 691-705: exact ordinary OBDD accounting
+
+A691-A697 connect recursive parity to the existing XOR fold and construct an exact
+conventional reduced OBDD certificate. A693-A695 prove its structured node type has exactly
+`2n + 1` nodes for nonempty inputs. A698-A704 prove strict OBDD-versus-cube and
+OBDD-versus-full-tree gaps and quantify sharing savings. A705 records all representation
+measures in one exact profile.
+
+## Approaches 706-720: exact minimal parity residual quotients
+
+A706-A708 prove nonempty parity has exactly two output classes. A709-A715 define the two
+prefix residual functions, prove they are distinct, bound every prefix layer by two states,
+and characterise residual equivalence by accumulated parity. A716-A718 compare full and
+reduced prefix storage. A719-A720 prove every exact residual decoder needs at least two
+states and that the Boolean quotient attains this minimum.
+
+## Approaches 721-735: complemented-edge parity diagrams
+
+A721-A724 define complemented references and prove that one physical residual node plus a
+polarity bit represents both parity states. A725-A729 prove `n + 1` physical-node accounting
+and exact evaluation. A730-A735 prove complemented diagrams strictly beat cube covers from
+`n >= 2`, quantify the exact `n`-node saving over the explicit-state convention, and require
+cost reports to state whether complement edges are permitted.
+
+## Approaches 736-750: general semantic complement pairing
+
+A736-A743 formalise pointwise complement, exact semantic complemented encodings,
+factorisation, reference injectivity, the `state card <= 2 * base card` theorem, and the
+one-base parity encoding. A744-A747 prove parity-base minimality, the necessary complement-
+closure condition, and an obstruction for unpaired residuals. A748-A750 give a baseline-
+safe representation portfolio, isolate the exact-pairing obligation, and record the full
+parity profile including complemented nodes.
