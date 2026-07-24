@@ -23,6 +23,7 @@ $experiments = @(
   "overlap_potential.py",
   "contextual_interning.py",
   "coherent_policy_dp.py",
+  "observable_image_elimination.py",
   "transform_then_observe.py",
   "nonlinear_observable_search.py",
   "reversible_beam_search.py",

@@ -439,3 +439,41 @@ and exact reachable-image cardinality through a bijection. A381-A388 prove that 
 both original and transformed exact quotients cannot worsen the baseline, with explicit
 network/feature/portfolio cost and certificate composition. A389-A390 package the
 combined compiler and conditional P = NP theorem.
+
+## Approaches 391-405: reachable-image generation correction
+
+A391-A395 define reachable feature images, exact complete-and-sound enumerators,
+representative tables, existential decision over enumerated images, and the lower bound
+that every complete enumeration must contain at least the reachable-image cardinality.
+A396-A399 prove the crucial circularity result: the feature `w ↦ verifier(w)` has at most
+two values, but reaching `true` is exactly the original witness-existence problem. A400-
+A405 account for ambient signature enumeration, construction/enumeration/evaluation
+cost, and state the corrected reachability-aware conditional class-collapse criterion.
+
+## Approaches 406-420: structural reachable-image composition
+
+A406-A409 prove exact product-feature images, cardinality multiplication, and product
+quotient decision. A410-A414 prove exact branch unions and separator-bucket unions with
+sum and separator-times-width bounds. A415 transports complete-and-sound enumerators
+through bijections. A416-A419 define exact finite-word state layers and prove layer
+membership and the `2^n` generic layer bound. A420 packages the corrected uniform
+structural-image-generator collapse criterion.
+
+## Approaches 421-435: proof-carrying exact image tables
+
+A421 defines exact image tables carrying both completeness and representative-witness
+soundness. A422-A430 prove mapping/projection, product, branch, separator and bijective-
+transform table constructors and their cardinality bounds. A431 proves exact decision by
+scanning a table. A432 proves that a two-row output-feature table is circular because its
+`true` row contains an accepting witness. A433-A435 account for intermediate
+materialization and package the corrected structural-image-plan collapse criterion.
+
+## Approaches 436-450: representative-producing syndrome generators
+
+A436 defines a rank-r generator with a coordinate encoder and representative witness for
+every coordinate. A437-A443 prove exact coordinate-image equality, the `2^r` bound,
+exact tables, decision, witness recovery, injective-cardinality equality, and the rank-one
+case. A444-A447 prove product, transform, coordinate-count and scan-work composition.
+A448 proves that a rank-one generator for the verifier-output feature already supplies an
+accepting witness, exposing the same circularity constructively. A449-A450 package the
+fully costed syndrome compiler and conditional class-collapse theorem.

@@ -1,6 +1,6 @@
 # PIsNPOrNot — Lean 4 attack laboratory
 
-A native Windows Lean 4 research workspace containing **390 mechanically checked approaches** to P versus NP, verified CNF transformations, executable finite experiments, and structural SAT prototypes.
+A native Windows Lean 4 research workspace containing **450 mechanically checked approaches** to P versus NP, verified CNF transformations, executable finite experiments, and structural SAT prototypes.
 
 The project does **not** claim a proof of `P = NP` or `P != NP`. It is designed to expose exactly which additional theorem each attempted route would require.
 
@@ -382,6 +382,43 @@ and the combined transform-feature compiler criterion.
 Full results and the precise remaining theorem are recorded in
 `LEARNED_COMPILER_RESULTS.md`.
 
+### `ResearchTwentyEighth.lean` - approaches 391-405
+
+Reachable-image enumerators and representatives, the exact distinction between image
+cardinality and image generation, the two-state verifier-output circularity theorem,
+ambient-signature enumeration cost, and a reachability-aware compiler criterion.
+
+### `ResearchTwentyNinth.lean` - approaches 406-420
+
+Exact image composition for independent products, alternative branches, separator
+buckets, bijective transforms, and finite layered machines. These lemmas show when local
+reachable-image generators compose without hidden witness enumeration.
+
+### `ResearchThirtieth.lean` - approaches 421-435
+
+Proof-carrying exact image tables with complete rows and representative witnesses,
+projection/product/branch/separator constructors, materialization accounting, output-table
+circularity, and the corrected structural-image-plan criterion.
+
+### `ResearchThirtyFirst.lean` - approaches 436-450
+
+Representative-producing syndrome generators, exact coordinate images, rank bounds,
+coordinate witness recovery, product and transform composition, output-syndrome
+circularity, and the uniform polynomial syndrome-compiler criterion.
+
+## Reachable-image experiment
+
+`observable_image_elimination.py` eliminates witness variables from exact relational
+feature factors while retaining feature outputs. Local feature systems produced exact
+images with hundreds or thousands of intermediate rows. Global parity, majority,
+exact-one, and verifier-output features all ended with only two rows, but generic
+materialization still reached all 262,144 assignments for 18 variables. Algebraic or
+combinatorial generators rescue the first three; reaching `true` for the verifier-output
+feature is exactly SAT.
+
+The corrected formulation and full measurements are recorded in
+`REACHABLE_IMAGE_RESULTS.md`.
+
 ## Main files
 
 - `PIsNPOrNot.lean` — approaches 1–15 and residual synthesis.
@@ -412,13 +449,18 @@ Full results and the precise remaining theorem are recorded in
 - `ResearchTwentyFifth.lean` - approaches 346-360 and nonlinear observable quotients.
 - `ResearchTwentySixth.lean` - approaches 361-375 and opposite-pair feature covers.
 - `ResearchTwentySeventh.lean` - approaches 376-390 and baseline-safe transform-feature portfolios.
+- `ResearchTwentyEighth.lean` - approaches 391-405 and reachability-aware quotient correction.
+- `ResearchTwentyNinth.lean` - approaches 406-420 and structural image-generator composition.
+- `ResearchThirtieth.lean` - approaches 421-435 and exact image tables/materialization.
+- `ResearchThirtyFirst.lean` - approaches 436-450 and representative-producing syndrome generators.
 - `CNFCore.lean` - verified CNF restriction semantics.
 - `Audit.lean` - selected theorem axiom audit.
-- `FORMULATIONS.md` - compact status of all 390 approaches.
+- `FORMULATIONS.md` - compact status of all 450 approaches.
 - `ACCEPTABLE_TARGET.md` - precise obligations still required for a publishable result.
 - `CANONICAL_FRONTIER_RESULTS.md` - canonical-state, coherent-policy, and frontier-pruning results.
 - `RADICAL_PARADIGMS_RESULTS.md` - linear, symmetry, restriction, reversible, and modular results.
 - `LEARNED_COMPILER_RESULTS.md` - beam-search, nonlinear-feature, and combined-portfolio results.
+- `REACHABLE_IMAGE_RESULTS.md` - exact reachable-image generation and syndrome results.
 - `Main.lean` - residual-state executable.
 - `hybrid_portfolio.py` - heterogeneous structural solver portfolio.
 - `certified_dag.py` - emitted and independently checked AND/OR DAG certificates.

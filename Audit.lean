@@ -26,6 +26,10 @@ import ResearchTwentyFourth
 import ResearchTwentyFifth
 import ResearchTwentySixth
 import ResearchTwentySeventh
+import ResearchTwentyEighth
+import ResearchTwentyNinth
+import ResearchThirtieth
+import ResearchThirtyFirst
 import CNFCore
 
 -- Original residual and decomposition core
@@ -181,3 +185,18 @@ import CNFCore
 #print axioms PIsNPOrNot.ResearchTwentySeventh.A379_FeatureImageTransport.pullback_image_eq
 #print axioms PIsNPOrNot.ResearchTwentySeventh.A386_SeparationPullback.transformed_cover_gives_original_cover
 #print axioms PIsNPOrNot.ResearchTwentySeventh.A390_CombinedCollapse.p_eq_np_of_uniform_transform_feature_compilers
+
+-- Approaches 391-450: reachable-image generation, exact tables, and syndromes
+#print axioms PIsNPOrNot.ResearchTwentyEighth.A398_OutputReachabilityCircularity.true_mem_output_image_iff
+#print axioms PIsNPOrNot.ResearchTwentyEighth.A399_OutputOracleEquivalence.oracle_decides_existence
+#print axioms PIsNPOrNot.ResearchTwentyEighth.A405_ReachabilityAwareCollapse.p_eq_np_of_uniform_reachable_quotients
+#print axioms PIsNPOrNot.ResearchTwentyNinth.A407_ProductImage.reachable_product_eq
+#print axioms PIsNPOrNot.ResearchTwentyNinth.A413_SeparatorImageExact.allBuckets_eq_global_image
+#print axioms PIsNPOrNot.ResearchTwentyNinth.A420_StructuralImageCollapse.p_eq_np_of_uniform_structural_image_generators
+#print axioms PIsNPOrNot.ResearchThirtieth.A421_ExactImageTable.rows_eq_reachableImage
+#print axioms PIsNPOrNot.ResearchThirtieth.A432_OutputTableCircularity.true_mem_output_table_iff
+#print axioms PIsNPOrNot.ResearchThirtieth.A435_StructuralPlanCollapse.p_eq_np_of_uniform_structural_plans
+#print axioms PIsNPOrNot.ResearchThirtyFirst.A437_SyndromeImageExact.reachable_eq_coordinate_image
+#print axioms PIsNPOrNot.ResearchThirtyFirst.A438_SyndromeCardinality.reachable_card_le_pow_two
+#print axioms PIsNPOrNot.ResearchThirtyFirst.A448_OutputSyndromeCircularity.true_coordinate_gives_witness
+#print axioms PIsNPOrNot.ResearchThirtyFirst.A450_SyndromeCollapse.p_eq_np_of_uniform_syndrome_compilers

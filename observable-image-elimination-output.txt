@@ -1,0 +1,20 @@
+Observable reachable-image elimination experiment
+seed=334446, input-variables=18
+Small image size is reported separately from the cost of generating that image.
+
+disjoint-pair-xor: observables=9, image=512, max-rows=512, max-scope=9, join-checks=584, factors=35, seconds=0.000; linear-rank=9, algebraic-image=512
+  elimination-order=(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17)
+overlapping-local-xor: observables=10, image=1024, max-rows=4096, max-scope=12, join-checks=4576, factors=31, seconds=0.001; linear-rank=10, algebraic-image=1024
+  elimination-order=(12, 13, 14, 15, 16, 17, 0, 11, 1, 10, 2, 9, 3, 8, 4, 7, 5, 6)
+local-majority-triples: observables=10, image=496, max-rows=634, max-scope=12, join-checks=874, factors=31, seconds=0.001; no specialised generator supplied
+  elimination-order=(12, 13, 14, 15, 16, 17, 0, 11, 1, 10, 2, 9, 3, 8, 4, 7, 5, 6)
+random-local: observables=10, image=992, max-rows=2208, max-scope=12, join-checks=3108, factors=34, seconds=0.001; no specialised generator supplied
+  elimination-order=(0, 7, 16, 1, 3, 10, 11, 13, 14, 5, 17, 9, 15, 12, 4, 2, 6, 8)
+global-parity: observables=1, image=2, max-rows=262144, max-scope=19, join-checks=0, factors=19, seconds=0.557; linear-rank=1, algebraic-image=2
+  elimination-order=(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17)
+global-majority: observables=1, image=2, max-rows=262144, max-scope=19, join-checks=0, factors=19, seconds=0.548; direct-combinatorial-image<=2
+  elimination-order=(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17)
+global-exact-one: observables=1, image=2, max-rows=262144, max-scope=19, join-checks=0, factors=19, seconds=0.541; direct-combinatorial-image<=2
+  elimination-order=(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17)
+verifier-output-feature: observables=1, image=2, max-rows=262144, max-scope=19, join-checks=0, factors=19, seconds=1.025; two output values, but true-reachability is SAT
+  elimination-order=(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17)
