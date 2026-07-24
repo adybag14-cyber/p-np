@@ -1,0 +1,37 @@
+Graph-guided internal-wire cutset experiment
+seed=6978567
+The greedy score removes the variable yielding the smallest min-fill induced width; internal wires are allowed.
+
+[random-dag-12x60] inputs=12, gates=60, graph-width=13, fills=138
+  order=w27:and, w12:or, x9, w36:xor, w50:and, w13:or
+  k=0, branches=1, graph-width=13, fills=138, image={0,1}, max-peak-rows=1184, max-scope=13, total-checks=5724, seconds=0.0798
+  k=1, branches=2, graph-width=12, fills=116, image={0,1}, max-peak-rows=768, max-scope=12, total-checks=6691, seconds=0.0181
+  k=2, branches=4, graph-width=10, fills=109, image={0,1}, max-peak-rows=576, max-scope=10, total-checks=9130, seconds=0.0357
+  k=3, branches=8, graph-width=9, fills=90, image={0,1}, max-peak-rows=304, max-scope=9, total-checks=10605, seconds=0.0719
+  k=4, branches=16, graph-width=8, fills=78, image={0,1}, max-peak-rows=196, max-scope=9, total-checks=16621, seconds=0.1583
+  k=5, branches=32, graph-width=8, fills=61, image={0,1}, max-peak-rows=108, max-scope=8, total-checks=20393, seconds=0.2778
+  k=6, branches=64, graph-width=6, fills=45, image={0,1}, max-peak-rows=48, max-scope=7, total-checks=25622, seconds=0.4767
+
+[random-3sat-12x30] inputs=12, gates=101, graph-width=19, fills=463
+  order=w12:not, w17:not, x7, w20:not, w21:not, w22:not
+  k=0, branches=1, graph-width=19, fills=463, image={0,1}, max-peak-rows=65536, max-scope=19, total-checks=236586, seconds=1.1366
+  k=1, branches=2, graph-width=18, fills=421, image={0,1}, max-peak-rows=18514, max-scope=18, total-checks=168935, seconds=0.1860
+  k=2, branches=4, graph-width=17, fills=384, image={0,1}, max-peak-rows=9554, max-scope=17, total-checks=154521, seconds=0.2043
+  k=3, branches=8, graph-width=16, fills=348, image={0,1}, max-peak-rows=4910, max-scope=16, total-checks=192199, seconds=1.6553
+  k=4, branches=16, graph-width=15, fills=313, image={0,1}, max-peak-rows=2500, max-scope=15, total-checks=207708, seconds=0.5959
+  k=5, branches=32, graph-width=14, fills=282, image={0,1}, max-peak-rows=2048, max-scope=14, total-checks=323696, seconds=7.9816
+  k=6, branches=64, graph-width=13, fills=250, image={0,1}, max-peak-rows=708, max-scope=13, total-checks=251358, seconds=1.6773
+
+[random-3sat-14x45] inputs=14, gates=148, graph-width=27, fills=872
+  order=w20:not, w134:and, w22:not, w17:not, x3
+  k=0, branches=1, graph-width=27, fills=872, image={}+1-unknown, max-peak-rows=1000001, max-scope=22, total-checks=860344, seconds=0.8366
+  k=1, branches=2, graph-width=25, fills=796, image={}+2-unknown, max-peak-rows=1000001, max-scope=20, total-checks=1301736, seconds=1.2557
+  k=2, branches=4, graph-width=23, fills=766, image={0,1}+2-unknown, max-peak-rows=1000001, max-scope=24, total-checks=9246525, seconds=7.0354
+  k=3, branches=8, graph-width=22, fills=713, image={}+8-unknown, max-peak-rows=1000001, max-scope=22, total-checks=6239920, seconds=5.1111
+  k=4, branches=16, graph-width=21, fills=659, image={0,1}+1-unknown, max-peak-rows=1000001, max-scope=22, total-checks=26581147, seconds=15.2462
+  k=5, branches=32, graph-width=20, fills=619, image={0,1}+16-unknown, max-peak-rows=1000001, max-scope=23, total-checks=26824370, seconds=20.9803
+
+Interpretation:
+- Conditioning internal wires is logically exact because impossible wire values leave empty residual branches.
+- Graph width is cheap to optimize but only approximates actual relation-row cost.
+- The decisive objective remains 2^k times residual construction work, not width alone.

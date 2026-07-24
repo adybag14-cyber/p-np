@@ -30,6 +30,11 @@ import ResearchTwentyEighth
 import ResearchTwentyNinth
 import ResearchThirtieth
 import ResearchThirtyFirst
+import ResearchThirtySecond
+import ResearchThirtyThird
+import ResearchThirtyFourth
+import ResearchThirtyFifth
+import ResearchThirtySixth
 import CNFCore
 
 -- Original residual and decomposition core
@@ -200,3 +205,19 @@ import CNFCore
 #print axioms PIsNPOrNot.ResearchThirtyFirst.A438_SyndromeCardinality.reachable_card_le_pow_two
 #print axioms PIsNPOrNot.ResearchThirtyFirst.A448_OutputSyndromeCircularity.true_coordinate_gives_witness
 #print axioms PIsNPOrNot.ResearchThirtyFirst.A450_SyndromeCollapse.p_eq_np_of_uniform_syndrome_compilers
+
+-- Approaches 451-525: exact circuit messages, read-once formulas, and internal cutsets
+#print axioms PIsNPOrNot.ResearchThirtySecond.A454_JoinMessage.joinMessage
+#print axioms PIsNPOrNot.ResearchThirtySecond.A456_HideSeparator.hideSeparator
+#print axioms PIsNPOrNot.ResearchThirtySecond.A462_HiddenSeparatorWidth.hidden_card_le
+#print axioms PIsNPOrNot.ResearchThirtyThird.A469_PossibleOutputsExact.possible_exact
+#print axioms PIsNPOrNot.ResearchThirtyThird.A474_ReadOnceSolver.solve_correct
+#print axioms PIsNPOrNot.ResearchThirtyThird.A475_ReconvergenceCounterexample.no_shared_witness
+#print axioms PIsNPOrNot.ResearchThirtyFourth.A484_BinaryGateRows.mem_rows
+#print axioms PIsNPOrNot.ResearchThirtyFourth.A490_EliminationMaterialization.total_rows_le_steps_mul
+#print axioms PIsNPOrNot.ResearchThirtyFifth.A497_CutsetUnionExact.allImages_eq_reachable
+#print axioms PIsNPOrNot.ResearchThirtyFifth.A505_CertifiedCutset.decide_correct
+#print axioms PIsNPOrNot.ResearchThirtySixth.A513_SubstitutedImageUnion.image_eq_branch_union
+#print axioms PIsNPOrNot.ResearchThirtySixth.A517_ArbitraryWireConditioning.exists_transport
+#print axioms PIsNPOrNot.ResearchThirtySixth.A522_BaselineSafeCutsetChoice.chosen_work_le_baseline
+#print axioms PIsNPOrNot.ResearchThirtySixth.A525_InternalCutsetCollapse.p_eq_np_of_uniform_internal_cutsets

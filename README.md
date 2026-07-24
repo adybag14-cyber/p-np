@@ -1,6 +1,6 @@
 # PIsNPOrNot — Lean 4 attack laboratory
 
-A native Windows Lean 4 research workspace containing **450 mechanically checked approaches** to P versus NP, verified CNF transformations, executable finite experiments, and structural SAT prototypes.
+A native Windows Lean 4 research workspace containing **525 mechanically checked approaches** to P versus NP, verified CNF transformations, executable finite experiments, and structural SAT prototypes.
 
 The project does **not** claim a proof of `P = NP` or `P != NP`. It is designed to expose exactly which additional theorem each attempted route would require.
 
@@ -419,6 +419,47 @@ feature is exactly SAT.
 The corrected formulation and full measurements are recorded in
 `REACHABLE_IMAGE_RESULTS.md`.
 
+### `ResearchThirtySecond.lean` - approaches 451-465
+
+Exact boundary messages, output maps, independent joins, alternative branches,
+finite-separator elimination, root image tables, and explicit message-width accounting.
+
+### `ResearchThirtyThird.lean` - approaches 466-480
+
+A concrete read-once Boolean-formula language with dependent witness types, exact
+bottom-up possible-output computation, a linear-work solver, and a mechanized
+reconvergence counterexample showing why repeated variables require equality coupling.
+
+### `ResearchThirtyFourth.lean` - approaches 481-495
+
+Boolean relation-table cardinality, deterministic gate-row bounds, join and projection
+accounting, equality-coupling rows, total materialization bounds, and the bounded-width
+elimination criterion.
+
+### `ResearchThirtyFifth.lean` - approaches 496-510
+
+Exact cutset conditioning, branch-image unions, per-cut exact tables, cutset work and
+obstruction arithmetic, certified branch coverage, and baseline-safe fallback.
+
+### `ResearchThirtySixth.lean` - approaches 511-525
+
+Immediate substitution semantics for input or internal-wire cutsets, exact residual-image
+reconstruction, impossible-branch elimination, total branch-work scoring, baseline-safe
+cutset selection, and monotone cutset-improvement chains.
+
+## Circuit message and cutset experiments
+
+- `circuit_message_width.py` performs exact relational elimination on deterministic
+  circuits and passed 392 brute-force validation cases. Read-once trees stayed at 4-8
+  peak rows, while random 3-SAT circuits reached 131,072 rows or the one-million cutoff.
+- `circuit_cutset_conditioning.py` substitutes selected inputs before elimination and
+  measures the full `2^k` branch cost.
+- `circuit_graph_cutset.py` conditions input or internal wires selected by a min-fill
+  graph heuristic. On one 12-variable 3-SAT circuit, one internal wire reduced peak rows
+  from 65,536 to 18,514 and total checks from 236,586 to 168,935.
+
+Full results and the remaining theorem are recorded in `CIRCUIT_MESSAGE_RESULTS.md`.
+
 ## Main files
 
 - `PIsNPOrNot.lean` — approaches 1–15 and residual synthesis.
@@ -453,14 +494,20 @@ The corrected formulation and full measurements are recorded in
 - `ResearchTwentyNinth.lean` - approaches 406-420 and structural image-generator composition.
 - `ResearchThirtieth.lean` - approaches 421-435 and exact image tables/materialization.
 - `ResearchThirtyFirst.lean` - approaches 436-450 and representative-producing syndrome generators.
+- `ResearchThirtySecond.lean` - approaches 451-465 and exact boundary-message composition.
+- `ResearchThirtyThird.lean` - approaches 466-480 and read-once formula message passing.
+- `ResearchThirtyFourth.lean` - approaches 481-495 and exact circuit relation-width accounting.
+- `ResearchThirtyFifth.lean` - approaches 496-510 and exact finite cutset conditioning.
+- `ResearchThirtySixth.lean` - approaches 511-525 and internal-wire substitution/cutset search.
 - `CNFCore.lean` - verified CNF restriction semantics.
 - `Audit.lean` - selected theorem axiom audit.
-- `FORMULATIONS.md` - compact status of all 450 approaches.
+- `FORMULATIONS.md` - compact status of all 525 approaches.
 - `ACCEPTABLE_TARGET.md` - precise obligations still required for a publishable result.
 - `CANONICAL_FRONTIER_RESULTS.md` - canonical-state, coherent-policy, and frontier-pruning results.
 - `RADICAL_PARADIGMS_RESULTS.md` - linear, symmetry, restriction, reversible, and modular results.
 - `LEARNED_COMPILER_RESULTS.md` - beam-search, nonlinear-feature, and combined-portfolio results.
 - `REACHABLE_IMAGE_RESULTS.md` - exact reachable-image generation and syndrome results.
+- `CIRCUIT_MESSAGE_RESULTS.md` - factorized circuit messages, reconvergence, and cutset results.
 - `Main.lean` - residual-state executable.
 - `hybrid_portfolio.py` - heterogeneous structural solver portfolio.
 - `certified_dag.py` - emitted and independently checked AND/OR DAG certificates.

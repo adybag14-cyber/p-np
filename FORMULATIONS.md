@@ -477,3 +477,42 @@ case. A444-A447 prove product, transform, coordinate-count and scan-work composi
 A448 proves that a rank-one generator for the verifier-output feature already supplies an
 accepting witness, exposing the same circularity constructively. A449-A450 package the
 fully costed syndrome compiler and conditional class-collapse theorem.
+
+
+## Approaches 451-465: exact boundary messages
+
+A451-A458 define complete-and-sound boundary messages, prove exact map/join/branch/
+separator constructors, and recover an exact root image table and witness-existence
+criterion. A459-A464 prove map, join, branch, hidden-separator, interface, and full-plan
+width bounds. A465 packages the conditional class-collapse theorem.
+
+## Approaches 466-480: read-once formulas and reconvergence
+
+A466-A474 define read-once Boolean formula trees, dependent witness types, exact
+bottom-up possible-output sets, the two-state subtree bound, linear work accounting, and
+an executable exact solver. A475 proves that independently duplicating the occurrences
+of `x` in `x AND NOT x` is unsound. A476-A478 restore equality coupling and count shared
+interfaces. A479-A480 package circuit-message compilers and the conditional collapse.
+
+## Approaches 481-495: relation-table width
+
+A481-A485 count Boolean boundaries and deterministic unary/binary/ternary gate rows.
+A486-A493 prove join, projection, indexed-check, materialization, polynomial-budget,
+equality-factor, and deterministic-interior lemmas. A494 separates final output-image
+size from intermediate width. A495 states the bounded-elimination collapse criterion.
+
+## Approaches 496-510: exact cutset conditioning
+
+A496-A500 define per-cut images and exact table union. A501-A504 account for branch work
+and the `2^k` cutset size. A505-A509 provide exact branch certificates, residual-width
+certificates, polynomial work composition, obstruction localization, and a safe fallback.
+A510 packages the uniform cutset collapse criterion.
+
+## Approaches 511-525: internal-wire substitution and total-work search
+
+A511-A518 prove immediate substitution, exact branch-image/table reconstruction, empty
+impossible branches, arbitrary internal-wire conditioning, and total substituted work.
+A519-A520 formalize the branch-width tradeoff and show that lower peak width alone is
+insufficient. A521-A524 prove exact candidate selection, baseline dominance, monotone
+improvement chains, and the limitation of graph-width proxy scores. A525 states the
+uniform internal-cutset collapse criterion.

@@ -1,0 +1,24 @@
+Circuit message-width experiment
+seed=203079703
+small brute-force validations=392
+Exact gate-relation elimination preserves only the final output variable.
+
+balanced-and-32: inputs=32, gates=31, vars=63, image={0,1}, peak-rows=4, peak-scope=3, join-checks=105, eliminated=62, seconds=0.0035
+balanced-xor-32: inputs=32, gates=31, vars=63, image={0,1}, peak-rows=4, peak-scope=3, join-checks=120, eliminated=62, seconds=0.0034
+parity-chain-32: inputs=32, gates=31, vars=63, image={0,1}, peak-rows=4, peak-scope=3, join-checks=120, eliminated=62, seconds=0.0030
+majority-tree-27: inputs=27, gates=13, vars=40, image={0,1}, peak-rows=8, peak-scope=4, join-checks=72, eliminated=39, seconds=0.0011
+random-read-once-32: inputs=32, gates=31, vars=63, image={0,1}, peak-rows=4, peak-scope=3, join-checks=106, eliminated=62, seconds=0.0033
+shared-x-and-not-x: inputs=1, gates=2, vars=3, image={0}, peak-rows=4, peak-scope=3, join-checks=2, eliminated=2, seconds=0.0000
+relaxed-independent-x-and-not-y: inputs=2, gates=2, vars=4, image={0,1}, peak-rows=4, peak-scope=3, join-checks=3, eliminated=3, seconds=0.0000
+reconvergent-diamond-12: inputs=12, gates=33, vars=45, image={0,1}, peak-rows=4, peak-scope=4, join-checks=117, eliminated=44, seconds=0.0018
+random-dag-12x20: inputs=12, gates=20, vars=32, image={0,1}, peak-rows=24, peak-scope=6, join-checks=181, eliminated=30, seconds=0.0011
+random-dag-12x40: inputs=12, gates=40, vars=52, image={0,1}, peak-rows=384, peak-scope=10, join-checks=1960, eliminated=51, seconds=0.0037
+random-dag-12x60: inputs=12, gates=60, vars=72, image={0,1}, peak-rows=960, peak-scope=13, join-checks=5927, eliminated=71, seconds=0.0093
+random-3sat-circuit-12x30: inputs=12, gates=101, vars=113, image={0,1}, peak-rows=131072, peak-scope=20, join-checks=522325, eliminated=112, seconds=0.2138
+random-3sat-circuit-14x45: inputs=14, gates=148, vars=162, image=cutoff, peak-rows=1000001, peak-scope=22, join-checks=1045632, eliminated=130, seconds=0.4636
+
+Interpretation:
+- Read-once trees keep tiny intermediate tables even for global outputs.
+- Shared inputs require equality coupling; dropping it changes satisfiability.
+- Reconvergence and CNF-variable reuse increase separator scope and table width.
+- A final two-value output image does not imply cheap construction.

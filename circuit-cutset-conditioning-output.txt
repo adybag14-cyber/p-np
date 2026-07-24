@@ -1,0 +1,48 @@
+Circuit cutset-conditioning experiment
+seed=12613095
+Cut variables are ordered by input reuse count; every 2^k branch is solved exactly.
+
+[shared-x-and-not-x] inputs=1, gates=2, cut-order=(0,)
+  k=0, branches=1, image={0}, max-peak-rows=4, max-scope=3, total-checks=2, created=5, seconds=0.0001
+  k=1, branches=2, image={0}, max-peak-rows=2, max-scope=2, total-checks=2, created=8, seconds=0.0001
+
+[random-dag-12x40] inputs=12, gates=40, cut-order=(0, 3, 1, 7, 8, 10)
+  k=0, branches=1, image={0,1}, max-peak-rows=80, max-scope=7, total-checks=752, created=129, seconds=0.0037
+  k=1, branches=2, image={0,1}, max-peak-rows=48, max-scope=7, total-checks=1068, created=256, seconds=0.0068
+  k=2, branches=4, image={0,1}, max-peak-rows=40, max-scope=6, total-checks=1564, created=508, seconds=0.0129
+  k=3, branches=8, image={0,1}, max-peak-rows=24, max-scope=5, total-checks=1972, created=1008, seconds=0.0231
+  k=4, branches=16, image={0,1}, max-peak-rows=16, max-scope=5, total-checks=3000, created=2000, seconds=0.0430
+  k=5, branches=32, image={0,1}, max-peak-rows=8, max-scope=5, total-checks=4592, created=3968, seconds=0.0839
+  k=6, branches=64, image={0,1}, max-peak-rows=8, max-scope=5, total-checks=7600, created=7872, seconds=0.1594
+
+[random-dag-12x60] inputs=12, gates=60, cut-order=(9, 11, 7, 0, 4, 5)
+  k=0, branches=1, image={0,1}, max-peak-rows=6912, max-scope=14, total-checks=16148, created=190, seconds=0.0128
+  k=1, branches=2, image={0,1}, max-peak-rows=1536, max-scope=15, total-checks=12816, created=378, seconds=0.0187
+  k=2, branches=4, image={0,1}, max-peak-rows=1024, max-scope=13, total-checks=20216, created=752, seconds=0.0345
+  k=3, branches=8, image={0,1}, max-peak-rows=512, max-scope=12, total-checks=24170, created=1496, seconds=0.0629
+  k=4, branches=16, image={0,1}, max-peak-rows=256, max-scope=11, total-checks=26924, created=2976, seconds=0.1134
+  k=5, branches=32, image={0,1}, max-peak-rows=256, max-scope=11, total-checks=51466, created=5920, seconds=0.2195
+  k=6, branches=64, image={0,1}, max-peak-rows=128, max-scope=10, total-checks=67320, created=11776, seconds=0.4158
+
+[random-3sat-12x30] inputs=12, gates=101, cut-order=(10, 0, 1, 9, 2, 8)
+  k=0, branches=1, image={0,1}, max-peak-rows=131072, max-scope=22, total-checks=679284, created=313, seconds=0.3943
+  k=1, branches=2, image={0,1}, max-peak-rows=65536, max-scope=21, total-checks=695000, created=624, seconds=0.3462
+  k=2, branches=4, image={0,1}, max-peak-rows=32768, max-scope=20, total-checks=719576, created=1244, seconds=0.3642
+  k=3, branches=8, image={0,1}, max-peak-rows=32768, max-scope=20, total-checks=1398192, created=2480, seconds=0.6736
+  k=4, branches=16, image={0,1}, max-peak-rows=16384, max-scope=19, total-checks=1415776, created=4944, seconds=0.9094
+  k=5, branches=32, image={0,1}, max-peak-rows=4096, max-scope=17, total-checks=725023, created=9856, seconds=1.1863
+  k=6, branches=64, image={0,1}, max-peak-rows=8192, max-scope=17, total-checks=1392738, created=19648, seconds=1.9376
+
+[random-3sat-14x45] inputs=14, gates=148, cut-order=(2, 3, 5, 1, 0)
+  k=0, branches=1, image={}+1-unknown, max-peak-rows=1000001, max-scope=21, total-checks=971560, created=404, seconds=0.5581
+  k=1, branches=2, image={}+2-unknown, max-peak-rows=1000001, max-scope=23, total-checks=2722864, created=824, seconds=1.7416
+  k=2, branches=4, image={}+4-unknown, max-peak-rows=1000001, max-scope=21, total-checks=5126216, created=1644, seconds=3.1586
+  k=3, branches=8, image={}+8-unknown, max-peak-rows=1000001, max-scope=22, total-checks=6003520, created=3288, seconds=4.0372
+  k=4, branches=16, image={}+16-unknown, max-peak-rows=1000001, max-scope=23, total-checks=18190224, created=6672, seconds=15.2061
+  k=5, branches=32, image={0,1}, max-peak-rows=524288, max-scope=23, total-checks=51037514, created=14432, seconds=29.2644
+
+Interpretation:
+- Conditioning can sharply lower the worst residual table width.
+- The exact total cost must still include every one of the 2^k branches.
+- A useful cutset needs logarithmic size or enough width reduction to offset its branch multiplier.
+- High input reuse is a heuristic, not a universal certificate of an optimal cutset.
