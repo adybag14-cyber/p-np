@@ -56,6 +56,10 @@ import ResearchFiftyFourth
 import ResearchFiftyFifth
 import ResearchFiftySixth
 import ResearchFiftySeventh
+import ResearchFiftyEighth
+import ResearchFiftyNinth
+import ResearchSixtieth
+import ResearchSixtyFirst
 import CNFCore
 
 -- Original residual and decomposition core
@@ -317,3 +321,18 @@ import CNFCore
 #print axioms PIsNPOrNot.ResearchFiftySeventh.A838_NormalizedReferenceSafety.equal_normal_forms_equal_meaning
 #print axioms PIsNPOrNot.ResearchFiftySeventh.A839_NormalizedImageBound.normalized_card_le
 #print axioms PIsNPOrNot.ResearchFiftySeventh.A840_NormalizedActionCollapse.p_eq_np_of_uniform_normalized_action_compilers
+
+-- Approaches 841-900: direct proof trials and exact failure points
+#print axioms PIsNPOrNot.ResearchFiftyEighth.A845_UniversalFamilyLowerBound.family_card_ge_domainSet_card
+#print axioms PIsNPOrNot.ResearchFiftyEighth.A850_HashBucketProductLowerBound.hash_mul_bucket_ge_domainSet
+#print axioms PIsNPOrNot.ResearchFiftyEighth.A851_FixedTargetExponential.fixed_target_hashes_ge_pow_two
+#print axioms PIsNPOrNot.ResearchFiftyNinth.A859_SymmetrizedExistence.symmetrized_iff_exists
+#print axioms PIsNPOrNot.ResearchFiftyNinth.A864_OneStateCircularity.value_true_iff_witness
+#print axioms PIsNPOrNot.ResearchFiftyNinth.A866_RejectionProduct.product_eq_zero_iff
+#print axioms PIsNPOrNot.ResearchSixtieth.A875_TargetedCertificate.chosenWitness_accepted
+#print axioms PIsNPOrNot.ResearchSixtieth.A882_IdentityOccupancyCircularity.identity_count_eq_one_iff
+#print axioms PIsNPOrNot.ResearchSixtieth.A885_FormulaDependentIsolationCriterion.successful_compile_gives_witness
+#print axioms PIsNPOrNot.ResearchSixtyFirst.A891_OracleChoiceSound.chosen_nonempty
+#print axioms PIsNPOrNot.ResearchSixtyFirst.A894_RootOracleCircularity.root_query_iff_witness
+#print axioms PIsNPOrNot.ResearchSixtyFirst.A899_LargeModulusExactness.count_eq_zero_of_residue
+#print axioms PIsNPOrNot.ResearchSixtyFirst.A900_ResidueCompilerCriterion.decideWitness_eq_true_iff

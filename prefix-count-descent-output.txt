@@ -1,0 +1,43 @@
+Exact prefix-count descent
+n=16, clauses=72, assignment-space=65536
+planted=0001100001111101
+model-count=8
+
+depth chosen-bit surviving-models cumulative-verifier-evaluations
+    1          1                8                          131072
+    2          0                8                          147456
+    3          0                6                          155648
+    4          0                2                          159744
+    5          1                2                          163840
+    6          1                2                          165888
+    7          1                2                          166912
+    8          1                2                          167424
+    9          1                2                          167680
+   10          0                2                          167744
+   11          1                2                          167808
+   12          0                1                          167824
+   13          1                1                          167840
+   14          0                1                          167844
+   15          0                1                          167846
+   16          0                1                          167847
+result-witness=0001010111110001
+witness-verifies=True
+
+Query accounting:
+  branch levels = 16
+  exact branch queries <= 33
+  actual verifier evaluations = 167847
+  exhaustive root scan = 65536
+  few oracle calls do not imply low work when each oracle call enumerates completions
+
+Residue examples for the exact root model count:
+  mod     2: 0
+  mod     3: 2
+  mod     5: 3
+  mod     7: 1
+  mod    11: 8
+  mod    17: 8
+  mod   257: 8
+  mod 65537: 8
+  any modulus larger than 2^n makes zero residue exact
+  computing that residue for an arbitrary verifier remains the missing algorithm

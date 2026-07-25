@@ -1,6 +1,6 @@
 # PIsNPOrNot — Lean 4 attack laboratory
 
-A native Windows Lean 4 research workspace containing **840 mechanically checked approaches** to P versus NP, verified CNF transformations, executable finite experiments, and structural SAT prototypes.
+A native Windows Lean 4 research workspace containing **900 mechanically checked approaches** to P versus NP, verified CNF transformations, executable finite experiments, and structural SAT prototypes.
 
 The project does **not** claim a proof of `P = NP` or `P != NP`. It is designed to expose exactly which additional theorem each attempted route would require.
 
@@ -605,6 +605,41 @@ Lawful finite-group actions, orbit equivalence, bit-encoded label capacity,
 Action invariants, invariant-class lower bounds on physical bases, product invariants,
 proof-carrying orbit certificates, and semantic-preserving idempotent normalisers.
 
+### `ResearchFiftyEighth.lean` - approaches 841-855
+
+Deterministic targeted witness isolation, deletion induction, the exact universal-family
+lower bound, and `hashes * buckets >= 2^n` for black-box fixed-target isolation.
+
+### `ResearchFiftyNinth.lean` - approaches 856-870
+
+Boolean translation symmetrisation, exact orbit-OR, one-state semantic collapse, the exact
+rejection-product identity, and the exponential orbit-aggregation obstruction.
+
+### `ResearchSixtieth.lean` - approaches 871-885
+
+Formula-dependent isolated certificates, witness recovery, affine/identity hash buckets,
+occupied-target circularity, and explicit isolation discovery accounting.
+
+### `ResearchSixtyFirst.lean` - approaches 886-900
+
+Exact prefix splits, oracle-guided witness descent, completion-count recurrence, residual SAT
+query circularity, modular false zeros, and the large-modulus residue compiler criterion.
+
+## Direct proof-trial phase
+
+- `deterministic_isolation_experiment.py` searches exact affine isolators for structured,
+  random, and planted witness sets while separately charging complete witness enumeration.
+- `prefix_count_descent_experiment.py` performs exact self-reduction on a planted 3-CNF and
+  records branch queries, completion counts, verifier evaluations, and modular residues.
+- Four proposed proof mechanisms were implemented before their universal step was assessed:
+  deterministic isolation, translation aggregation, formula-dependent isolation, and exact
+  prefix descent.
+- The finite semantics all work; each universal polynomial step reduces to witness discovery,
+  residual SAT, exact aggregation, or exact modular counting.
+
+The complete theorem statements, failed shortcuts, experiment outputs, and literature bridge
+are recorded in `DIRECT_PROOF_TRIALS.md`.
+
 ## Finite-action edge-valued phase
 
 - `modular_edge_diagram.py` compares exact cube covers, canonical MTBDDs, and additive
@@ -694,9 +729,13 @@ proof obligations are recorded in `OPEN_SOURCE_CUBE_RESULTS.md`.
 - `ResearchFiftyFifth.lean` - approaches 796-810 and exact modular streaming and linear edge-labelled diagrams.
 - `ResearchFiftySixth.lean` - approaches 811-825 and finite-group actions, encoded label capacity, and full storage cost.
 - `ResearchFiftySeventh.lean` - approaches 826-840 and action invariants, orbit lower bounds, and canonical normalisation.
+- `ResearchFiftyEighth.lean` - approaches 841-855 and deterministic isolation lower bounds.
+- `ResearchFiftyNinth.lean` - approaches 856-870 and translation-symmetrisation aggregation.
+- `ResearchSixtieth.lean` - approaches 871-885 and formula-dependent isolation discovery.
+- `ResearchSixtyFirst.lean` - approaches 886-900 and prefix-count/residue proof trials.
 - `CNFCore.lean` - verified CNF restriction semantics.
 - `Audit.lean` - selected theorem axiom audit.
-- `FORMULATIONS.md` - compact status of all 840 approaches.
+- `FORMULATIONS.md` - compact status of all 900 approaches.
 - `ACCEPTABLE_TARGET.md` - precise obligations still required for a publishable result.
 - `CANONICAL_FRONTIER_RESULTS.md` - canonical-state, coherent-policy, and frontier-pruning results.
 - `RADICAL_PARADIGMS_RESULTS.md` - linear, symmetry, restriction, reversible, and modular results.
@@ -707,6 +746,7 @@ proof obligations are recorded in `OPEN_SOURCE_CUBE_RESULTS.md`.
 - `OPEN_SOURCE_CUBE_RESULTS.md` - Backdoor DNF, CPOG, exact cube-cover, and MTBDD results.
 - `PARITY_SUBCUBE_RESULTS.md` - parity cube lower bounds, OBDD sharing, and complement edges.
 - `EDGE_VALUED_ACTION_RESULTS.md` - finite actions, modular sums, label cost, and MEDDLY validation.
+- `DIRECT_PROOF_TRIALS.md` - four unconditional proof attempts and exact failure points.
 - `validate_meddly_evplus.sh` - optional checksum-pinned MEDDLY release validation.
 - `Main.lean` - residual-state executable.
 - `hybrid_portfolio.py` - heterogeneous structural solver portfolio.

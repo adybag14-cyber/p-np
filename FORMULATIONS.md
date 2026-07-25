@@ -690,3 +690,38 @@ invariant-class count lower-bounds base count, and obstruct one-base encodings a
 invariant classes. A833-A836 compose product invariants and package proof-carrying orbit
 lower bounds. A837-A839 formalise semantic-preserving idempotent normalisers and bounded
 normal-form images. A840 states the normalized-action collapse criterion.
+
+## Approaches 841-855: deterministic witness-isolation trial
+
+A841-A845 define targeted isolation, universal finite test families, deletion of an isolated
+point, and prove that every family isolating all nonempty subsets of a universe has at least
+one test per universe element. A846-A851 transfer this to n-bit witnesses and hash fibers,
+giving `hashes * buckets >= 2^n` and an exact exponential lower bound for fixed-target
+black-box isolation. A852-A855 account for enumeration work, recover a witness from a unique
+fiber, and isolate formula-dependent discovery as the only surviving isolation route.
+
+## Approaches 856-870: full-translation symmetrisation trial
+
+A856-A860 prove that XOR translations act transitively on the Boolean witness universe and
+that orbit-OR is exactly witness existence, independent of the anchor. A861-A865 give the
+finite executable decision, collapse the semantics to one state, and prove that constructing
+that state already decides SAT. A866 proves the rejection product over every translate is zero
+exactly when a witness exists. A867-A870 expose its `2^n` factors and separate semantic
+collapse from exact aggregation cost.
+
+## Approaches 871-885: formula-dependent affine-isolation trial
+
+A871-A876 define the accepted witness set, prove nonemptiness is satisfiability, construct a
+one-test isolator from a known witness, and prove every proof-carrying isolated test recovers
+an accepted witness. A877-A883 formalise hash buckets, unique targets, identity hashing, and
+show that selecting an occupied identity bucket is exactly witness search. A884-A885 separate
+low-rank isolator existence from the cost of discovering and checking the occupied target.
+
+## Approaches 886-900: prefix-count and modular-residue trial
+
+A886-A891 define exact Boolean splits, prove child-count recurrence and nonempty-child
+preservation under an exact oracle. A892-A897 show that only one branch query per level is
+needed abstractly, while the root query and every residual query are exact witness-existence
+questions; exact counts can choose a surviving heavier child. A898-A900 prove modular
+false-zero examples, prove zero residue is exact when the modulus exceeds the count, and show
+that a uniformly efficient exact residue compiler would decide witness existence.
