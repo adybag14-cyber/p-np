@@ -1,0 +1,46 @@
+Additive edge-label gauge-normalisation experiment
+Canonical convention: every low edge is zero; high edge is one.
+
+q  n gauge_space checked distinct_raw canonical_forms gauge_check assignment_check
+ 2  1           2       2            2               1 exhaustive exhaustive
+ 2  2           4       4            4               1 exhaustive exhaustive
+ 2  4          16      16           16               1 exhaustive exhaustive
+ 2  8         256     256          256               1 exhaustive exhaustive
+ 2 12        4096     250          239               1 sampled    sampled
+ 2 16       65536     250          249               1 sampled    sampled
+ 3  1           3       3            3               1 exhaustive exhaustive
+ 3  2           9       9            9               1 exhaustive exhaustive
+ 3  4          81      81           81               1 exhaustive exhaustive
+ 3  8        6561     250          247               1 sampled    exhaustive
+ 3 12      531441     250          250               1 sampled    sampled
+ 3 16    43046721     250          250               1 sampled    sampled
+ 4  1           4       4            4               1 exhaustive exhaustive
+ 4  2          16      16           16               1 exhaustive exhaustive
+ 4  4         256     256          256               1 exhaustive exhaustive
+ 4  8       65536     250          250               1 sampled    exhaustive
+ 4 12    16777216     250          250               1 sampled    sampled
+ 4 16  4294967296     250          250               1 sampled    sampled
+ 5  1           5       5            5               1 exhaustive exhaustive
+ 5  2          25      25           25               1 exhaustive exhaustive
+ 5  4         625     625          625               1 exhaustive exhaustive
+ 5  8      390625     250          250               1 sampled    exhaustive
+ 5 12   244140625     250          250               1 sampled    sampled
+ 5 16 152587890625     250          250               1 sampled    sampled
+ 7  1           7       7            7               1 exhaustive exhaustive
+ 7  2          49      49           49               1 exhaustive exhaustive
+ 7  4        2401     250          231               1 sampled    exhaustive
+ 7  8     5764801     250          250               1 sampled    exhaustive
+ 7 12 13841287201     250          250               1 sampled    sampled
+ 7 16 33232930569601     250          250               1 sampled    sampled
+11  1          11      11           11               1 exhaustive exhaustive
+11  2         121     121          121               1 exhaustive exhaustive
+11  4       14641     250          248               1 sampled    exhaustive
+11  8   214358881     250          250               1 sampled    exhaustive
+11 12 3138428376721     250          250               1 sampled    sampled
+11 16 45949729863572161     250          250               1 sampled    sampled
+
+Verified:
+- q^n gauge choices give q^n raw encodings in every exhaustively checked case.
+- Every tested raw encoding computes the same modular population sum.
+- Low-edge-zero normalisation maps every tested encoding to one canonical chain.
+- Normalisation preserves semantics and is idempotent.

@@ -643,3 +643,50 @@ one-base parity encoding. A744-A747 prove parity-base minimality, the necessary 
 closure condition, and an obstruction for unpaired residuals. A748-A750 give a baseline-
 safe representation portfolio, isolate the exact-pairing obligation, and record the full
 parity profile including complemented nodes.
+
+
+## Approaches 751-765: finite action-labelled semantic encodings
+
+A751-A757 separate physical bases from labels, define exact decoding, prove reference
+injectivity for distinguishable meanings, derive `|State| <= |Base| * |Label|`, and expose
+orbit-closure and one-base capacity obligations. A758-A764 formalise lawful actions,
+composition normalisation, exact finite orbit models, injective orbit capacity, and
+outside-orbit obstructions. A765 states the uniform action-labelled collapse criterion.
+
+## Approaches 766-780: cyclic additive edge labels
+
+A766-A773 instantiate the action with addition in `ZMod q`, prove identity, composition,
+inverse recovery, exact one-base cyclic encodings, and injective meanings. A774-A779 prove
+exact cyclic state/reference cardinalities, saturation of the generic capacity bound,
+parity as `ZMod 2`, and separate semantic/physical accounting. A780 states the cyclic-action
+collapse criterion.
+
+## Approaches 781-795: modular-sum sensitivity and cube lower bounds
+
+A781-A788 define Boolean modular population sums and prove that flipping any coordinate
+changes the output for every modulus at least two. A789-A794 transfer full sensitivity to
+safe cubes, prove every term fully specified with a unique extension, and derive the exact
+`2^n` complete-cover lower bound. A795 states the modular-cube collapse criterion.
+
+## Approaches 796-810: linear modular edge-valued streams
+
+A796-A800 prove that streaming `state <- state + bit` computes the modular population sum.
+A801-A809 account for one cyclic state label, `n + 1` physical nodes, explicit-state
+layering, exact savings, label cardinality, factorisation, and representation profiles.
+A810 states the edge-labelled stream collapse criterion.
+
+## Approaches 811-825: group actions and encoded label cost
+
+A811-A819 formalise lawful finite-group actions, inverse recovery, label normalisation,
+orbit equivalence, orbit cardinality, and independent product actions. A820-A824 prove that
+`b` label bits give at most `2^b` labels, derive `|State| <= |Base| * 2^b`, charge node,
+edge, label-storage, and arithmetic work separately, and expose insufficient-capacity
+obstructions. A825 states the encoded-action collapse criterion.
+
+## Approaches 826-840: invariant lower bounds and canonical normalisation
+
+A826-A832 define action invariants, transport semantic classes to physical bases, prove
+invariant-class count lower-bounds base count, and obstruct one-base encodings across two
+invariant classes. A833-A836 compose product invariants and package proof-carrying orbit
+lower bounds. A837-A839 formalise semantic-preserving idempotent normalisers and bounded
+normal-form images. A840 states the normalized-action collapse criterion.

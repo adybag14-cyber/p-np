@@ -1,0 +1,73 @@
+MEDDLY 0.18.1 EV+MDD validation
+
+Official release archive
+  URL: https://downloads.sourceforge.net/project/meddly/meddly-0.18.1.tar.gz
+  SHA-256: 6a1bbcfa129a11d8426421cf5dc72aacac3672927ba404283495f785f6011ebf
+  Build options: ./configure --disable-shared --without-gmp
+  Build result: passed
+  Test result: 121 total, 121 passed, 0 skipped, 0 failed, 0 errors
+
+EV+ coverage observed in the release tests
+  ops_mult --set/--rel --EVp --long: passed
+  ops_plusminus --set/--rel --EVp --long: passed
+  ops_prepost --set --EVp across full/quasi/identity relation policies: passed
+  ops_user_un --set/--rel --EVp --long: passed
+  EVPLUS source coverage also appears in copy, minterm, storage, reordering,
+  comparison, division/modulo, maximum/minimum, and xA tests.
+
+Current Git checkout reproducibility note
+  Commit: fb5d4831d53ff607832809c2cd1881ec04483a5e
+  Commit date: 2026-06-15
+  The committed src/defines.h is malformed: its include guard and header prefix
+  were replaced by repeated copies of the release date. The parent commit has a
+  valid header. The official 0.18.1 SourceForge tarball contains the corrected
+  header and builds/tests successfully. No third-party source was modified for
+  the successful release-archive validation.
+
+Purpose-built modular population-sum harness
+  Source: meddly_modsum_validation.cc
+  Construction:
+    - binary variables in an INTEGER EVPLUS forest
+    - each variable is an edge-valued 0/1 function
+    - functions are combined using MEDDLY element-wise PLUS
+    - every assignment is evaluated exactly
+    - the integer result is also reduced modulo q and checked
+
+q n nodes edges assignments status
+2 1 1 2 2 verified
+2 2 2 4 4 verified
+2 4 4 8 16 verified
+2 8 8 16 256 verified
+2 12 12 24 4096 verified
+2 16 16 32 65536 verified
+3 1 1 2 2 verified
+3 2 2 4 4 verified
+3 4 4 8 16 verified
+3 8 8 16 256 verified
+3 12 12 24 4096 verified
+3 16 16 32 65536 verified
+4 1 1 2 2 verified
+4 2 2 4 4 verified
+4 4 4 8 16 verified
+4 8 8 16 256 verified
+4 12 12 24 4096 verified
+4 16 16 32 65536 verified
+5 1 1 2 2 verified
+5 2 2 4 4 verified
+5 4 4 8 16 verified
+5 8 8 16 256 verified
+5 12 12 24 4096 verified
+5 16 16 32 65536 verified
+7 1 1 2 2 verified
+7 2 2 4 4 verified
+7 4 4 8 16 verified
+7 8 8 16 256 verified
+7 12 12 24 4096 verified
+7 16 16 32 65536 verified
+
+Interpretation
+  MEDDLY getNodeCount() reports n reachable nonterminal nodes for the sum of n
+  Boolean variables; getEdgeCount() reports 2n. With the terminal included,
+  this agrees with the n+1 physical-node convention used in the Lean model.
+  The diagram computes the exact integer population sum; modular output is an
+  external cyclic-label interpretation of that exact sum.

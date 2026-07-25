@@ -50,6 +50,12 @@ import ResearchFortyEighth
 import ResearchFortyNinth
 import ResearchFiftieth
 import ResearchFiftyFirst
+import ResearchFiftySecond
+import ResearchFiftyThird
+import ResearchFiftyFourth
+import ResearchFiftyFifth
+import ResearchFiftySixth
+import ResearchFiftySeventh
 import CNFCore
 
 -- Original residual and decomposition core
@@ -292,3 +298,22 @@ import CNFCore
 #print axioms PIsNPOrNot.ResearchFiftyFirst.A740_ComplementedCardinalityBound.state_card_le_two_mul_base
 #print axioms PIsNPOrNot.ResearchFiftyFirst.A746_ComplementClosure.meaning_is_base_or_complement
 #print axioms PIsNPOrNot.ResearchFiftyFirst.A747_UnpairedResidualObstruction.no_encoding_of_unpaired
+
+-- Approaches 751-840: finite actions, modular sums, encoded labels, and normalisation
+#print axioms PIsNPOrNot.ResearchFiftySecond.A755_ActionCardinalityBound.state_card_le_base_mul_label
+#print axioms PIsNPOrNot.ResearchFiftySecond.A756_ActionClosure.meaning_is_action_of_base
+#print axioms PIsNPOrNot.ResearchFiftySecond.A764_UnpairedActionObstruction.no_encoding_of_outside_orbits
+#print axioms PIsNPOrNot.ResearchFiftyThird.A772_CyclicEncoding.encoding
+#print axioms PIsNPOrNot.ResearchFiftyThird.A776_CyclicCapacityExact.exact_capacity
+#print axioms PIsNPOrNot.ResearchFiftyFourth.A786_ModularFlipSensitive.flip_ne
+#print axioms PIsNPOrNot.ResearchFiftyFourth.A794_ModularTermLowerBound.term_card_lower_bound
+#print axioms PIsNPOrNot.ResearchFiftyFifth.A800_StreamSumExact.stream_eq_modSum
+#print axioms PIsNPOrNot.ResearchFiftyFifth.A806_ModularStreamCubeGap.physical_nodes_lt_terms
+#print axioms PIsNPOrNot.ResearchFiftySixth.A817_GroupOrbitCardinality.orbit_card_le
+#print axioms PIsNPOrNot.ResearchFiftySixth.A821_EncodedActionCapacity.state_card_le_base_mul_pow_two
+#print axioms PIsNPOrNot.ResearchFiftySixth.A824_InsufficientLabelCapacity.no_encoding_when_capacity_too_small
+#print axioms PIsNPOrNot.ResearchFiftySeventh.A830_OrbitClassBaseLowerBound.semantic_class_card_le_base_card
+#print axioms PIsNPOrNot.ResearchFiftySeventh.A836_OrbitCertificateSoundness.claimed_classes_le_bases
+#print axioms PIsNPOrNot.ResearchFiftySeventh.A838_NormalizedReferenceSafety.equal_normal_forms_equal_meaning
+#print axioms PIsNPOrNot.ResearchFiftySeventh.A839_NormalizedImageBound.normalized_card_le
+#print axioms PIsNPOrNot.ResearchFiftySeventh.A840_NormalizedActionCollapse.p_eq_np_of_uniform_normalized_action_compilers

@@ -1,6 +1,6 @@
 name = "pisnpornot"
 version = "0.2.0"
-defaultTargets = ["PIsNPOrNot", "ResearchNext", "ResearchThird", "ResearchFourth", "ResearchAgenda", "ResearchFifth", "ResearchSixth", "ResearchSeventh", "ResearchEighth", "ResearchNinth", "ResearchTenth", "ResearchEleventh", "ResearchTwelfth", "ResearchThirteenth", "ResearchFourteenth", "ResearchFifteenth", "ResearchSixteenth", "ResearchSeventeenth", "ResearchEighteenth", "ResearchNineteenth", "ResearchTwentieth", "ResearchTwentyFirst", "ResearchTwentySecond", "ResearchTwentyThird", "ResearchTwentyFourth", "ResearchTwentyFifth", "ResearchTwentySixth", "ResearchTwentySeventh", "ResearchTwentyEighth", "ResearchTwentyNinth", "ResearchThirtieth", "ResearchThirtyFirst", "ResearchThirtySecond", "ResearchThirtyThird", "ResearchThirtyFourth", "ResearchThirtyFifth", "ResearchThirtySixth", "ResearchThirtySeventh", "ResearchThirtyEighth", "ResearchThirtyNinth", "ResearchFortieth", "ResearchFortyFirst", "ResearchFortySecond", "ResearchFortyThird", "ResearchFortyFourth", "CNFCore", "pnp_experiments"]
+defaultTargets = ["PIsNPOrNot", "ResearchNext", "ResearchThird", "ResearchFourth", "ResearchAgenda", "ResearchFifth", "ResearchSixth", "ResearchSeventh", "ResearchEighth", "ResearchNinth", "ResearchTenth", "ResearchEleventh", "ResearchTwelfth", "ResearchThirteenth", "ResearchFourteenth", "ResearchFifteenth", "ResearchSixteenth", "ResearchSeventeenth", "ResearchEighteenth", "ResearchNineteenth", "ResearchTwentieth", "ResearchTwentyFirst", "ResearchTwentySecond", "ResearchTwentyThird", "ResearchTwentyFourth", "ResearchTwentyFifth", "ResearchTwentySixth", "ResearchTwentySeventh", "ResearchTwentyEighth", "ResearchTwentyNinth", "ResearchThirtieth", "ResearchThirtyFirst", "ResearchThirtySecond", "ResearchThirtyThird", "ResearchThirtyFourth", "ResearchThirtyFifth", "ResearchThirtySixth", "ResearchThirtySeventh", "ResearchThirtyEighth", "ResearchThirtyNinth", "ResearchFortieth", "ResearchFortyFirst", "ResearchFortySecond", "ResearchFortyThird", "ResearchFortyFourth", "ResearchFortyFifth", "ResearchFortySixth", "ResearchFortySeventh", "ResearchFortyEighth", "ResearchFortyNinth", "ResearchFiftieth", "ResearchFiftyFirst", "ResearchFiftySecond", "ResearchFiftyThird", "ResearchFiftyFourth", "ResearchFiftyFifth", "ResearchFiftySixth", "ResearchFiftySeventh", "CNFCore", "pnp_experiments"]
 
 [[lean_lib]]
 name = "PIsNPOrNot"
@@ -160,6 +160,24 @@ name = "ResearchFiftieth"
 
 [[lean_lib]]
 name = "ResearchFiftyFirst"
+
+[[lean_lib]]
+name = "ResearchFiftySecond"
+
+[[lean_lib]]
+name = "ResearchFiftyThird"
+
+[[lean_lib]]
+name = "ResearchFiftyFourth"
+
+[[lean_lib]]
+name = "ResearchFiftyFifth"
+
+[[lean_lib]]
+name = "ResearchFiftySixth"
+
+[[lean_lib]]
+name = "ResearchFiftySeventh"
 
 [[lean_exe]]
 name = "pnp_experiments"

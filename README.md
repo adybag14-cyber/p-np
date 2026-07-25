@@ -1,6 +1,6 @@
 # PIsNPOrNot — Lean 4 attack laboratory
 
-A native Windows Lean 4 research workspace containing **750 mechanically checked approaches** to P versus NP, verified CNF transformations, executable finite experiments, and structural SAT prototypes.
+A native Windows Lean 4 research workspace containing **840 mechanically checked approaches** to P versus NP, verified CNF transformations, executable finite experiments, and structural SAT prototypes.
 
 The project does **not** claim a proof of `P = NP` or `P != NP`. It is designed to expose exactly which additional theorem each attempted route would require.
 
@@ -573,6 +573,55 @@ portfolios with explicit accounting conventions.
 The literature bridge, formal theorems, exact measurements, and external validation are
 recorded in `PARITY_SUBCUBE_RESULTS.md`.
 
+
+### `ResearchFiftySecond.lean` - approaches 751-765
+
+Finite action-labelled references, exact semantic decoding, the
+`states <= bases * labels` capacity theorem, orbit closure, label composition, and the
+uniform action-compiler criterion.
+
+### `ResearchFiftyThird.lean` - approaches 766-780
+
+Cyclic additive labels over `ZMod q`, exact one-base orbit encodings, capacity saturation,
+and complemented edges as the `q = 2` special case.
+
+### `ResearchFiftyFourth.lean` - approaches 781-795
+
+Modular population sums, coordinate sensitivity, singleton monochromatic cubes, injective
+cover ownership, and the exact `2^n` safe-cube lower bound.
+
+### `ResearchFiftyFifth.lean` - approaches 796-810
+
+Exact modular stream evaluation, one cyclic label as state, `n + 1` physical-node
+accounting, explicit-state savings, and edge-labelled-versus-cube separation.
+
+### `ResearchFiftySixth.lean` - approaches 811-825
+
+Lawful finite-group actions, orbit equivalence, bit-encoded label capacity,
+`states <= bases * 2^b`, and separate node, edge, label-storage, and arithmetic costs.
+
+### `ResearchFiftySeventh.lean` - approaches 826-840
+
+Action invariants, invariant-class lower bounds on physical bases, product invariants,
+proof-carrying orbit certificates, and semantic-preserving idempotent normalisers.
+
+## Finite-action edge-valued phase
+
+- `modular_edge_diagram.py` compares exact cube covers, canonical MTBDDs, and additive
+  edge-valued chains for modular population sums.
+- `edge_label_normalization.py` checks gauge-equivalent additive edge labels and canonical
+  low-edge-zero normalisation.
+- The official MEDDLY 0.18.1 archive built unchanged and passed 121/121 tests.
+- `meddly_modsum_validation.cc` independently constructs EV+ population sums and verifies
+  every assignment through 16 variables for five moduli.
+- `validate_meddly_evplus.sh` downloads the checksum-pinned official release, builds it, runs
+  all upstream tests, compiles the custom harness, and executes it under Linux or WSL.
+- The current MEDDLY Git release commit contains a malformed committed header; the official
+  SourceForge release archive contains the corrected header and is the validated artifact.
+
+Formal results, deterministic measurements, external checksums, and the exact remaining
+compiler obligations are recorded in `EDGE_VALUED_ACTION_RESULTS.md`.
+
 ## Open-source cube and knowledge-compilation phase
 
 - `residual_dnf_cover.py` computes exact residual labels, all monochromatic partial cubes,
@@ -639,9 +688,15 @@ proof obligations are recorded in `OPEN_SOURCE_CUBE_RESULTS.md`.
 - `ResearchFortyNinth.lean` - approaches 706-720 and minimal parity residual quotients.
 - `ResearchFiftieth.lean` - approaches 721-735 and complemented-edge parity BDDs.
 - `ResearchFiftyFirst.lean` - approaches 736-750 and general complement-pair encodings.
+- `ResearchFiftySecond.lean` - approaches 751-765 and finite action-labelled encodings and orbit capacity.
+- `ResearchFiftyThird.lean` - approaches 766-780 and cyclic additive edge labels and exact one-base action orbits.
+- `ResearchFiftyFourth.lean` - approaches 781-795 and modular-sum sensitivity and exponential cube lower bounds.
+- `ResearchFiftyFifth.lean` - approaches 796-810 and exact modular streaming and linear edge-labelled diagrams.
+- `ResearchFiftySixth.lean` - approaches 811-825 and finite-group actions, encoded label capacity, and full storage cost.
+- `ResearchFiftySeventh.lean` - approaches 826-840 and action invariants, orbit lower bounds, and canonical normalisation.
 - `CNFCore.lean` - verified CNF restriction semantics.
 - `Audit.lean` - selected theorem axiom audit.
-- `FORMULATIONS.md` - compact status of all 750 approaches.
+- `FORMULATIONS.md` - compact status of all 840 approaches.
 - `ACCEPTABLE_TARGET.md` - precise obligations still required for a publishable result.
 - `CANONICAL_FRONTIER_RESULTS.md` - canonical-state, coherent-policy, and frontier-pruning results.
 - `RADICAL_PARADIGMS_RESULTS.md` - linear, symmetry, restriction, reversible, and modular results.
@@ -651,6 +706,8 @@ proof obligations are recorded in `OPEN_SOURCE_CUBE_RESULTS.md`.
 - `RESIDUAL_QUOTIENT_RESULTS.md` - exact semantic branch quotients and safe certificate results.
 - `OPEN_SOURCE_CUBE_RESULTS.md` - Backdoor DNF, CPOG, exact cube-cover, and MTBDD results.
 - `PARITY_SUBCUBE_RESULTS.md` - parity cube lower bounds, OBDD sharing, and complement edges.
+- `EDGE_VALUED_ACTION_RESULTS.md` - finite actions, modular sums, label cost, and MEDDLY validation.
+- `validate_meddly_evplus.sh` - optional checksum-pinned MEDDLY release validation.
 - `Main.lean` - residual-state executable.
 - `hybrid_portfolio.py` - heterogeneous structural solver portfolio.
 - `certified_dag.py` - emitted and independently checked AND/OR DAG certificates.
