@@ -1,6 +1,6 @@
 # PIsNPOrNot — Lean 4 attack laboratory
 
-A native Windows Lean 4 research workspace containing **900 mechanically checked approaches** to P versus NP, verified CNF transformations, executable finite experiments, and structural SAT prototypes.
+A native Windows Lean 4 research workspace containing **1,050 mechanically checked approaches** to P versus NP, verified CNF transformations, executable finite experiments, and structural SAT prototypes.
 
 The project does **not** claim a proof of `P = NP` or `P != NP`. It is designed to expose exactly which additional theorem each attempted route would require.
 
@@ -625,6 +625,56 @@ occupied-target circularity, and explicit isolation discovery accounting.
 Exact prefix splits, oracle-guided witness descent, completion-count recurrence, residual SAT
 query circularity, modular false zeros, and the large-modulus residue compiler criterion.
 
+### `ResearchSixtySecond.lean` - approaches 901-915
+
+Shannon-style Boolean-function counting, short-description non-surjectivity, hard-function
+existence, truth-table storage, and the target-slice explicitness gap.
+
+### `ResearchSixtyThird.lean` - approaches 916-930
+
+Exhaustive hard-table selection, exact candidate and comparison counts, stored-table cost,
+and the uniform construction/evaluation package required for an explicit lower bound.
+
+### `ResearchSixtyFourth.lean` - approaches 931-945
+
+Padding plans, deterministic history length, full-runtime padding collapse, underpadding,
+and the proof that padding enough for NP-style history verification also makes simulation easy.
+
+### `ResearchSixtyFifth.lean` - approaches 946-960
+
+Polynomial-stage diagonalisation, the unbounded-exponent obstruction, exponent caps,
+universal simulation failure, and the stage-specific padding trap.
+
+### `ResearchSixtySixth.lean` - approaches 961-975
+
+The `forall k, exists L_k` versus `exists L, forall k` quantifier gap, fixed-verifier
+exponents, universal selectors, and the one-uniform-NP-language separation criterion.
+
+### `ResearchSixtySeventh.lean` - approaches 976-990
+
+Range avoiders, local bit evaluation, nonimage difference certificates, `n * 2^b` raw
+certificate cost, and the local-explicitness/succinct-soundness obligations.
+
+### `ResearchSixtyEighth.lean` - approaches 991-1005
+
+Pointwise range nonmembership, universal certificate checking, locally explicit Boolean
+families, fixed NP verifiers, polynomial code budgets, and the separation-grade range package.
+
+### `ResearchSixtyNinth.lean` - approaches 1006-1020
+
+Truth-table and direct-DNF encoding costs, counting-to-SAT reduction blow-up, succinct hard
+families, and the uniform-generation obligation behind NP-completeness transfer.
+
+### `ResearchSeventieth.lean` - approaches 1021-1035
+
+Sound complete proof systems, proof/checker cost, system-specific lower bounds,
+proof simulations, and the all-polynomial-proof-system requirement for proof-complexity separation.
+
+### `ResearchSeventyFirst.lean` - approaches 1036-1050
+
+Monotone and unrestricted Boolean representations, the one-gate negation counterexample,
+restricted-model simulations, bounded-depth profiles, and general-circuit transfer obligations.
+
 ## Direct proof-trial phase
 
 - `deterministic_isolation_experiment.py` searches exact affine isolators for structured,
@@ -639,6 +689,22 @@ query circularity, modular false zeros, and the large-modulus residue compiler c
 
 The complete theorem statements, failed shortcuts, experiment outputs, and literature bridge
 are recorded in `DIRECT_PROOF_TRIALS.md`.
+
+## Direct separation-trial phase
+
+- `circuit_counting_explicitness.py` exactly enumerates tiny unrestricted Boolean circuit
+  universes and measures Shannon counting versus lexicographic hard-table construction.
+- `padding_diagonalization_experiment.py` measures full-runtime padding, underpadding, variable
+  polynomial exponents, and the per-stage-versus-one-family quantifier split.
+- `range_avoidance_certificate.py` constructs and independently verifies one distinguishing
+  input per represented function and reports the raw nonimage-certificate scale.
+- Counting, padding, diagonalisation, range avoidance, NP-completeness transfer, proof
+  complexity, and restricted-circuit routes were all pursued as concrete separation attempts.
+- Every route establishes a genuine lower bound or transfer theorem in its stated model, but
+  none yields one uniformly NP-verifiable language hard against all unrestricted polynomial time.
+
+The formal results, deterministic outputs, current lower-bound literature bridge, and exact
+remaining separation package are recorded in `SEPARATION_PROOF_TRIALS.md`.
 
 ## Finite-action edge-valued phase
 
@@ -733,9 +799,19 @@ proof obligations are recorded in `OPEN_SOURCE_CUBE_RESULTS.md`.
 - `ResearchFiftyNinth.lean` - approaches 856-870 and translation-symmetrisation aggregation.
 - `ResearchSixtieth.lean` - approaches 871-885 and formula-dependent isolation discovery.
 - `ResearchSixtyFirst.lean` - approaches 886-900 and prefix-count/residue proof trials.
+- `ResearchSixtySecond.lean` - approaches 901-915 and Shannon counting/target-slice gaps.
+- `ResearchSixtyThird.lean` - approaches 916-930 and exhaustive hard-table explicitness.
+- `ResearchSixtyFourth.lean` - approaches 931-945 and padding/history collapse.
+- `ResearchSixtyFifth.lean` - approaches 946-960 and polynomial-stage diagonalisation.
+- `ResearchSixtySixth.lean` - approaches 961-975 and uniform-language quantifier gaps.
+- `ResearchSixtySeventh.lean` - approaches 976-990 and range-avoidance certificate cost.
+- `ResearchSixtyEighth.lean` - approaches 991-1005 and local-NP range packages.
+- `ResearchSixtyNinth.lean` - approaches 1006-1020 and counting-to-SAT transfer.
+- `ResearchSeventieth.lean` - approaches 1021-1035 and proof-system lower-bound transfer.
+- `ResearchSeventyFirst.lean` - approaches 1036-1050 and restricted-circuit transfer.
 - `CNFCore.lean` - verified CNF restriction semantics.
 - `Audit.lean` - selected theorem axiom audit.
-- `FORMULATIONS.md` - compact status of all 900 approaches.
+- `FORMULATIONS.md` - compact status of all 1,050 approaches.
 - `ACCEPTABLE_TARGET.md` - precise obligations still required for a publishable result.
 - `CANONICAL_FRONTIER_RESULTS.md` - canonical-state, coherent-policy, and frontier-pruning results.
 - `RADICAL_PARADIGMS_RESULTS.md` - linear, symmetry, restriction, reversible, and modular results.
@@ -746,7 +822,8 @@ proof obligations are recorded in `OPEN_SOURCE_CUBE_RESULTS.md`.
 - `OPEN_SOURCE_CUBE_RESULTS.md` - Backdoor DNF, CPOG, exact cube-cover, and MTBDD results.
 - `PARITY_SUBCUBE_RESULTS.md` - parity cube lower bounds, OBDD sharing, and complement edges.
 - `EDGE_VALUED_ACTION_RESULTS.md` - finite actions, modular sums, label cost, and MEDDLY validation.
-- `DIRECT_PROOF_TRIALS.md` - four unconditional proof attempts and exact failure points.
+- `DIRECT_PROOF_TRIALS.md` - four unconditional P=NP proof attempts and exact failure points.
+- `SEPARATION_PROOF_TRIALS.md` - nine direct P!=NP proof attempts and exact transfer gaps.
 - `validate_meddly_evplus.sh` - optional checksum-pinned MEDDLY release validation.
 - `Main.lean` - residual-state executable.
 - `hybrid_portfolio.py` - heterogeneous structural solver portfolio.

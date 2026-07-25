@@ -725,3 +725,85 @@ needed abstractly, while the root query and every residual query are exact witne
 questions; exact counts can choose a surviving heavier child. A898-A900 prove modular
 false-zero examples, prove zero residue is exact when the modulus exceeds the count, and show
 that a uniformly efficient exact residue compiler would decide witness existence.
+
+## Approaches 901-915: Shannon counting and target-slice explicitness
+
+A901-A906 define n-bit Boolean functions and b-bit circuit codes, prove the input,
+function, and code cardinalities, and bound every evaluator image by its code count.
+A907-A911 prove short descriptions cannot cover all Boolean functions, construct a
+noncomputable hard function, and certify that no code computes it. A912-A915 charge the
+`2^n` truth-table length and prove that counting locates a hard member of a desired class
+only after that target slice is independently shown larger than the circuit image.
+
+## Approaches 916-930: exhaustive hard-table selection
+
+A916-A921 define the full function universe and hard-candidate set, prove nonemptiness under
+the counting gap, select one missing truth table, and certify its nonrepresentability.
+A922-A925 expose `2^(2^n)` candidates and the naive candidate-by-code comparison cost.
+A926-A930 separate cheap table lookup from exponential representation and construction,
+and package the uniform explicitness obligations required for a circuit lower bound.
+
+## Approaches 931-945: padding and deterministic-history collapse
+
+A931-A936 formalise padding plans, full deterministic histories, and prove that any padding
+making the complete history polynomial also makes direct deterministic simulation polynomial.
+A937-A943 instantiate full-runtime exponential padding, prove it makes simulation linear,
+and show underpadding cannot fit the full history. A944-A945 require certificates genuinely
+shorter than deterministic recomputation and record the padding separation failure.
+
+## Approaches 946-960: polynomial-stage diagonalisation
+
+A946-A951 formalise polynomial machine stages, strict exponent growth, and prove that a
+universal stage simulator has no single fixed polynomial exponent. A952-A956 show every
+finite exponent cap misses the next stage and encoding the exponent in the input does not
+make it constant. A957-A960 prove stage-specific padding makes simulation linear and state
+the fixed-verifier/universal-disagreement criterion needed for a valid NP diagonal language.
+
+## Approaches 961-975: one-language quantifier obstruction
+
+A961-A965 prove every fixed polynomial exponent has a larger stage-specific candidate but no
+single candidate beats every exponent. A966-A970 formalise fixed NP verifier exponents,
+universal selector failure, and the padding trap. A971-A975 distinguish
+`forall k, exists L_k` from `exists L, forall k`, require one fixed NP family hard against
+every stage, and record the missing uniform language and hardness-preserving padding theorem.
+
+## Approaches 976-990: range avoidance and raw nonimage certificates
+
+A976-A985 define exact range avoiders, derive one distinguishing input per code, separate
+local bit evaluation from global output construction, and prove self-representation is
+impossible. A986-A989 construct proof-carrying difference certificates and charge exactly
+one n-bit entry per b-bit code, giving `n * 2^b` raw certificate bits. A990 packages local
+explicitness, nonimage soundness, and proof-cost obligations for separation-grade avoidance.
+
+## Approaches 991-1005: local-NP range-avoidance package
+
+A991-A995 characterise range nonmembership as `forall code, exists input` disagreement and
+charge explicit universal checking. A996-A1001 separate supplied-table lookup from uniform
+construction and define locally explicit families hard for code families. A1002-A1005 add
+one fixed NP-style witness verifier, exponent-indexed polynomial code budgets, and the single
+family hard against every budget required by a range-avoidance separation.
+
+## Approaches 1006-1020: counting-to-SAT transfer
+
+A1006-A1014 account for direct truth tables, DNF encodings, and SAT reductions containing the
+full `2^n`-bit payload. A1015-A1020 prove that value preservation alone does not transfer the
+counting lower bound: the source family and reduction must be succinct and uniformly
+polynomial in the original input length, not merely polynomial in an exponentially large
+produced instance.
+
+## Approaches 1021-1035: proof-complexity separation trial
+
+A1021-A1026 formalise sound complete proof systems, proof length, checker cost, polynomial
+boundedness, and system-specific lower bounds. A1027-A1030 prove lower bounds transfer to a
+different proof system only through an acceptance-preserving size-bounded simulation.
+A1031-A1035 isolate the gap between strong restricted-system bounds and the universal lower
+bound against every polynomially checkable sound complete proof system needed for separation.
+
+## Approaches 1036-1050: restricted-circuit transfer trial
+
+A1036-A1043 prove Boolean negation is nonmonotone, has a one-gate unrestricted circuit, and
+therefore obstructs any exact monotone simulation of all unrestricted circuits. A1044-A1047
+separate bounded-depth and unrestricted size and show adding missing gates can destroy the
+restricted invariant. A1048-A1050 require a polynomial-overhead transfer to general circuits
+and record that current restricted and exponential-time lower bounds do not yield one NP
+language hard for unrestricted polynomial computation.

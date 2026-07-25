@@ -1,0 +1,49 @@
+Padding and diagonalisation obstruction profiles
+
+Exponential-time language padded by its full runtime
+n original-time padded-length simulation/padded-length
+ 4            16            16                        1
+ 8           256           256                        1
+12          4096          4096                        1
+16         65536         65536                        1
+20       1048576       1048576                        1
+
+Underpadding by n^3 leaves exponential history outside the bound
+n original-time padded-length=n^3 original/padded
+ 8           256               512           0.500
+12          4096              1728           2.370
+16         65536              4096          16.000
+20       1048576              8000         131.072
+24      16777216             13824        1213.630
+32    4294967296             32768      131072.000
+
+Unbounded polynomial exponents at the fixed input length two
+fixed-bound-exponent attacking-exponent fixed-cost attack-cost factor
+                   1                  2          2           4      2
+                   2                  3          4           8      2
+                   3                  4          8          16      2
+                   4                  5         16          32      2
+                   5                  6         32          64      2
+                   6                  7         64         128      2
+                   7                  8        128         256      2
+                   8                  9        256         512      2
+
+Per-stage candidate versus one uniform candidate
+target-exponent selected-stage selected-stage-beats-target fixed-stage-5-beats-target
+              0              1 True True
+              1              2 True True
+              2              3 True True
+              3              4 True True
+              4              5 True True
+              5              6 True False
+              6              7 True False
+              7              8 True False
+              8              9 True False
+              9             10 True False
+
+Interpretation:
+  padding to the original runtime makes direct simulation degree one
+  smaller polynomial padding does not fit the full deterministic history
+  no fixed exponent simulates machines whose exponents are unbounded
+  choosing a new hard language for every exponent does not yield one NP language
+  the missing theorem must combine one fixed verifier with hardness against all P exponents

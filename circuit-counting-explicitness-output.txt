@@ -1,0 +1,51 @@
+Exact small-circuit counting and explicitness
+gates use NOT, AND, OR, XOR; constants and projections cost zero
+
+n=3, Boolean functions=256, gate budget=4
+  gates<= 0: reachable=     5, missing=   251
+  gates<= 1: reachable=    17, missing=   239
+  gates<= 2: reachable=    59, missing=   197
+  gates<= 3: reachable=   171, missing=    85
+  gates<= 4: reachable=   238, missing=    18
+  lexicographically first missing truth table: 11101000
+
+n=4, Boolean functions=65536, gate budget=4
+  gates<= 0: reachable=     6, missing= 65530
+  gates<= 1: reachable=    28, missing= 65508
+  gates<= 2: reachable=   154, missing= 65382
+  gates<= 3: reachable=   845, missing= 64691
+  gates<= 4: reachable=  3876, missing= 61660
+  lexicographically first missing truth table: 1101000000000000
+
+Asymptotic description counting
+n code-bits=n^2 log2(all-functions)=2^n counting-gap
+ 2             4                      4 no
+ 3             9                      8 no
+ 4            16                     16 no
+ 5            25                     32 yes
+ 6            36                     64 yes
+ 7            49                    128 yes
+ 8            64                    256 yes
+ 9            81                    512 yes
+10           100                   1024 yes
+11           121                   2048 yes
+12           144                   4096 yes
+13           169                   8192 yes
+14           196                  16384 yes
+15           225                  32768 yes
+16           256                  65536 yes
+
+Exhaustive lexicographic-selection scale
+n truth-table-bits number-of-candidate-functions decimal-digits
+ 4               16 2^(2^4)              5
+ 8              256 2^(2^8)             78
+12             4096 2^(2^12)           1234
+16            65536 2^(2^16)          19729
+20          1048576 2^(2^20)         315653
+
+Interpretation:
+  counting proves missing functions once code bits < 2^n
+  exact enumeration can select one for tiny n
+  the selected object is supplied as a 2^n-bit truth table
+  exhaustive lexicographic construction scans up to 2^(2^n) candidates
+  neither step provides a uniform polynomial-time NP language
